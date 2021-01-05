@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bubble_gum_simulator:block/mediumbluewhiteslab"
+    },
+    "type=top": {
+      "model": "bubble_gum_simulator:block/mediumbluewhiteslab_top"
+    },
+    "type=double": {
+      "model": "bubble_gum_simulator:block/mediumbluewhiteslab_full"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "bubble_gum_simulator:blocks/testegg",
+    "particle": "bubble_gum_simulator:blocks/testegg"
+  }
+}

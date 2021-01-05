@@ -1,0 +1,25 @@
+{
+  "_fv": 13,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Spawnprtl 1",
+    "achievementDescription": "you unlocked the first spawn portal",
+    "achievementIcon": {
+      "value": "Items.KNOWLEDGE_BOOK"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 1,
+    "achievementType": "goal",
+    "parent": {
+      "value": "CUSTOM:Bubbler"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"biome_entered\" x=\"39\" y=\"52\"><field name=\"biome\">CUSTOM:Spawnprtl1bio</field><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

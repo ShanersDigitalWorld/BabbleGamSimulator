@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "bubble_gum_simulator:vip"
+    },
+    "title": {
+      "translate": "advancements.bgs_vip.title"
+    },
+    "description": {
+      "translate": "advancements.bgs_vip.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bgs_vip": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "bubble_gum_simulator:candyland"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "bubble_gum_simulator:bubbler"
+}

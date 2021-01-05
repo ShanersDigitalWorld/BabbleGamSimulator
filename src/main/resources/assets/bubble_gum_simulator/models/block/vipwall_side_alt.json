@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_glass_pane_side_alt",
+  "textures": {
+    "edge": "bubble_gum_simulator:blocks/bgsvipwallt",
+    "pane": "bubble_gum_simulator:blocks/bgsvipwallt"
+  }
+}

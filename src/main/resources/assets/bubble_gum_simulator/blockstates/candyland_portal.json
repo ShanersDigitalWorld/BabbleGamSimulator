@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "bubble_gum_simulator:block/candyland_portal_ew"
+    },
+    "axis=x": {
+      "model": "bubble_gum_simulator:block/candyland_portal_ns"
+    }
+  }
+}

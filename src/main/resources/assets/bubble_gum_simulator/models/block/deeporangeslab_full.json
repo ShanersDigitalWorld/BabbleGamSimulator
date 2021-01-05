@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "bubble_gum_simulator:blocks/deep_orange",
+    "top": "bubble_gum_simulator:blocks/deep_orange",
+    "side": "bubble_gum_simulator:blocks/deep_orange"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bubble_gum_simulator:block/reallyredwhiteslab"
+    },
+    "type=top": {
+      "model": "bubble_gum_simulator:block/reallyredwhiteslab_top"
+    },
+    "type=double": {
+      "model": "bubble_gum_simulator:block/reallyredwhiteslab_full"
+    }
+  }
+}

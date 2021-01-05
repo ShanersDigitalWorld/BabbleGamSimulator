@@ -1,0 +1,51 @@
+{
+  "_fv": 13,
+  "_type": "plant",
+  "definition": {
+    "renderType": 13,
+    "texture": "spikyegg",
+    "textureBottom": "",
+    "customModelName": "Crop model",
+    "itemTexture": "",
+    "particleTexture": "",
+    "plantType": "normal",
+    "staticPlantGenerationType": "Flower",
+    "growapableSpawnType": "Plains",
+    "growapableMaxHeight": 3,
+    "doublePlantGenerationType": "Flower",
+    "name": "Spikey Egg",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Bgseggs"
+    },
+    "hardness": 0.0,
+    "resistance": 0.0,
+    "luminance": 0.0,
+    "unbreakable": false,
+    "soundOnStep": {
+      "value": "NETHER_WART"
+    },
+    "useLootTableForDrops": false,
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "forceTicking": false,
+    "emissiveRendering": false,
+    "hasTileEntity": false,
+    "isReplaceable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "XZ",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 100,
+    "fireSpreadSpeed": 60,
+    "frequencyOnChunks": 5,
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "restrictionBiomes": []
+  }
+}

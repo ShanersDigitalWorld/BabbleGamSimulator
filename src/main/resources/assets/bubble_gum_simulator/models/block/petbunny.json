@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "bubble_gum_simulator:blocks/industrial_white",
+    "particle": "bubble_gum_simulator:blocks/industrial_white"
+  }
+}

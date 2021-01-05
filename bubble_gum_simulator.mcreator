@@ -1,0 +1,1799 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "Bgs",
+      "type": "tab",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bgs"
+    },
+    {
+      "name": "Vip",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vip"
+    },
+    {
+      "name": "Spinthewheel",
+      "type": "painting",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spinthewheel"
+    },
+    {
+      "name": "Vippainting",
+      "type": "painting",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vippainting"
+    },
+    {
+      "name": "Tech",
+      "type": "painting",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tech"
+    },
+    {
+      "name": "Bgsst1",
+      "type": "musicdisc",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "bgsst_1"
+    },
+    {
+      "name": "Bgsst2",
+      "type": "musicdisc",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "bgsst_2"
+    },
+    {
+      "name": "Bgsst3",
+      "type": "musicdisc",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "bgsst_3"
+    },
+    {
+      "name": "Bgsst4",
+      "type": "musicdisc",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "bgsst_4"
+    },
+    {
+      "name": "Bgsst5",
+      "type": "musicdisc",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "bgsst_5"
+    },
+    {
+      "name": "Bgsst6",
+      "type": "musicdisc",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "bgsst_6"
+    },
+    {
+      "name": "Bgsst7",
+      "type": "musicdisc",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "bgsst_7"
+    },
+    {
+      "name": "Guessapet",
+      "type": "painting",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "guessapet"
+    },
+    {
+      "name": "Coins",
+      "type": "item",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coins"
+    },
+    {
+      "name": "Candylandbio",
+      "type": "biome",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "candylandbio"
+    },
+    {
+      "name": "Toylandbio",
+      "type": "biome",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "toylandbio"
+    },
+    {
+      "name": "Beachbio",
+      "type": "biome",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beachbio"
+    },
+    {
+      "name": "Atlantisbio",
+      "type": "biome",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "atlantisbio"
+    },
+    {
+      "name": "Rainbowbio",
+      "type": "biome",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rainbowbio"
+    },
+    {
+      "name": "Underworldbio",
+      "type": "biome",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "underworldbio"
+    },
+    {
+      "name": "Mythicforestbio",
+      "type": "biome",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mythicforestbio"
+    },
+    {
+      "name": "Overworldbio",
+      "type": "biome",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "overworldbio"
+    },
+    {
+      "name": "Candyland",
+      "type": "dimension",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "candyland"
+    },
+    {
+      "name": "Theoverworld",
+      "type": "dimension",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "theoverworld"
+    },
+    {
+      "name": "Toyland",
+      "type": "dimension",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "toyland"
+    },
+    {
+      "name": "Beach",
+      "type": "dimension",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beach"
+    },
+    {
+      "name": "Atlantis",
+      "type": "dimension",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "atlantis"
+    },
+    {
+      "name": "Rainbowland",
+      "type": "dimension",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rainbowland"
+    },
+    {
+      "name": "Underworld",
+      "type": "dimension",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "underworld"
+    },
+    {
+      "name": "Mysticforest",
+      "type": "dimension",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mysticforest"
+    },
+    {
+      "name": "Bgsst8",
+      "type": "musicdisc",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "bgsst_8"
+    },
+    {
+      "name": "Bgsst9",
+      "type": "musicdisc",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "bgsst_9"
+    },
+    {
+      "name": "Bgsst10",
+      "type": "musicdisc",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "bgsst_10"
+    },
+    {
+      "name": "Bgsst11",
+      "type": "musicdisc",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "bgsst_11"
+    },
+    {
+      "name": "Bgsst12",
+      "type": "musicdisc",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "bgsst_12"
+    },
+    {
+      "name": "Bgsst13",
+      "type": "musicdisc",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "bgsst_13"
+    },
+    {
+      "name": "Bgsst14",
+      "type": "musicdisc",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "bgsst_14"
+    },
+    {
+      "name": "Bgsst15",
+      "type": "musicdisc",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "bgsst_15"
+    },
+    {
+      "name": "Bgsst16",
+      "type": "musicdisc",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "bgsst_16"
+    },
+    {
+      "name": "Bgsst17",
+      "type": "musicdisc",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "bgsst_17"
+    },
+    {
+      "name": "Bubbler",
+      "type": "achievement",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bubbler"
+    },
+    {
+      "name": "Cashmereblock",
+      "type": "block",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cashmereblock"
+    },
+    {
+      "name": "Seagreenblock",
+      "type": "block",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "seagreenblock"
+    },
+    {
+      "name": "Cyanblock",
+      "type": "block",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cyanblock"
+    },
+    {
+      "name": "Smokygreyblock",
+      "type": "block",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smokygreyblock"
+    },
+    {
+      "name": "Smokygreystair",
+      "type": "block",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smokygreystair"
+    },
+    {
+      "name": "Smokygreyslab",
+      "type": "block",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smokygreyslab"
+    },
+    {
+      "name": "Portalframeblock",
+      "type": "block",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "portalframeblock"
+    },
+    {
+      "name": "Greenportalblock",
+      "type": "block",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "greenportalblock"
+    },
+    {
+      "name": "Carnationpinkblock",
+      "type": "block",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "carnationpinkblock"
+    },
+    {
+      "name": "Persimmonblock",
+      "type": "block",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "persimmonblock"
+    },
+    {
+      "name": "Limegreenblock",
+      "type": "block",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "limegreenblock"
+    },
+    {
+      "name": "Rustblock",
+      "type": "block",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rustblock"
+    },
+    {
+      "name": "Fawnbrownblock",
+      "type": "block",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fawnbrownblock"
+    },
+    {
+      "name": "Reallyredblock",
+      "type": "block",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reallyredblock"
+    },
+    {
+      "name": "Reddishbrownblock",
+      "type": "block",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reddishbrownblock"
+    },
+    {
+      "name": "Deeporangeblock",
+      "type": "block",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "deeporangeblock"
+    },
+    {
+      "name": "Royalpurpleblock",
+      "type": "block",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "royalpurpleblock"
+    },
+    {
+      "name": "Bgsbricks",
+      "type": "block",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bgsbricks"
+    },
+    {
+      "name": "Deeporangeslab",
+      "type": "block",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "deeporangeslab"
+    },
+    {
+      "name": "Deeporangestair",
+      "type": "block",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "deeporangestair"
+    },
+    {
+      "name": "Blackblock",
+      "type": "block",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blackblock"
+    },
+    {
+      "name": "Brightblueblock",
+      "type": "block",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "brightblueblock"
+    },
+    {
+      "name": "Brightgreenblock",
+      "type": "block",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "brightgreenblock"
+    },
+    {
+      "name": "Brightredblock",
+      "type": "block",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "brightredblock"
+    },
+    {
+      "name": "Brightvioletblock",
+      "type": "block",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "brightvioletblock"
+    },
+    {
+      "name": "Brightyellowblock",
+      "type": "block",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "brightyellowblock"
+    },
+    {
+      "name": "Brownblock",
+      "type": "block",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "brownblock"
+    },
+    {
+      "name": "Burntsiennablock",
+      "type": "block",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "burntsiennablock"
+    },
+    {
+      "name": "Cadetblueblock",
+      "type": "block",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cadetblueblock"
+    },
+    {
+      "name": "Crimsonblock",
+      "type": "block",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimsonblock"
+    },
+    {
+      "name": "Daisyorangeblock",
+      "type": "block",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "daisyorangeblock"
+    },
+    {
+      "name": "Darkgreenblock",
+      "type": "block",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkgreenblock"
+    },
+    {
+      "name": "Darkgreyblock",
+      "type": "block",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkgreyblock"
+    },
+    {
+      "name": "Darkindigoblock",
+      "type": "block",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkindigoblock"
+    },
+    {
+      "name": "Darkstonegreyblock",
+      "type": "block",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkstonegreyblock"
+    },
+    {
+      "name": "Darktaupeblock",
+      "type": "block",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darktaupeblock"
+    },
+    {
+      "name": "Deepblueblock",
+      "type": "block",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "deepblueblock"
+    },
+    {
+      "name": "Dirtbrownblock",
+      "type": "block",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirtbrownblock"
+    },
+    {
+      "name": "Earthgreenblock",
+      "type": "block",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "earthgreenblock"
+    },
+    {
+      "name": "Electricblueblock",
+      "type": "block",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "electricblueblock"
+    },
+    {
+      "name": "Forestgreenblock",
+      "type": "block",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "forestgreenblock"
+    },
+    {
+      "name": "Goldblock",
+      "type": "block",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "goldblock"
+    },
+    {
+      "name": "Hotpinkblock",
+      "type": "block",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hotpinkblock"
+    },
+    {
+      "name": "Bgssoundtrack",
+      "type": "tab",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bgssoundtrack"
+    },
+    {
+      "name": "CandylandPlayerEntersDimensionmusic",
+      "type": "procedure",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "candyland_player_enters_dimensionmusic",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ToylandPlayerEntersDimensionmusic",
+      "type": "procedure",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "toyland_player_enters_dimensionmusic",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BeachPlayerEntersDimensionmusic",
+      "type": "procedure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "beach_player_enters_dimensionmusic",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AtlantisPlayerEntersDimensionmusic",
+      "type": "procedure",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "atlantis_player_enters_dimensionmusic",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RainbowPlayerEntersDimensionmusic",
+      "type": "procedure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "rainbow_player_enters_dimensionmusic",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UnderworldPlayerEntersDimensionmusic",
+      "type": "procedure",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "underworld_player_enters_dimensionmusic",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OverworldPlayerEntersDimensionmusic",
+      "type": "procedure",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "overworld_player_enters_dimensionmusic",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MysticForestPlayerEntersDimensionmusic",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "mystic_forest_player_enters_dimensionmusic",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bubblingprocedure",
+      "type": "procedure",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bubblingprocedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Petkingdoggy",
+      "type": "block",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "petkingdoggy"
+    },
+    {
+      "name": "Petbear",
+      "type": "block",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "petbear"
+    },
+    {
+      "name": "Petbunny",
+      "type": "block",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "petbunny"
+    },
+    {
+      "name": "Petkitty",
+      "type": "block",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "petkitty"
+    },
+    {
+      "name": "Petdoggy",
+      "type": "block",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "petdoggy"
+    },
+    {
+      "name": "Prohatchcommonegg",
+      "type": "procedure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "prohatchcommonegg",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Protesthatch2pets",
+      "type": "procedure",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "protesthatch_2pets",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Test2pethatch",
+      "type": "block",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "test_2pethatch"
+    },
+    {
+      "name": "Commoneggblock",
+      "type": "block",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "commoneggblock"
+    },
+    {
+      "name": "Commonegg",
+      "type": "plant",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "commonegg"
+    },
+    {
+      "name": "Iceshardegg",
+      "type": "plant",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iceshardegg"
+    },
+    {
+      "name": "Spikeyegg",
+      "type": "plant",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spikeyegg"
+    },
+    {
+      "name": "Infernoegg",
+      "type": "plant",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infernoegg"
+    },
+    {
+      "name": "Bgseggs",
+      "type": "tab",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bgseggs"
+    },
+    {
+      "name": "Spottedegg",
+      "type": "plant",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spottedegg"
+    },
+    {
+      "name": "Mediumbluewhiteslab",
+      "type": "block",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mediumbluewhiteslab"
+    },
+    {
+      "name": "Bluewhiteblock",
+      "type": "block",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bluewhiteblock"
+    },
+    {
+      "name": "Redwhiteblock",
+      "type": "block",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "redwhiteblock"
+    },
+    {
+      "name": "Reallyredwhiteslab",
+      "type": "block",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reallyredwhiteslab"
+    },
+    {
+      "name": "Steelbluewhiteblock",
+      "type": "block",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "steelbluewhiteblock"
+    },
+    {
+      "name": "Steelbluewhiteslab",
+      "type": "block",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "steelbluewhiteslab"
+    },
+    {
+      "name": "Blackwhiteblock",
+      "type": "block",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blackwhiteblock"
+    },
+    {
+      "name": "Blackwhiteslab",
+      "type": "block",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blackwhiteslab"
+    },
+    {
+      "name": "StrMysticforest",
+      "type": "structure",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "str_mysticforest"
+    },
+    {
+      "name": "Bgsbubbles",
+      "type": "overlay",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bgsbubbles"
+    },
+    {
+      "name": "Galaxytest",
+      "type": "block",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "galaxytest"
+    },
+    {
+      "name": "BgsVip",
+      "type": "achievement",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bgs_vip"
+    },
+    {
+      "name": "Doggyitem",
+      "type": "item",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "doggyitem"
+    },
+    {
+      "name": "Spawnprtl1bio",
+      "type": "biome",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawnprtl_1bio"
+    },
+    {
+      "name": "Spawnprtl1",
+      "type": "achievement",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawnprtl_1"
+    },
+    {
+      "name": "Vipunlocked",
+      "type": "block",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vipunlocked"
+    },
+    {
+      "name": "VipEntityCollidesInTheBlock",
+      "type": "procedure",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vip_entity_collides_in_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "advancement",
+            "type": "advancement"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CommoneggPlantRightClicked",
+      "type": "procedure",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "commonegg_plant_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Parttest",
+      "type": "particle",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "parttest"
+    },
+    {
+      "name": "Blueglasses",
+      "type": "item",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blueglasses"
+    },
+    {
+      "name": "BlueglassesArmor",
+      "type": "armor",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blueglasses_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Rainbowstrairs",
+      "type": "block",
+      "sortid": 198,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rainbowstrairs"
+    },
+    {
+      "name": "Rainbowblock",
+      "type": "block",
+      "sortid": 199,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rainbowblock"
+    },
+    {
+      "name": "RainbowTrap",
+      "type": "block",
+      "sortid": 200,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rainbow_trap"
+    },
+    {
+      "name": "Rainbowslab",
+      "type": "block",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rainbowslab"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "bgsst1",
+      "files": [
+        "bubble-season-roblox_-bubble-gum-simulator-_original-soundtrack_-by-bslick"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "bgsst2",
+      "files": [
+        "bubbles-in-the-sky-roblox_-bubble-gum-simulator-_original-soundtrack_-by-bslick"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "bgsst3",
+      "files": [
+        "going-higher-and-higher-roblox_-bubble-gum-simulator-_original-soundtrack_-by-bslick_1"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "bgsst4",
+      "files": [
+        "gum-by-the-fire-roblox_-bubble-gum-simulator-_original-soundtrack_-by-bslick"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "bgsst5",
+      "files": [
+        "gum-hair-don_t-care-roblox_-bubble-gum-simulator-_original-soundtrack_-by-bslick_1"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "bgsst6",
+      "files": [
+        "no-pop-zone-roblox_-bubble-gum-simulator-_original-soundtrack_-by-bslick"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "bgsst7",
+      "files": [
+        "snow-bubbles-roblox_-bubble-gum-simulator-_original-soundtrack_-by-bslick"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "bgsst8",
+      "files": [
+        "undertow-roblox_-bubble-gum-simulator-_original-soundtrack_-by-bslick"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "bgsst9",
+      "files": [
+        "toys-in-motion-roblox_-bubble-gum-simulator-_original-soundtrack_-by-bslick"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "bgsst10",
+      "files": [
+        "taste-the-rainbow-roblox_-bubble-gum-simulator-_original-soundtrack_-by-bslick"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "bgsst11",
+      "files": [
+        "sunrays-roblox_-bubble-gum-simulator-_original-soundtrack_-by-bslick"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "bgsst12",
+      "files": [
+        "many-sights-to-eat-roblox-bubble"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "bgsst13",
+      "files": [
+        "lolly-pop-get-it-roblox_-bubble-gum-simulator-_original-soundtrack_-by-bslick"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "bgsst14",
+      "files": [
+        "leaving-candy-behind-roblox-bubb"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "bgsst15",
+      "files": [
+        "bubbly-water-roblox_-bubble-gum-simulator-_original-soundtrack_-by-bslick"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "bgsst16",
+      "files": [
+        "all-the-colors-roblox_-bubble-gum-simulator-_original-soundtrack_-by-bslick"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "bgsst17",
+      "files": [
+        "a-little-bit-of-rain-roblox_-bubble-gum-simulator-_original-soundtrack_-by-bslick"
+      ],
+      "category": "master",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "block.bubble_gum_simulator.blackwhiteslab": "Blackwhiteslab",
+      "item.bubble_gum_simulator.bgsst_16.desc": "bgs",
+      "block.bubble_gum_simulator.bluewhiteblock": "Bluewhiteblock",
+      "itemGroup.tabbgs": "Bgs",
+      "item.bubble_gum_simulator.atlantis": "Atlantis Portal Igniter",
+      "item.bubble_gum_simulator.blueglasses_armor_helmet": "Blueglasses Helmet",
+      "block.bubble_gum_simulator.smokygreyslab": "Smokyblock",
+      "block.bubble_gum_simulator.earthgreenblock": "Carnationpinkblock",
+      "item.bubble_gum_simulator.bgsst_1": "Bgsst 1",
+      "block.bubble_gum_simulator.deeporangeslab": "Cashmereblock",
+      "block.bubble_gum_simulator.persimmonblock": "Carnationpinkblock",
+      "item.bubble_gum_simulator.bgsst_9.desc": "bgs",
+      "item.bubble_gum_simulator.bgsst_17.desc": "bgs",
+      "block.bubble_gum_simulator.deepblueblock": "Carnationpinkblock",
+      "item.bubble_gum_simulator.underworld": "Underworld Portal Igniter",
+      "advancements.spawnprtl_1.descr": "you unlocked the first spawn portal",
+      "block.bubble_gum_simulator.vip": "Vip",
+      "block.bubble_gum_simulator.test_2pethatch": "testpet",
+      "block.bubble_gum_simulator.darkstonegreyblock": "Carnationpinkblock",
+      "block.bubble_gum_simulator.burntsiennablock": "Cashmereblock",
+      "block.bubble_gum_simulator.spottedegg": "Spotted Egg",
+      "item.bubble_gum_simulator.bgsst_8.desc": "bgs",
+      "biome.bubble_gum_simulator.rainbowbio": "Rainbowbio",
+      "block.bubble_gum_simulator.deeporangestair": "Cashmereblock",
+      "block.bubble_gum_simulator.petbunny": "Petkingdoggy",
+      "item.bubble_gum_simulator.bgsst_15.desc": "bgs",
+      "block.bubble_gum_simulator.hotpinkblock": "Carnationpinkblock",
+      "item.bubble_gum_simulator.bgsst_13.desc": "bgs",
+      "block.bubble_gum_simulator.smokygreyblock": "Smokyblock",
+      "block.bubble_gum_simulator.portalframeblock": "Portalframeblock",
+      "block.bubble_gum_simulator.cyanblock": "Cyanblock",
+      "block.bubble_gum_simulator.cadetblueblock": "Cashmereblock",
+      "block.bubble_gum_simulator.petbear": "Petkingdoggy",
+      "block.bubble_gum_simulator.cashmereblock": "Cashmereblock",
+      "subtitles.bgsst16": "",
+      "item.bubble_gum_simulator.candyland": "Candyland Portal Igniter",
+      "subtitles.bgsst15": "",
+      "block.bubble_gum_simulator.steelbluewhiteslab": "Steelbluewhiteslab",
+      "block.bubble_gum_simulator.seagreenblock": "Cashmereblock",
+      "subtitles.bgsst17": "",
+      "item.bubble_gum_simulator.rainbowland": "Rainbowland Portal Igniter",
+      "advancements.spawnprtl_1.title": "Spawnprtl 1",
+      "item.bubble_gum_simulator.bgsst_6.desc": "bgs",
+      "item.bubble_gum_simulator.doggyitem": "Doggyitem",
+      "block.bubble_gum_simulator.rustblock": "Cashmereblock",
+      "block.bubble_gum_simulator.reddishbrownblock": "Cashmereblock",
+      "itemGroup.tabbgssoundtrack": "Bgssoundtrack",
+      "block.bubble_gum_simulator.bgsbricks": "Cashmereblock",
+      "block.bubble_gum_simulator.rainbowstrairs": "Rainbowblock",
+      "advancements.bubbler.descr": "Thanks For Playing Babble Gam Sim",
+      "block.bubble_gum_simulator.petkitty": "Petkingdoggy",
+      "item.bubble_gum_simulator.coins": "Coins",
+      "item.bubble_gum_simulator.blueglasses_armor_leggings": "Blueglasses Leggings",
+      "item.bubble_gum_simulator.bgsst_8": "Bgsst 8",
+      "item.bubble_gum_simulator.bgsst_9": "Bgsst 9",
+      "item.bubble_gum_simulator.bgsst_10": "Bgsst 1 0",
+      "item.bubble_gum_simulator.bgsst_6": "Bgsst 6",
+      "subtitles.bgsst9": "",
+      "item.bubble_gum_simulator.bgsst_11": "Bgsst 1 1",
+      "block.bubble_gum_simulator.commonegg": "Common Egg",
+      "item.bubble_gum_simulator.bgsst_7": "Bgsst 7",
+      "subtitles.bgsst8": "",
+      "item.bubble_gum_simulator.bgsst_12": "Bgsst 1 2",
+      "subtitles.bgsst7": "",
+      "item.bubble_gum_simulator.bgsst_4": "Bgsst 4",
+      "item.bubble_gum_simulator.bgsst_13": "Bgsst 1 3",
+      "item.bubble_gum_simulator.bgsst_5": "Bgsst 5",
+      "subtitles.bgsst6": "",
+      "item.bubble_gum_simulator.bgsst_14": "Bgsst 1 4",
+      "item.bubble_gum_simulator.bgsst_2": "Bgsst 2",
+      "subtitles.bgsst5": "",
+      "item.bubble_gum_simulator.bgsst_15": "Bgsst 1 5",
+      "block.bubble_gum_simulator.redwhiteblock": "Redwhiteblock",
+      "subtitles.bgsst4": "",
+      "item.bubble_gum_simulator.bgsst_3": "Bgsst 3",
+      "item.bubble_gum_simulator.bgsst_16": "Bgsst 1 6",
+      "subtitles.bgsst3": "",
+      "item.bubble_gum_simulator.bgsst_17": "Bgsst 1 7",
+      "block.bubble_gum_simulator.petdoggy": "Petkingdoggy",
+      "block.bubble_gum_simulator.rainbow_trap": "Rainbowblock",
+      "subtitles.bgsst2": "",
+      "subtitles.bgsst1": "",
+      "biome.bubble_gum_simulator.candylandbio": "Candylandbio",
+      "item.bubble_gum_simulator.theoverworld": "Theoverworld Portal Igniter",
+      "biome.bubble_gum_simulator.beachbio": "Beachbio",
+      "block.bubble_gum_simulator.dirtbrownblock": "Carnationpinkblock",
+      "block.bubble_gum_simulator.blackblock": "Cashmereblock",
+      "block.bubble_gum_simulator.darkgreyblock": "Carnationpinkblock",
+      "block.bubble_gum_simulator.steelbluewhiteblock": "Steelbluewhiteblock",
+      "item.bubble_gum_simulator.bgsst_10.desc": "bgs",
+      "biome.bubble_gum_simulator.overworldbio": "Overworldbio",
+      "block.bubble_gum_simulator.darkindigoblock": "Carnationpinkblock",
+      "block.bubble_gum_simulator.rainbowslab": "Rainbowblock",
+      "item.bubble_gum_simulator.bgsst_3.desc": "bgs",
+      "block.bubble_gum_simulator.brightredblock": "Cashmereblock",
+      "block.bubble_gum_simulator.goldblock": "Carnationpinkblock",
+      "block.bubble_gum_simulator.vipunlocked": "Vip",
+      "advancements.bgs_vip.descr": "You Are VIP",
+      "block.bubble_gum_simulator.brightblueblock": "Cashmereblock",
+      "block.bubble_gum_simulator.daisyorangeblock": "Carnationpinkblock",
+      "item.bubble_gum_simulator.bgsst_2.desc": "bgs",
+      "item.bubble_gum_simulator.bgsst_5.desc": "bgs",
+      "block.bubble_gum_simulator.forestgreenblock": "Forestgreenblock",
+      "block.bubble_gum_simulator.crimsonblock": "Carnationpinkblock",
+      "block.bubble_gum_simulator.brownblock": "Cashmereblock",
+      "advancements.bubbler.title": "Bubbler",
+      "block.bubble_gum_simulator.brightgreenblock": "Cashmereblock",
+      "biome.bubble_gum_simulator.atlantisbio": "Atlantisbio",
+      "block.bubble_gum_simulator.brightvioletblock": "Cashmereblock",
+      "item.bubble_gum_simulator.blueglasses_armor_boots": "Blueglasses Boots",
+      "subtitles.bgsst12": "",
+      "subtitles.bgsst11": "",
+      "subtitles.bgsst14": "",
+      "subtitles.bgsst13": "",
+      "block.bubble_gum_simulator.darkgreenblock": "Carnationpinkblock",
+      "subtitles.bgsst10": "",
+      "block.bubble_gum_simulator.darktaupeblock": "Carnationpinkblock",
+      "item.bubble_gum_simulator.beach": "Beach Portal Igniter",
+      "item.bubble_gum_simulator.toyland": "Toyland Portal Igniter",
+      "item.bubble_gum_simulator.bgsst_12.desc": "bgs",
+      "block.bubble_gum_simulator.mediumbluewhiteslab": "Mediumbluewhiteslab",
+      "block.bubble_gum_simulator.iceshardegg": "Ice Shard Egg",
+      "block.bubble_gum_simulator.fawnbrownblock": "Cashmereblock",
+      "biome.bubble_gum_simulator.mythicforestbio": "Mythicforestbio",
+      "block.bubble_gum_simulator.rainbowblock": "Rainbowblock",
+      "block.bubble_gum_simulator.electricblueblock": "Carnationpinkblock",
+      "item.bubble_gum_simulator.bgsst_1.desc": "Bgs",
+      "biome.bubble_gum_simulator.underworldbio": "Underworldbio",
+      "block.bubble_gum_simulator.greenportalblock": "Greenportalblock",
+      "block.bubble_gum_simulator.brightyellowblock": "Cashmereblock",
+      "block.bubble_gum_simulator.royalpurpleblock": "Cashmereblock",
+      "block.bubble_gum_simulator.commoneggblock": "Commoneggblock",
+      "item.bubble_gum_simulator.bgsst_14.desc": "bgs",
+      "block.bubble_gum_simulator.infernoegg": "Inferno Egg",
+      "block.bubble_gum_simulator.petkingdoggy": "Petkingdoggy",
+      "block.bubble_gum_simulator.spikeyegg": "Spikey Egg",
+      "block.bubble_gum_simulator.galaxytest": "Galaxytest",
+      "block.bubble_gum_simulator.carnationpinkblock": "Carnationpinkblock",
+      "block.bubble_gum_simulator.reallyredblock": "Cashmereblock",
+      "block.bubble_gum_simulator.limegreenblock": "Cashmereblock",
+      "block.bubble_gum_simulator.deeporangeblock": "Cashmereblock",
+      "block.bubble_gum_simulator.blackwhiteblock": "Blackwhiteblock",
+      "advancements.bgs_vip.title": "Bgs Vip",
+      "item.bubble_gum_simulator.bgsst_11.desc": "bgs",
+      "item.bubble_gum_simulator.blueglasses": "Blueglasses",
+      "biome.bubble_gum_simulator.toylandbio": "Toylandbio",
+      "item.bubble_gum_simulator.bgsst_4.desc": "bgs",
+      "item.bubble_gum_simulator.bgsst_7.desc": "bgs",
+      "itemGroup.tabbgseggs": "Bgseggs",
+      "item.bubble_gum_simulator.blueglasses_armor_chestplate": "Blueglasses Chestplate",
+      "biome.bubble_gum_simulator.spawnprtl_1bio": "Spawnprtl 1bio",
+      "block.bubble_gum_simulator.smokygreystair": "Smokyblock",
+      "block.bubble_gum_simulator.reallyredwhiteslab": "Mediumbluewhiteslab",
+      "item.bubble_gum_simulator.mysticforest": "Mysticforest Portal Igniter"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "bubble_gum_simulator",
+    "modName": "Bubble Gum Simulator",
+    "version": "1.0.0",
+    "author": "Shane, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.15.2",
+    "modElementsPackage": "net.mcreator.bubblegumsimulator",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000547520
+}

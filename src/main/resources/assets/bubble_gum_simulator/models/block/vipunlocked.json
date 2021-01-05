@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "bubble_gum_simulator:blocks/bgsvipwallt",
+    "up": "bubble_gum_simulator:blocks/bgsvipwallt",
+    "north": "bubble_gum_simulator:blocks/bgsvip",
+    "east": "bubble_gum_simulator:blocks/bgsvipwallt",
+    "south": "bubble_gum_simulator:blocks/bgsvipwallt",
+    "west": "bubble_gum_simulator:blocks/bgsvipwallt",
+    "particle": "bubble_gum_simulator:blocks/bgsvipwallt"
+  }
+}

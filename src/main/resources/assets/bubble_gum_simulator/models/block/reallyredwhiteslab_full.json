@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "bubble_gum_simulator:blocks/really_red",
+    "top": "bubble_gum_simulator:blocks/really_red",
+    "side": "bubble_gum_simulator:blocks/eggstandredwhite"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "display": {
+    "background": "bubble_gum_simulator:textures/vip.png",
+    "icon": {
+      "item": "bubble_gum_simulator:techplushie"
+    },
+    "title": {
+      "translate": "advancements.bubbler.title"
+    },
+    "description": {
+      "translate": "advancements.bubbler.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bubbler": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "bubble_gum_simulator:overworldbio"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  }
+}

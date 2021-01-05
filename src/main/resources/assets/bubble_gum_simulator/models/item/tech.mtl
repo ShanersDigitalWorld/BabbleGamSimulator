@@ -1,0 +1,7 @@
+newmtl Technorris1Mtl
+Ka 1.0 1.0 1.0
+Kd 1.0 1.0 1.0
+Ks 0.0627451 0.0627451 0.0627451
+map_Kd bubble_gum_simulator:blocks/
+Ns 0.0
+d 1.0

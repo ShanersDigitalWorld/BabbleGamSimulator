@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "bubble_gum_simulator:blocks/mediumblue",
+    "up": "bubble_gum_simulator:blocks/mediumblue",
+    "north": "bubble_gum_simulator:blocks/eggstandbluewhite",
+    "east": "bubble_gum_simulator:blocks/eggstandbluewhite",
+    "south": "bubble_gum_simulator:blocks/eggstandbluewhite",
+    "west": "bubble_gum_simulator:blocks/eggstandbluewhite",
+    "particle": "bubble_gum_simulator:blocks/mediumblue"
+  }
+}
