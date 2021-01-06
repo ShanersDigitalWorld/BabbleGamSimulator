@@ -44,7 +44,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.bubblegumsimulator.world.dimension.TheoverworldDimension;
-import net.mcreator.bubblegumsimulator.procedures.CommoneggPlantRightClickedProcedure;
+import net.mcreator.bubblegumsimulator.procedures.BetatestcommoneggProcedure;
 import net.mcreator.bubblegumsimulator.itemgroup.BgseggsItemGroup;
 import net.mcreator.bubblegumsimulator.BubbleGumSimulatorModElements;
 
@@ -147,7 +147,7 @@ public class CommoneggBlock extends BubbleGumSimulatorModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				CommoneggPlantRightClickedProcedure.executeProcedure($_dependencies);
+				BetatestcommoneggProcedure.executeProcedure($_dependencies);
 			}
 			return ActionResultType.SUCCESS;
 		}

@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "black_text",
+        "2": "rumble_blue_text",
+        "3": "white_text"
+      },
+      "name": "default"
+    }
+  }
+}

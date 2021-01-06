@@ -1,0 +1,222 @@
+{
+  "_fv": 13,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "untitled-4.png",
+          "use1Xscale": true,
+          "name": "untitled-4.png",
+          "x": 377,
+          "y": 124
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "overlays.png",
+          "use1Xscale": true,
+          "name": "overlays.png",
+          "x": 3,
+          "y": 88
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:number:Bubbles>",
+          "color": {
+            "value": -65281,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:number:Bubbles>",
+          "x": 20,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:number:Coincurrency>",
+          "color": {
+            "value": -256,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:number:Coincurrency>",
+          "x": 20,
+          "y": 137
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:number:Gemcurrency>",
+          "color": {
+            "value": -10092340,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:number:Gemcurrency>",
+          "x": 23,
+          "y": 157
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:number:Heights>",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:number:Heights>",
+          "x": 192,
+          "y": 183
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "m",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "m",
+          "x": 217,
+          "y": 183
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "untitled-3.png",
+          "use1Xscale": true,
+          "name": "untitled-3.png",
+          "x": 114,
+          "y": 194
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Height",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Height",
+          "x": 114,
+          "y": 184
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "(P)",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "(P)",
+          "x": 403,
+          "y": 135
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "(S)",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "(S)",
+          "x": 403,
+          "y": 167
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "(T)",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "(T)",
+          "x": 402,
+          "y": 197
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "(M)",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "(M)",
+          "x": 397,
+          "y": 226
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "(I)",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "(I)",
+          "x": 28,
+          "y": 93
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "(C)",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "(C)",
+          "x": 5,
+          "y": 94
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "(B)",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "(B)",
+          "x": 74,
+          "y": 94
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "(R)",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "(R)",
+          "x": 51,
+          "y": 94
+        }
+      }
+    ],
+    "baseTexture": ""
+  }
+}

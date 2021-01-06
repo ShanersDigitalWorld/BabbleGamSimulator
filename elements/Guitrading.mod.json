@@ -1,0 +1,64 @@
+{
+  "_fv": 13,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 206,
+    "height": 203,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "x",
+          "onClick": {
+            "name": "Closeallguis"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "x",
+          "x": 397,
+          "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "trading.png",
+          "use1Xscale": true,
+          "name": "trading.png",
+          "x": 107,
+          "y": 15
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Enabled",
+          "width": 60,
+          "height": 20,
+          "name": "Enabled",
+          "x": 150,
+          "y": 202
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Trade",
+          "onClick": {
+            "name": "Tradescreen2pro"
+          },
+          "width": 50,
+          "height": 20,
+          "name": "Trade",
+          "x": 262,
+          "y": 51
+        }
+      }
+    ]
+  }
+}

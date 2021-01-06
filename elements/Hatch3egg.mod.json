@@ -1,0 +1,12 @@
+{
+  "_fv": 13,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "E",
+    "keyBindingName": "Hatch 1egg",
+    "keyBindingCategoryKey": "inventory",
+    "onKeyPressed": {
+      "name": "CommoneggPlantRightClicked"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "bubble_gum_simulator:custom/omaka",
+  "textures": {
+    "all": "bubble_gum_simulator:blocks/green_text",
+    "particle": "bubble_gum_simulator:blocks/green_text",
+    "0": "bubble_gum_simulator:blocks/black_text",
+    "1": "bubble_gum_simulator:blocks/green_text"
+  }
+}

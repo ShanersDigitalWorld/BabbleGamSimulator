@@ -1,0 +1,62 @@
+{
+  "_fv": 13,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 163,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "x",
+          "onClick": {
+            "name": "Closeallguis"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "x",
+          "x": 282,
+          "y": 40
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "layer_11.png",
+          "use1Xscale": true,
+          "name": "layer_11.png",
+          "x": 119,
+          "y": 39
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "rersr.png",
+          "use1Xscale": true,
+          "name": "rersr.png",
+          "x": 315,
+          "y": 57
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:number:Totalbubbles>",
+          "color": {
+            "value": -52276,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:number:Totalbubbles>",
+          "x": 154,
+          "y": 204
+        }
+      }
+    ]
+  }
+}

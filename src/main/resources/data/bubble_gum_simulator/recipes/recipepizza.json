@@ -1,0 +1,20 @@
+{
+  "group": "bubble_gum_simulator",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1"
+  ],
+  "key": {
+    "0": {
+      "item": "bubble_gum_simulator:itemblueberrygum"
+    },
+    "1": {
+      "item": "bubble_gum_simulator:itemcrafttool"
+    }
+  },
+  "result": {
+    "item": "bubble_gum_simulator:itemblueberrygum",
+    "count": 1
+  }
+}

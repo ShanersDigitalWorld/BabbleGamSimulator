@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "bubble_gum_simulator:items/blueglasses_leggings"
-  }
-}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "bubble_gum_simulator:items/f370fff0534dbed0393ed5005456581d"
+  }
+}

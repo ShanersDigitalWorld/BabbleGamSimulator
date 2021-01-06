@@ -1,0 +1,25 @@
+{
+  "_fv": 13,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Bubble Master",
+    "achievementDescription": "You're a master of the ways of the bubbles with 3.5M blown",
+    "achievementIcon": {
+      "value": "CUSTOM:Bubblemasterbadge"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 1,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:BubbleConnoisseur"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_consumed\" x=\"45\" y=\"23\"><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:Intermediatebadge</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

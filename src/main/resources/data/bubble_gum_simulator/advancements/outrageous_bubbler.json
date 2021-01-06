@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "bubble_gum_simulator:outrageousbubblerbadge"
+    },
+    "title": {
+      "translate": "advancements.outrageous_bubbler.title"
+    },
+    "description": {
+      "translate": "advancements.outrageous_bubbler.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "outrageous_bubbler": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "bubble_gum_simulator:intermediatebadge"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "bubble_gum_simulator:incredible_bubbler"
+}

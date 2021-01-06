@@ -1,0 +1,10 @@
+{
+  "parent": "bubble_gum_simulator:custom/ob",
+  "textures": {
+    "all": "bubble_gum_simulator:blocks/black_text",
+    "particle": "bubble_gum_simulator:blocks/black_text",
+    "0": "bubble_gum_simulator:blocks/black_text",
+    "2": "bubble_gum_simulator:blocks/rumble_blue_text",
+    "3": "bubble_gum_simulator:blocks/white_text"
+  }
+}

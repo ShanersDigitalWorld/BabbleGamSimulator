@@ -1,0 +1,25 @@
+{
+  "_fv": 13,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Hatch 100,000 Eggs",
+    "achievementDescription": "100K eggs hatched! You must be a pro",
+    "achievementIcon": {
+      "value": "CUSTOM:Hatch100000eggsbadge"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 1,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:Hatch10000Eggs"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_consumed\" x=\"45\" y=\"23\"><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:Intermediatebadge</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

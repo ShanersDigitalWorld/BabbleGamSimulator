@@ -2,7 +2,7 @@
   "display": {
     "background": "bubble_gum_simulator:textures/vip.png",
     "icon": {
-      "item": "bubble_gum_simulator:techplushie"
+      "item": "bubble_gum_simulator:unknown_element"
     },
     "title": {
       "translate": "advancements.bubbler.title"

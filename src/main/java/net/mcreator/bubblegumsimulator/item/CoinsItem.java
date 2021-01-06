@@ -3,13 +3,19 @@ package net.mcreator.bubblegumsimulator.item;
 
 import net.minecraftforge.registries.ObjectHolder;
 
+import net.minecraft.world.World;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.bubblegumsimulator.procedures.CoinsItemIsDroppedByPlayerProcedure;
 import net.mcreator.bubblegumsimulator.itemgroup.BgsItemGroup;
 import net.mcreator.bubblegumsimulator.BubbleGumSimulatorModElements;
+
+import java.util.Map;
+import java.util.HashMap;
 
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class CoinsItem extends BubbleGumSimulatorModElements.ModElement {
@@ -42,6 +48,21 @@ public class CoinsItem extends BubbleGumSimulatorModElements.ModElement {
 		@Override
 		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
 			return 1F;
+		}
+
+		@Override
+		public boolean hitEntity(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
+			boolean retval = super.hitEntity(itemstack, entity, sourceentity);
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
+			World world = entity.world;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("itemstack", itemstack);
+				CoinsItemIsDroppedByPlayerProcedure.executeProcedure($_dependencies);
+			}
+			return retval;
 		}
 	}
 }

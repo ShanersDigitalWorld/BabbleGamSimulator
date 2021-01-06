@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "bubble_gum_simulator:gumspecialistbadge"
+    },
+    "title": {
+      "translate": "advancements.gum_specialist.title"
+    },
+    "description": {
+      "translate": "advancements.gum_specialist.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "gum_specialist": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "bubble_gum_simulator:intermediatebadge"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "bubble_gum_simulator:extreme_bubbler"
+}

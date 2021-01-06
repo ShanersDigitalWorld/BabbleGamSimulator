@@ -1,0 +1,12 @@
+{
+  "_fv": 13,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "C",
+    "keyBindingName": "Codeskey",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "CodeskeyOnKeyPressed"
+    }
+  }
+}
