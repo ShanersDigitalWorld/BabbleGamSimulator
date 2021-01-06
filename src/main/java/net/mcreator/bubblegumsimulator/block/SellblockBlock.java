@@ -29,7 +29,7 @@ public class SellblockBlock extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:sellblock")
 	public static final Block block = null;
 	public SellblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 306);
+		super(instance, 46);
 	}
 
 	@Override

@@ -27,7 +27,7 @@ public class ContrastItem extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:contrast")
 	public static final Item block = null;
 	public ContrastItem(BubbleGumSimulatorModElements instance) {
-		super(instance, 296);
+		super(instance, 134);
 	}
 
 	@Override

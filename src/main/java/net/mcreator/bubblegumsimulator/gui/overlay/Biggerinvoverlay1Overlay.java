@@ -17,7 +17,7 @@ import net.mcreator.bubblegumsimulator.BubbleGumSimulatorModElements;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class Biggerinvoverlay1Overlay extends BubbleGumSimulatorModElements.ModElement {
 	public Biggerinvoverlay1Overlay(BubbleGumSimulatorModElements instance) {
-		super(instance, 366);
+		super(instance, 307);
 	}
 
 	@Override

@@ -105,7 +105,7 @@ public class MysticforestDimension extends BubbleGumSimulatorModElements.ModElem
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public MysticforestDimension(BubbleGumSimulatorModElements instance) {
-		super(instance, 48);
+		super(instance, 97);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

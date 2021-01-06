@@ -105,7 +105,7 @@ public class RainbowlandDimension extends BubbleGumSimulatorModElements.ModEleme
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public RainbowlandDimension(BubbleGumSimulatorModElements instance) {
-		super(instance, 46);
+		super(instance, 95);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

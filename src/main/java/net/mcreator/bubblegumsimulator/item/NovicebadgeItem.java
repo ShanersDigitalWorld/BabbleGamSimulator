@@ -16,7 +16,7 @@ public class NovicebadgeItem extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:novicebadge")
 	public static final Item block = null;
 	public NovicebadgeItem(BubbleGumSimulatorModElements instance) {
-		super(instance, 202);
+		super(instance, 103);
 	}
 
 	@Override

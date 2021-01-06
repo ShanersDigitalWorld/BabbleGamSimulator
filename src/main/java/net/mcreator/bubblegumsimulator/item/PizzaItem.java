@@ -27,7 +27,7 @@ public class PizzaItem extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:pizza")
 	public static final Item block = null;
 	public PizzaItem(BubbleGumSimulatorModElements instance) {
-		super(instance, 290);
+		super(instance, 128);
 	}
 
 	@Override

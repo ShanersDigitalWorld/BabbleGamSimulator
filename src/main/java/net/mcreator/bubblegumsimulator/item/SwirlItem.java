@@ -27,7 +27,7 @@ public class SwirlItem extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:swirl")
 	public static final Item block = null;
 	public SwirlItem(BubbleGumSimulatorModElements instance) {
-		super(instance, 299);
+		super(instance, 140);
 	}
 
 	@Override

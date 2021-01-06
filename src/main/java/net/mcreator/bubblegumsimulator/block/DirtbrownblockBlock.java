@@ -23,7 +23,7 @@ public class DirtbrownblockBlock extends BubbleGumSimulatorModElements.ModElemen
 	@ObjectHolder("bubble_gum_simulator:dirtbrownblock")
 	public static final Block block = null;
 	public DirtbrownblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 99);
+		super(instance, 42);
 	}
 
 	@Override

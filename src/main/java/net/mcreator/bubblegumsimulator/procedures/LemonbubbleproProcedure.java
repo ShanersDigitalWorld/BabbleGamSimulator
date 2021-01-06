@@ -9,7 +9,7 @@ import java.util.Map;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class LemonbubbleproProcedure extends BubbleGumSimulatorModElements.ModElement {
 	public LemonbubbleproProcedure(BubbleGumSimulatorModElements instance) {
-		super(instance, 316);
+		super(instance, 251);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

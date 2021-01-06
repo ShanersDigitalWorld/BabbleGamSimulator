@@ -16,7 +16,7 @@ public class Hatch10000eggsbadgeItem extends BubbleGumSimulatorModElements.ModEl
 	@ObjectHolder("bubble_gum_simulator:hatch_10000eggsbadge")
 	public static final Item block = null;
 	public Hatch10000eggsbadgeItem(BubbleGumSimulatorModElements instance) {
-		super(instance, 249);
+		super(instance, 123);
 	}
 
 	@Override

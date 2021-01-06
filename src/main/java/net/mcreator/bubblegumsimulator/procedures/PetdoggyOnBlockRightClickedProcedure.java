@@ -15,7 +15,7 @@ import java.util.Map;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class PetdoggyOnBlockRightClickedProcedure extends BubbleGumSimulatorModElements.ModElement {
 	public PetdoggyOnBlockRightClickedProcedure(BubbleGumSimulatorModElements instance) {
-		super(instance, 352);
+		super(instance, 280);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

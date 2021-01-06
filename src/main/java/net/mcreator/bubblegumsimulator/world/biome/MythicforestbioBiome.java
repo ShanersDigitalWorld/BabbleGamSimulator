@@ -29,7 +29,7 @@ public class MythicforestbioBiome extends BubbleGumSimulatorModElements.ModEleme
 	@ObjectHolder("bubble_gum_simulator:mythicforestbio")
 	public static final CustomBiome biome = null;
 	public MythicforestbioBiome(BubbleGumSimulatorModElements instance) {
-		super(instance, 40);
+		super(instance, 152);
 	}
 
 	@Override

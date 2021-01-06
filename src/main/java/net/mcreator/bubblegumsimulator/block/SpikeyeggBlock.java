@@ -49,7 +49,7 @@ public class SpikeyeggBlock extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:spikeyegg")
 	public static final Block block = null;
 	public SpikeyeggBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 130);
+		super(instance, 101);
 	}
 
 	@Override

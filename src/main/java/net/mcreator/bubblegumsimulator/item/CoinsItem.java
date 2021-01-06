@@ -22,7 +22,7 @@ public class CoinsItem extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:coins")
 	public static final Item block = null;
 	public CoinsItem(BubbleGumSimulatorModElements instance) {
-		super(instance, 31);
+		super(instance, 71);
 	}
 
 	@Override

@@ -42,7 +42,7 @@ public class EggsguiGui extends BubbleGumSimulatorModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
 	public EggsguiGui(BubbleGumSimulatorModElements instance) {
-		super(instance, 279);
+		super(instance, 223);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,

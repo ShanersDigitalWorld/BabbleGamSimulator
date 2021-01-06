@@ -30,7 +30,7 @@ public class ObblockBlock extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:obblock")
 	public static final Block block = null;
 	public ObblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 330);
+		super(instance, 62);
 	}
 
 	@Override

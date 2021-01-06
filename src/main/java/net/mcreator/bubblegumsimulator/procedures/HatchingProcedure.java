@@ -7,7 +7,7 @@ import java.util.Map;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class HatchingProcedure extends BubbleGumSimulatorModElements.ModElement {
 	public HatchingProcedure(BubbleGumSimulatorModElements instance) {
-		super(instance, 283);
+		super(instance, 232);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

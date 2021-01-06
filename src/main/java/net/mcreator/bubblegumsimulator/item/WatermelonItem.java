@@ -27,7 +27,7 @@ public class WatermelonItem extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:watermelon")
 	public static final Item block = null;
 	public WatermelonItem(BubbleGumSimulatorModElements instance) {
-		super(instance, 295);
+		super(instance, 133);
 	}
 
 	@Override

@@ -7,7 +7,7 @@ import java.util.Map;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class BgsoverlayDisplayOverlayIngameProcedure extends BubbleGumSimulatorModElements.ModElement {
 	public BgsoverlayDisplayOverlayIngameProcedure(BubbleGumSimulatorModElements instance) {
-		super(instance, 286);
+		super(instance, 231);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

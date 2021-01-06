@@ -31,7 +31,7 @@ public class PetskeyKeyBinding extends BubbleGumSimulatorModElements.ModElement 
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public PetskeyKeyBinding(BubbleGumSimulatorModElements instance) {
-		super(instance, 359);
+		super(instance, 292);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

@@ -25,7 +25,7 @@ public class MediumbluewhiteslabBlock extends BubbleGumSimulatorModElements.ModE
 	@ObjectHolder("bubble_gum_simulator:mediumbluewhiteslab")
 	public static final Block block = null;
 	public MediumbluewhiteslabBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 134);
+		super(instance, 65);
 	}
 
 	@Override

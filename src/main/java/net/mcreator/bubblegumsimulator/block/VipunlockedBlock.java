@@ -30,7 +30,7 @@ public class VipunlockedBlock extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:vipunlocked")
 	public static final Block block = null;
 	public VipunlockedBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 150);
+		super(instance, 2);
 	}
 
 	@Override

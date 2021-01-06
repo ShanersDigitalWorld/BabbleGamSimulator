@@ -14,7 +14,7 @@ import java.util.Map;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class BubblingprocedureProcedure extends BubbleGumSimulatorModElements.ModElement {
 	public BubblingprocedureProcedure(BubbleGumSimulatorModElements instance) {
-		super(instance, 114);
+		super(instance, 164);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

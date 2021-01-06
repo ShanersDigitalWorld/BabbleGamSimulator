@@ -31,7 +31,7 @@ public class HatchautoKeyBinding extends BubbleGumSimulatorModElements.ModElemen
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public HatchautoKeyBinding(BubbleGumSimulatorModElements instance) {
-		super(instance, 262);
+		super(instance, 206);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

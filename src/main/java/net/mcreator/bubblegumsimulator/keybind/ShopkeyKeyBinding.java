@@ -31,7 +31,7 @@ public class ShopkeyKeyBinding extends BubbleGumSimulatorModElements.ModElement 
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public ShopkeyKeyBinding(BubbleGumSimulatorModElements instance) {
-		super(instance, 358);
+		super(instance, 290);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

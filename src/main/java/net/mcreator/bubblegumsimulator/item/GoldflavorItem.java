@@ -27,7 +27,7 @@ public class GoldflavorItem extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:goldflavor")
 	public static final Item block = null;
 	public GoldflavorItem(BubbleGumSimulatorModElements instance) {
-		super(instance, 297);
+		super(instance, 135);
 	}
 
 	@Override

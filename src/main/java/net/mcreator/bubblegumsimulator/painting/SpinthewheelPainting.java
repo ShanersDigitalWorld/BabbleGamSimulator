@@ -12,7 +12,7 @@ import net.mcreator.bubblegumsimulator.BubbleGumSimulatorModElements;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class SpinthewheelPainting extends BubbleGumSimulatorModElements.ModElement {
 	public SpinthewheelPainting(BubbleGumSimulatorModElements instance) {
-		super(instance, 12);
+		super(instance, 142);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

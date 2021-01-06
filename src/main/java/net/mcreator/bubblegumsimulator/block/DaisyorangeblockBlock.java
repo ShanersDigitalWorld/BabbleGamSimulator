@@ -23,7 +23,7 @@ public class DaisyorangeblockBlock extends BubbleGumSimulatorModElements.ModElem
 	@ObjectHolder("bubble_gum_simulator:daisyorangeblock")
 	public static final Block block = null;
 	public DaisyorangeblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 92);
+		super(instance, 52);
 	}
 
 	@Override

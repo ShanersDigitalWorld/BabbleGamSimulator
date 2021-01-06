@@ -24,7 +24,7 @@ import io.netty.buffer.Unpooled;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class Tradescreen2proProcedure extends BubbleGumSimulatorModElements.ModElement {
 	public Tradescreen2proProcedure(BubbleGumSimulatorModElements instance) {
-		super(instance, 373);
+		super(instance, 311);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

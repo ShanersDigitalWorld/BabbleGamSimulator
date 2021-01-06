@@ -31,7 +31,7 @@ public class PrizeskeyKeyBinding extends BubbleGumSimulatorModElements.ModElemen
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public PrizeskeyKeyBinding(BubbleGumSimulatorModElements instance) {
-		super(instance, 357);
+		super(instance, 288);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

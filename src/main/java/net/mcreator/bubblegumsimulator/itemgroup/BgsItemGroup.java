@@ -13,7 +13,7 @@ import net.mcreator.bubblegumsimulator.BubbleGumSimulatorModElements;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class BgsItemGroup extends BubbleGumSimulatorModElements.ModElement {
 	public BgsItemGroup(BubbleGumSimulatorModElements instance) {
-		super(instance, 1);
+		super(instance, 141);
 	}
 
 	@Override

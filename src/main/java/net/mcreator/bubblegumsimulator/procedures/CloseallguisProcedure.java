@@ -10,7 +10,7 @@ import java.util.Map;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class CloseallguisProcedure extends BubbleGumSimulatorModElements.ModElement {
 	public CloseallguisProcedure(BubbleGumSimulatorModElements instance) {
-		super(instance, 278);
+		super(instance, 222);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

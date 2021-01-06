@@ -31,7 +31,7 @@ import java.util.Random;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class StrMysticforestStructure extends BubbleGumSimulatorModElements.ModElement {
 	public StrMysticforestStructure(BubbleGumSimulatorModElements instance) {
-		super(instance, 143);
+		super(instance, 168);
 	}
 
 	@Override

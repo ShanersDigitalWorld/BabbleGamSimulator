@@ -33,7 +33,7 @@ public class Test2pethatchBlock extends BubbleGumSimulatorModElements.ModElement
 	@ObjectHolder("bubble_gum_simulator:test_2pethatch")
 	public static final Block block = null;
 	public Test2pethatchBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 122);
+		super(instance, 53);
 	}
 
 	@Override

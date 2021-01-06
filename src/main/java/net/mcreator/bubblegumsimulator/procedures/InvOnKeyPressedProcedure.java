@@ -24,7 +24,7 @@ import io.netty.buffer.Unpooled;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class InvOnKeyPressedProcedure extends BubbleGumSimulatorModElements.ModElement {
 	public InvOnKeyPressedProcedure(BubbleGumSimulatorModElements instance) {
-		super(instance, 277);
+		super(instance, 221);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

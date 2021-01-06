@@ -24,7 +24,7 @@ import io.netty.buffer.Unpooled;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class CommoneggMobplayerCollidesWithPlantProcedure extends BubbleGumSimulatorModElements.ModElement {
 	public CommoneggMobplayerCollidesWithPlantProcedure(BubbleGumSimulatorModElements instance) {
-		super(instance, 280);
+		super(instance, 224);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -23,7 +23,7 @@ public class PersimmonblockBlock extends BubbleGumSimulatorModElements.ModElemen
 	@ObjectHolder("bubble_gum_simulator:persimmonblock")
 	public static final Block block = null;
 	public PersimmonblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 70);
+		super(instance, 20);
 	}
 
 	@Override

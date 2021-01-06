@@ -23,7 +23,7 @@ public class EarthgreenblockBlock extends BubbleGumSimulatorModElements.ModEleme
 	@ObjectHolder("bubble_gum_simulator:earthgreenblock")
 	public static final Block block = null;
 	public EarthgreenblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 100);
+		super(instance, 43);
 	}
 
 	@Override

@@ -14,7 +14,7 @@ import java.util.Map;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class HeightresetproProcedure extends BubbleGumSimulatorModElements.ModElement {
 	public HeightresetproProcedure(BubbleGumSimulatorModElements instance) {
-		super(instance, 325);
+		super(instance, 256);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

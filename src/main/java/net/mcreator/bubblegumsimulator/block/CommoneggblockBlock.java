@@ -33,7 +33,7 @@ public class CommoneggblockBlock extends BubbleGumSimulatorModElements.ModElemen
 	@ObjectHolder("bubble_gum_simulator:commoneggblock")
 	public static final Block block = null;
 	public CommoneggblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 127);
+		super(instance, 55);
 	}
 
 	@Override

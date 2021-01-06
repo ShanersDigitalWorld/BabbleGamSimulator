@@ -25,7 +25,7 @@ public class DeeporangeslabBlock extends BubbleGumSimulatorModElements.ModElemen
 	@ObjectHolder("bubble_gum_simulator:deeporangeslab")
 	public static final Block block = null;
 	public DeeporangeslabBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 80);
+		super(instance, 66);
 	}
 
 	@Override

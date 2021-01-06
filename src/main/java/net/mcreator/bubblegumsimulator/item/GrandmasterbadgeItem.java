@@ -16,7 +16,7 @@ public class GrandmasterbadgeItem extends BubbleGumSimulatorModElements.ModEleme
 	@ObjectHolder("bubble_gum_simulator:grandmasterbadge")
 	public static final Item block = null;
 	public GrandmasterbadgeItem(BubbleGumSimulatorModElements instance) {
-		super(instance, 239);
+		super(instance, 117);
 	}
 
 	@Override

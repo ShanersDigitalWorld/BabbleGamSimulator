@@ -16,7 +16,7 @@ public class ItemcrafttoolItem extends BubbleGumSimulatorModElements.ModElement 
 	@ObjectHolder("bubble_gum_simulator:itemcrafttool")
 	public static final Item block = null;
 	public ItemcrafttoolItem(BubbleGumSimulatorModElements instance) {
-		super(instance, 318);
+		super(instance, 70);
 	}
 
 	@Override

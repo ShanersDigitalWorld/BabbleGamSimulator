@@ -29,7 +29,7 @@ public class OverworldbioBiome extends BubbleGumSimulatorModElements.ModElement 
 	@ObjectHolder("bubble_gum_simulator:overworldbio")
 	public static final CustomBiome biome = null;
 	public OverworldbioBiome(BubbleGumSimulatorModElements instance) {
-		super(instance, 41);
+		super(instance, 153);
 	}
 
 	@Override

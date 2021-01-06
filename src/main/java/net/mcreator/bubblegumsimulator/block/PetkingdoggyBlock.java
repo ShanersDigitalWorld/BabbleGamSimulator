@@ -23,7 +23,7 @@ public class PetkingdoggyBlock extends BubbleGumSimulatorModElements.ModElement 
 	@ObjectHolder("bubble_gum_simulator:petkingdoggy")
 	public static final Block block = null;
 	public PetkingdoggyBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 115);
+		super(instance, 33);
 	}
 
 	@Override

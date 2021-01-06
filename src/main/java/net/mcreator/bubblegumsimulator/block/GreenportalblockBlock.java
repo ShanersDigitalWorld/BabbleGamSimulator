@@ -30,7 +30,7 @@ public class GreenportalblockBlock extends BubbleGumSimulatorModElements.ModElem
 	@ObjectHolder("bubble_gum_simulator:greenportalblock")
 	public static final Block block = null;
 	public GreenportalblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 68);
+		super(instance, 16);
 	}
 
 	@Override

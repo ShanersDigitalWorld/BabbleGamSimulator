@@ -15,7 +15,7 @@ import java.util.Iterator;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class BadgetestproProcedure extends BubbleGumSimulatorModElements.ModElement {
 	public BadgetestproProcedure(BubbleGumSimulatorModElements instance) {
-		super(instance, 371);
+		super(instance, 309);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

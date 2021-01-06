@@ -20,7 +20,7 @@ import java.util.Map;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class Protesthatch2petsProcedure extends BubbleGumSimulatorModElements.ModElement {
 	public Protesthatch2petsProcedure(BubbleGumSimulatorModElements instance) {
-		super(instance, 121);
+		super(instance, 166);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

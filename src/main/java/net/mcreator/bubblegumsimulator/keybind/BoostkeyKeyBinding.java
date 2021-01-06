@@ -31,7 +31,7 @@ public class BoostkeyKeyBinding extends BubbleGumSimulatorModElements.ModElement
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public BoostkeyKeyBinding(BubbleGumSimulatorModElements instance) {
-		super(instance, 354);
+		super(instance, 282);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

@@ -27,7 +27,7 @@ public class ItemBubblegumItem extends BubbleGumSimulatorModElements.ModElement 
 	@ObjectHolder("bubble_gum_simulator:item_bubblegum")
 	public static final Item block = null;
 	public ItemBubblegumItem(BubbleGumSimulatorModElements instance) {
-		super(instance, 317);
+		super(instance, 137);
 	}
 
 	@Override
@@ -80,6 +80,10 @@ public class ItemBubblegumItem extends BubbleGumSimulatorModElements.ModElement 
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
 				BubblegumbubbleproProcedure.executeProcedure($_dependencies);
 			}
 			return retval;

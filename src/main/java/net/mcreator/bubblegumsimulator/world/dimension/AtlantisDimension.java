@@ -105,7 +105,7 @@ public class AtlantisDimension extends BubbleGumSimulatorModElements.ModElement 
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public AtlantisDimension(BubbleGumSimulatorModElements instance) {
-		super(instance, 45);
+		super(instance, 94);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

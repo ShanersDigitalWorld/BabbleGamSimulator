@@ -24,7 +24,7 @@ import io.netty.buffer.Unpooled;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class HatskeyOnKeyPressedProcedure extends BubbleGumSimulatorModElements.ModElement {
 	public HatskeyOnKeyPressedProcedure(BubbleGumSimulatorModElements instance) {
-		super(instance, 362);
+		super(instance, 297);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

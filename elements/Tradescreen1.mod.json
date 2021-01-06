@@ -4,7 +4,7 @@
   "definition": {
     "type": 1,
     "width": 199,
-    "height": 131,
+    "height": 125,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 120,
     "renderBgLayer": true,
@@ -344,6 +344,9 @@
         "type": "button",
         "data": {
           "text": "x",
+          "onClick": {
+            "name": "Closeallguis"
+          },
           "width": 30,
           "height": 20,
           "name": "x",

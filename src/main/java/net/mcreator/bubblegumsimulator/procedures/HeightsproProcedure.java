@@ -16,7 +16,7 @@ import java.util.HashMap;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class HeightsproProcedure extends BubbleGumSimulatorModElements.ModElement {
 	public HeightsproProcedure(BubbleGumSimulatorModElements instance) {
-		super(instance, 324);
+		super(instance, 255);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

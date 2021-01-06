@@ -105,7 +105,7 @@ public class UnderworldDimension extends BubbleGumSimulatorModElements.ModElemen
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public UnderworldDimension(BubbleGumSimulatorModElements instance) {
-		super(instance, 47);
+		super(instance, 96);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

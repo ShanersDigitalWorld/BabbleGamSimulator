@@ -16,7 +16,7 @@ import java.util.Map;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class VipEntityCollidesInTheBlockProcedure extends BubbleGumSimulatorModElements.ModElement {
 	public VipEntityCollidesInTheBlockProcedure(BubbleGumSimulatorModElements instance) {
-		super(instance, 151);
+		super(instance, 172);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

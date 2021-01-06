@@ -24,7 +24,7 @@ public class DeeporangestairBlock extends BubbleGumSimulatorModElements.ModEleme
 	@ObjectHolder("bubble_gum_simulator:deeporangestair")
 	public static final Block block = null;
 	public DeeporangestairBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 81);
+		super(instance, 67);
 	}
 
 	@Override

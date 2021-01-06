@@ -23,7 +23,7 @@ public class CyanblockBlock extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:cyanblock")
 	public static final Block block = null;
 	public CyanblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 62);
+		super(instance, 48);
 	}
 
 	@Override

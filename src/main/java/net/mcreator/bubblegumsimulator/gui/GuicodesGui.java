@@ -43,7 +43,7 @@ public class GuicodesGui extends BubbleGumSimulatorModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
 	public GuicodesGui(BubbleGumSimulatorModElements instance) {
-		super(instance, 272);
+		super(instance, 216);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,

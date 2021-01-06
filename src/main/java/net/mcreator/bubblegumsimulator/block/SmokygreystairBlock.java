@@ -24,7 +24,7 @@ public class SmokygreystairBlock extends BubbleGumSimulatorModElements.ModElemen
 	@ObjectHolder("bubble_gum_simulator:smokygreystair")
 	public static final Block block = null;
 	public SmokygreystairBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 65);
+		super(instance, 60);
 	}
 
 	@Override

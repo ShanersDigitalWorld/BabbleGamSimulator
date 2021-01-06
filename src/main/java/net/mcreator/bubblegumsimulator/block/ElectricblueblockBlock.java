@@ -23,7 +23,7 @@ public class ElectricblueblockBlock extends BubbleGumSimulatorModElements.ModEle
 	@ObjectHolder("bubble_gum_simulator:electricblueblock")
 	public static final Block block = null;
 	public ElectricblueblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 101);
+		super(instance, 45);
 	}
 
 	@Override

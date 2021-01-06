@@ -23,7 +23,7 @@ public class DeepblueblockBlock extends BubbleGumSimulatorModElements.ModElement
 	@ObjectHolder("bubble_gum_simulator:deepblueblock")
 	public static final Block block = null;
 	public DeepblueblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 98);
+		super(instance, 44);
 	}
 
 	@Override

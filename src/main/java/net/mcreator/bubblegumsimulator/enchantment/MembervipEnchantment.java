@@ -14,7 +14,7 @@ public class MembervipEnchantment extends BubbleGumSimulatorModElements.ModEleme
 	@ObjectHolder("bubble_gum_simulator:membervip")
 	public static final Enchantment enchantment = null;
 	public MembervipEnchantment(BubbleGumSimulatorModElements instance) {
-		super(instance, 257);
+		super(instance, 201);
 	}
 
 	@Override

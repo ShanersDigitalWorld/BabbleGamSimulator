@@ -23,7 +23,7 @@ public class RedwhiteblockBlock extends BubbleGumSimulatorModElements.ModElement
 	@ObjectHolder("bubble_gum_simulator:redwhiteblock")
 	public static final Block block = null;
 	public RedwhiteblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 136);
+		super(instance, 6);
 	}
 
 	@Override

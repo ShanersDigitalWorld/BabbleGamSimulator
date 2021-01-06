@@ -23,7 +23,7 @@ public class CrimsonblockBlock extends BubbleGumSimulatorModElements.ModElement 
 	@ObjectHolder("bubble_gum_simulator:crimsonblock")
 	public static final Block block = null;
 	public CrimsonblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 91);
+		super(instance, 27);
 	}
 
 	@Override

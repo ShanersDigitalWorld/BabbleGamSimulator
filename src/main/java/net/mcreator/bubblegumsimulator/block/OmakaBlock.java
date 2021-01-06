@@ -30,7 +30,7 @@ public class OmakaBlock extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:omaka")
 	public static final Block block = null;
 	public OmakaBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 326);
+		super(instance, 61);
 	}
 
 	@Override

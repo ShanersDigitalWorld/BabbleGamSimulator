@@ -31,7 +31,7 @@ public class InvkeyKeyBinding extends BubbleGumSimulatorModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public InvkeyKeyBinding(BubbleGumSimulatorModElements instance) {
-		super(instance, 363);
+		super(instance, 299);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

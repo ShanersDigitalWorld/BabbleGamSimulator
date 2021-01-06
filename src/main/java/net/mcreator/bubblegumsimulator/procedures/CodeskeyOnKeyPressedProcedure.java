@@ -24,7 +24,7 @@ import io.netty.buffer.Unpooled;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class CodeskeyOnKeyPressedProcedure extends BubbleGumSimulatorModElements.ModElement {
 	public CodeskeyOnKeyPressedProcedure(BubbleGumSimulatorModElements instance) {
-		super(instance, 355);
+		super(instance, 283);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

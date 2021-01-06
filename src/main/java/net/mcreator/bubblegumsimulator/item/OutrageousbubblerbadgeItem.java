@@ -16,7 +16,7 @@ public class OutrageousbubblerbadgeItem extends BubbleGumSimulatorModElements.Mo
 	@ObjectHolder("bubble_gum_simulator:outrageousbubblerbadge")
 	public static final Item block = null;
 	public OutrageousbubblerbadgeItem(BubbleGumSimulatorModElements instance) {
-		super(instance, 213);
+		super(instance, 110);
 	}
 
 	@Override

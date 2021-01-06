@@ -31,7 +31,7 @@ public class TradingkeyKeyBinding extends BubbleGumSimulatorModElements.ModEleme
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public TradingkeyKeyBinding(BubbleGumSimulatorModElements instance) {
-		super(instance, 360);
+		super(instance, 294);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

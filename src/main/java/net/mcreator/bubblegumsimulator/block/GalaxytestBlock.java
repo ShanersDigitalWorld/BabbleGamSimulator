@@ -23,7 +23,7 @@ public class GalaxytestBlock extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:galaxytest")
 	public static final Block block = null;
 	public GalaxytestBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 146);
+		super(instance, 3);
 	}
 
 	@Override

@@ -23,7 +23,7 @@ public class DarktaupeblockBlock extends BubbleGumSimulatorModElements.ModElemen
 	@ObjectHolder("bubble_gum_simulator:darktaupeblock")
 	public static final Block block = null;
 	public DarktaupeblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 97);
+		super(instance, 12);
 	}
 
 	@Override

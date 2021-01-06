@@ -23,7 +23,7 @@ public class PortalframeblockBlock extends BubbleGumSimulatorModElements.ModElem
 	@ObjectHolder("bubble_gum_simulator:portalframeblock")
 	public static final Block block = null;
 	public PortalframeblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 67);
+		super(instance, 10);
 	}
 
 	@Override

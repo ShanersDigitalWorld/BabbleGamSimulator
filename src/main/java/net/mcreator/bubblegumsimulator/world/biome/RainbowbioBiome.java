@@ -29,7 +29,7 @@ public class RainbowbioBiome extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:rainbowbio")
 	public static final CustomBiome biome = null;
 	public RainbowbioBiome(BubbleGumSimulatorModElements instance) {
-		super(instance, 38);
+		super(instance, 150);
 	}
 
 	@Override

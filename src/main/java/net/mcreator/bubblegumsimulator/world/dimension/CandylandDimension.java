@@ -105,7 +105,7 @@ public class CandylandDimension extends BubbleGumSimulatorModElements.ModElement
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public CandylandDimension(BubbleGumSimulatorModElements instance) {
-		super(instance, 34);
+		super(instance, 91);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

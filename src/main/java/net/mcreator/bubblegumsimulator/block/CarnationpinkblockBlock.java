@@ -23,7 +23,7 @@ public class CarnationpinkblockBlock extends BubbleGumSimulatorModElements.ModEl
 	@ObjectHolder("bubble_gum_simulator:carnationpinkblock")
 	public static final Block block = null;
 	public CarnationpinkblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 69);
+		super(instance, 21);
 	}
 
 	@Override

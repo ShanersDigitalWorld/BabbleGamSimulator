@@ -25,7 +25,7 @@ import net.mcreator.bubblegumsimulator.BubbleGumSimulatorModElements;
 public class ParttestParticle extends BubbleGumSimulatorModElements.ModElement {
 	public static final BasicParticleType particle = new BasicParticleType(false);
 	public ParttestParticle(BubbleGumSimulatorModElements instance) {
-		super(instance, 153);
+		super(instance, 174);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

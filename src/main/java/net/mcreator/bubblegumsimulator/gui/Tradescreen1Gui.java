@@ -36,6 +36,7 @@ import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.bubblegumsimulator.procedures.CloseallguisProcedure;
 import net.mcreator.bubblegumsimulator.BubbleGumSimulatorModElements;
 import net.mcreator.bubblegumsimulator.BubbleGumSimulatorMod;
 
@@ -48,7 +49,7 @@ public class Tradescreen1Gui extends BubbleGumSimulatorModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
 	public Tradescreen1Gui(BubbleGumSimulatorModElements instance) {
-		super(instance, 370);
+		super(instance, 308);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
@@ -121,91 +122,91 @@ public class Tradescreen1Gui extends BubbleGumSimulatorModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 66, 24) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 66, 21) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 83, 24) {
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 83, 21) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 100, 24) {
+			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 100, 21) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 117, 24) {
+			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 117, 21) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 66, 41) {
+			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 66, 38) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 83, 41) {
+			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 83, 38) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 100, 41) {
+			this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 100, 38) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 117, 41) {
+			this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 117, 38) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 7, 39) {
+			this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 7, 36) {
 			}));
-			this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 24, 39) {
+			this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 24, 36) {
 			}));
-			this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 41, 39) {
+			this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 41, 36) {
 			}));
-			this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 7, 56) {
+			this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 7, 53) {
 			}));
-			this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 24, 56) {
+			this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 24, 53) {
 			}));
-			this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 41, 56) {
+			this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 41, 53) {
 			}));
-			this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 7, 73) {
+			this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 7, 70) {
 			}));
-			this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 24, 73) {
+			this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 24, 70) {
 			}));
-			this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 41, 73) {
+			this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 41, 70) {
 			}));
-			this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 7, 90) {
+			this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 7, 87) {
 			}));
-			this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal, 18, 24, 90) {
+			this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal, 18, 24, 87) {
 			}));
-			this.customSlots.put(19, this.addSlot(new SlotItemHandler(internal, 19, 41, 90) {
+			this.customSlots.put(19, this.addSlot(new SlotItemHandler(internal, 19, 41, 87) {
 			}));
-			this.customSlots.put(20, this.addSlot(new SlotItemHandler(internal, 20, 7, 107) {
+			this.customSlots.put(20, this.addSlot(new SlotItemHandler(internal, 20, 7, 104) {
 			}));
-			this.customSlots.put(21, this.addSlot(new SlotItemHandler(internal, 21, 24, 107) {
+			this.customSlots.put(21, this.addSlot(new SlotItemHandler(internal, 21, 24, 104) {
 			}));
-			this.customSlots.put(22, this.addSlot(new SlotItemHandler(internal, 22, 41, 107) {
+			this.customSlots.put(22, this.addSlot(new SlotItemHandler(internal, 22, 41, 104) {
 			}));
 			int si;
 			int sj;
 			for (si = 0; si < 3; ++si)
 				for (sj = 0; sj < 9; ++sj)
-					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 11 + 8 + sj * 18, 102 + 84 + si * 18));
+					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 11 + 8 + sj * 18, 99 + 84 + si * 18));
 			for (si = 0; si < 9; ++si)
-				this.addSlot(new Slot(inv, si, 11 + 8 + si * 18, 102 + 142));
+				this.addSlot(new Slot(inv, si, 11 + 8 + si * 18, 99 + 142));
 		}
 
 		public Map<Integer, Slot> get() {
@@ -375,7 +376,7 @@ public class Tradescreen1Gui extends BubbleGumSimulatorModElements.ModElement {
 			this.z = container.z;
 			this.entity = container.entity;
 			this.xSize = 199;
-			this.ySize = 131;
+			this.ySize = 125;
 		}
 		private static final ResourceLocation texture = new ResourceLocation("bubble_gum_simulator:textures/tradescreen_1.png");
 		@Override
@@ -395,7 +396,7 @@ public class Tradescreen1Gui extends BubbleGumSimulatorModElements.ModElement {
 			int l = (this.height - this.ySize) / 2;
 			this.blit(k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("bubble_gum_simulator:textures/tradescreen2reduced.png"));
-			this.blit(this.guiLeft + 0, this.guiTop + 0, 0, 0, 200, 138, 200, 138);
+			this.blit(this.guiLeft + 0, this.guiTop + -2, 0, 0, 200, 138, 200, 138);
 		}
 
 		@Override
@@ -432,7 +433,7 @@ public class Tradescreen1Gui extends BubbleGumSimulatorModElements.ModElement {
 		public void init(Minecraft minecraft, int width, int height) {
 			super.init(minecraft, width, height);
 			minecraft.keyboardListener.enableRepeatEvents(true);
-			searchyourtradeinv = new TextFieldWidget(this.font, this.guiLeft + -117, this.guiTop + 16, 120, 20, "Search...") {
+			searchyourtradeinv = new TextFieldWidget(this.font, this.guiLeft + -117, this.guiTop + 13, 120, 20, "Search...") {
 				{
 					setSuggestion("Search...");
 				}
@@ -457,7 +458,7 @@ public class Tradescreen1Gui extends BubbleGumSimulatorModElements.ModElement {
 			guistate.put("text:searchyourtradeinv", searchyourtradeinv);
 			searchyourtradeinv.setMaxStringLength(32767);
 			this.children.add(this.searchyourtradeinv);
-			searchtraderinv = new TextFieldWidget(this.font, this.guiLeft + 196, this.guiTop + 16, 120, 20, "Search...") {
+			searchtraderinv = new TextFieldWidget(this.font, this.guiLeft + 196, this.guiTop + 13, 120, 20, "Search...") {
 				{
 					setSuggestion("Search...");
 				}
@@ -482,7 +483,7 @@ public class Tradescreen1Gui extends BubbleGumSimulatorModElements.ModElement {
 			guistate.put("text:searchtraderinv", searchtraderinv);
 			searchtraderinv.setMaxStringLength(32767);
 			this.children.add(this.searchtraderinv);
-			this.addButton(new Button(this.guiLeft + 283, this.guiTop + -53, 30, 20, "x", e -> {
+			this.addButton(new Button(this.guiLeft + 283, this.guiTop + -56, 30, 20, "x", e -> {
 				BubbleGumSimulatorMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
 				handleButtonAction(entity, 0, x, y, z);
 			}));
@@ -575,6 +576,13 @@ public class Tradescreen1Gui extends BubbleGumSimulatorModElements.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
+		if (buttonID == 0) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				CloseallguisProcedure.executeProcedure($_dependencies);
+			}
+		}
 	}
 
 	private static void handleSlotAction(PlayerEntity entity, int slotID, int changeType, int meta, int x, int y, int z) {

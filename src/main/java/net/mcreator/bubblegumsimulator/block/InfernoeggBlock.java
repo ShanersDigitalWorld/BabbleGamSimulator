@@ -49,7 +49,7 @@ public class InfernoeggBlock extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:infernoegg")
 	public static final Block block = null;
 	public InfernoeggBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 131);
+		super(instance, 102);
 	}
 
 	@Override

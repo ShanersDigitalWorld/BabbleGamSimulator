@@ -23,7 +23,7 @@ public class HotpinkblockBlock extends BubbleGumSimulatorModElements.ModElement 
 	@ObjectHolder("bubble_gum_simulator:hotpinkblock")
 	public static final Block block = null;
 	public HotpinkblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 104);
+		super(instance, 22);
 	}
 
 	@Override

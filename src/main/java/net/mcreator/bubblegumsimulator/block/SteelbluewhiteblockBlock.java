@@ -23,7 +23,7 @@ public class SteelbluewhiteblockBlock extends BubbleGumSimulatorModElements.ModE
 	@ObjectHolder("bubble_gum_simulator:steelbluewhiteblock")
 	public static final Block block = null;
 	public SteelbluewhiteblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 138);
+		super(instance, 7);
 	}
 
 	@Override

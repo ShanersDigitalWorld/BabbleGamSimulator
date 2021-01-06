@@ -43,7 +43,7 @@ public class CandylandbioBiome extends BubbleGumSimulatorModElements.ModElement 
 	@ObjectHolder("bubble_gum_simulator:candylandbio")
 	public static final CustomBiome biome = null;
 	public CandylandbioBiome(BubbleGumSimulatorModElements instance) {
-		super(instance, 34);
+		super(instance, 146);
 	}
 
 	@Override

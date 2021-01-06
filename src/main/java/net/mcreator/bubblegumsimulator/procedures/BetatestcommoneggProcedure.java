@@ -21,7 +21,7 @@ import java.util.Map;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class BetatestcommoneggProcedure extends BubbleGumSimulatorModElements.ModElement {
 	public BetatestcommoneggProcedure(BubbleGumSimulatorModElements instance) {
-		super(instance, 328);
+		super(instance, 258);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

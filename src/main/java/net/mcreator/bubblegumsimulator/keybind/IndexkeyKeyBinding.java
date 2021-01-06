@@ -31,7 +31,7 @@ public class IndexkeyKeyBinding extends BubbleGumSimulatorModElements.ModElement
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public IndexkeyKeyBinding(BubbleGumSimulatorModElements instance) {
-		super(instance, 356);
+		super(instance, 286);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

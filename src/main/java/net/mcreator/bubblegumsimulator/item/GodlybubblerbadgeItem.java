@@ -16,7 +16,7 @@ public class GodlybubblerbadgeItem extends BubbleGumSimulatorModElements.ModElem
 	@ObjectHolder("bubble_gum_simulator:godlybubblerbadge")
 	public static final Item block = null;
 	public GodlybubblerbadgeItem(BubbleGumSimulatorModElements instance) {
-		super(instance, 241);
+		super(instance, 119);
 	}
 
 	@Override

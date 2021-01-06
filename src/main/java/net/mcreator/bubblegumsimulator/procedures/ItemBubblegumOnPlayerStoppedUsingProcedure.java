@@ -14,7 +14,7 @@ import java.util.Map;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class ItemBubblegumOnPlayerStoppedUsingProcedure extends BubbleGumSimulatorModElements.ModElement {
 	public ItemBubblegumOnPlayerStoppedUsingProcedure(BubbleGumSimulatorModElements instance) {
-		super(instance, 375);
+		super(instance, 314);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

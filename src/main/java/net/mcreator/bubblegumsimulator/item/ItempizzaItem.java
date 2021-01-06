@@ -16,7 +16,7 @@ public class ItempizzaItem extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:itempizza")
 	public static final Item block = null;
 	public ItempizzaItem(BubbleGumSimulatorModElements instance) {
-		super(instance, 322);
+		super(instance, 139);
 	}
 
 	@Override

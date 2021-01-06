@@ -23,7 +23,7 @@ public class BgsbricksBlock extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:bgsbricks")
 	public static final Block block = null;
 	public BgsbricksBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 78);
+		super(instance, 4);
 	}
 
 	@Override

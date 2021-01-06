@@ -105,7 +105,7 @@ public class BeachDimension extends BubbleGumSimulatorModElements.ModElement {
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public BeachDimension(BubbleGumSimulatorModElements instance) {
-		super(instance, 44);
+		super(instance, 93);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

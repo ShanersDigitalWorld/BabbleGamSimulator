@@ -23,7 +23,7 @@ public class GoldblockBlock extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:goldblock")
 	public static final Block block = null;
 	public GoldblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 103);
+		super(instance, 34);
 	}
 
 	@Override

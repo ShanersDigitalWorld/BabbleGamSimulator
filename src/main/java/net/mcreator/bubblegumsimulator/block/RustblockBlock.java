@@ -23,7 +23,7 @@ public class RustblockBlock extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:rustblock")
 	public static final Block block = null;
 	public RustblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 72);
+		super(instance, 36);
 	}
 
 	@Override

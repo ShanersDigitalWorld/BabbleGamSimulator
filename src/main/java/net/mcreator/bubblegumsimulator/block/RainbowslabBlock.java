@@ -25,7 +25,7 @@ public class RainbowslabBlock extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:rainbowslab")
 	public static final Block block = null;
 	public RainbowslabBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 201);
+		super(instance, 58);
 	}
 
 	@Override

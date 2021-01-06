@@ -29,7 +29,7 @@ public class AtlantisbioBiome extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:atlantisbio")
 	public static final CustomBiome biome = null;
 	public AtlantisbioBiome(BubbleGumSimulatorModElements instance) {
-		super(instance, 37);
+		super(instance, 149);
 	}
 
 	@Override

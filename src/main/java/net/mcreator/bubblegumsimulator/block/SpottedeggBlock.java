@@ -49,7 +49,7 @@ public class SpottedeggBlock extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:spottedegg")
 	public static final Block block = null;
 	public SpottedeggBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 133);
+		super(instance, 99);
 	}
 
 	@Override

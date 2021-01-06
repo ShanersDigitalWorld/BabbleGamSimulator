@@ -23,7 +23,7 @@ public class CadetblueblockBlock extends BubbleGumSimulatorModElements.ModElemen
 	@ObjectHolder("bubble_gum_simulator:cadetblueblock")
 	public static final Block block = null;
 	public CadetblueblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 90);
+		super(instance, 49);
 	}
 
 	@Override

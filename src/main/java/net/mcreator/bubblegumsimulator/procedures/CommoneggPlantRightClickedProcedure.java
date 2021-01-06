@@ -18,7 +18,7 @@ import java.util.Map;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class CommoneggPlantRightClickedProcedure extends BubbleGumSimulatorModElements.ModElement {
 	public CommoneggPlantRightClickedProcedure(BubbleGumSimulatorModElements instance) {
-		super(instance, 152);
+		super(instance, 173);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

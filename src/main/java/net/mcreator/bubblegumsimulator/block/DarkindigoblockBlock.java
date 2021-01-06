@@ -23,7 +23,7 @@ public class DarkindigoblockBlock extends BubbleGumSimulatorModElements.ModEleme
 	@ObjectHolder("bubble_gum_simulator:darkindigoblock")
 	public static final Block block = null;
 	public DarkindigoblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 95);
+		super(instance, 31);
 	}
 
 	@Override

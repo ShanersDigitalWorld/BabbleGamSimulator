@@ -31,7 +31,7 @@ public class CodeskeyKeyBinding extends BubbleGumSimulatorModElements.ModElement
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public CodeskeyKeyBinding(BubbleGumSimulatorModElements instance) {
-		super(instance, 355);
+		super(instance, 284);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

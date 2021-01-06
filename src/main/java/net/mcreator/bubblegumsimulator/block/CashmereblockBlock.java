@@ -23,7 +23,7 @@ public class CashmereblockBlock extends BubbleGumSimulatorModElements.ModElement
 	@ObjectHolder("bubble_gum_simulator:cashmereblock")
 	public static final Block block = null;
 	public CashmereblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 60);
+		super(instance, 54);
 	}
 
 	@Override

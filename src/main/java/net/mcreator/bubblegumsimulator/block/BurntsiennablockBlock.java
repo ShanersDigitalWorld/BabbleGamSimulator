@@ -23,7 +23,7 @@ public class BurntsiennablockBlock extends BubbleGumSimulatorModElements.ModElem
 	@ObjectHolder("bubble_gum_simulator:burntsiennablock")
 	public static final Block block = null;
 	public BurntsiennablockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 89);
+		super(instance, 39);
 	}
 
 	@Override

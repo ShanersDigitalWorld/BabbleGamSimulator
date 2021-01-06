@@ -16,7 +16,7 @@ public class IntermediatebadgeItem extends BubbleGumSimulatorModElements.ModElem
 	@ObjectHolder("bubble_gum_simulator:intermediatebadge")
 	public static final Item block = null;
 	public IntermediatebadgeItem(BubbleGumSimulatorModElements instance) {
-		super(instance, 203);
+		super(instance, 104);
 	}
 
 	@Override

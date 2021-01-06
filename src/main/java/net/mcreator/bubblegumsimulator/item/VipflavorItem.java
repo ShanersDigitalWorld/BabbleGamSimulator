@@ -27,7 +27,7 @@ public class VipflavorItem extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:vipflavor")
 	public static final Item block = null;
 	public VipflavorItem(BubbleGumSimulatorModElements instance) {
-		super(instance, 293);
+		super(instance, 131);
 	}
 
 	@Override

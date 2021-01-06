@@ -21,7 +21,7 @@ import com.mojang.blaze3d.platform.GlStateManager;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class BgsoverlayOverlay extends BubbleGumSimulatorModElements.ModElement {
 	public BgsoverlayOverlay(BubbleGumSimulatorModElements instance) {
-		super(instance, 276);
+		super(instance, 220);
 	}
 
 	@Override
@@ -65,12 +65,12 @@ public class BgsoverlayOverlay extends BubbleGumSimulatorModElements.ModElement 
 				RenderSystem.enableDepthTest();
 				RenderSystem.enableAlphaTest();
 				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
-				Minecraft.getInstance().fontRenderer.drawString("" + (entity.getPersistentData().getDouble("Bubbles")) + "", posX + -193, posY + -4,
+				Minecraft.getInstance().fontRenderer.drawString("" + (entity.getPersistentData().getDouble("Bubbles")) + "", posX + -193, posY + -3,
 						-65281);
-				Minecraft.getInstance().fontRenderer.drawString("" + (entity.getPersistentData().getDouble("Coincurrency")) + "", posX + -193,
-						posY + 17, -256);
-				Minecraft.getInstance().fontRenderer.drawString("" + (entity.getPersistentData().getDouble("Gemcurrency")) + "", posX + -190,
-						posY + 37, -10092340);
+				Minecraft.getInstance().fontRenderer.drawString("" + (entity.getPersistentData().getDouble("Coincurrency")) + "", posX + -192,
+						posY + 18, -256);
+				Minecraft.getInstance().fontRenderer.drawString("" + (entity.getPersistentData().getDouble("Gemcurrency")) + "", posX + -191,
+						posY + 38, -10092340);
 				Minecraft.getInstance().fontRenderer.drawString("" + (entity.getPersistentData().getDouble("Heights")) + "", posX + -21, posY + 63,
 						-1);
 				Minecraft.getInstance().fontRenderer.drawString("m", posX + 4, posY + 63, -1);
@@ -87,14 +87,14 @@ public class BgsoverlayOverlay extends BubbleGumSimulatorModElements.ModElement 
 				RenderSystem.enableAlphaTest();
 				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
 				Minecraft.getInstance().fontRenderer.drawString("Height", posX + -99, posY + 64, -1);
-				Minecraft.getInstance().fontRenderer.drawString("(P)", posX + 190, posY + 15, -12829636);
+				Minecraft.getInstance().fontRenderer.drawString("(P)", posX + 190, posY + 16, -12829636);
 				Minecraft.getInstance().fontRenderer.drawString("(S)", posX + 190, posY + 47, -12829636);
-				Minecraft.getInstance().fontRenderer.drawString("(T)", posX + 189, posY + 77, -12829636);
-				Minecraft.getInstance().fontRenderer.drawString("(M)", posX + 184, posY + 106, -12829636);
-				Minecraft.getInstance().fontRenderer.drawString("(I)", posX + -185, posY + -27, -12829636);
-				Minecraft.getInstance().fontRenderer.drawString("(C)", posX + -208, posY + -26, -12829636);
-				Minecraft.getInstance().fontRenderer.drawString("(B)", posX + -139, posY + -26, -12829636);
-				Minecraft.getInstance().fontRenderer.drawString("(R)", posX + -162, posY + -26, -12829636);
+				Minecraft.getInstance().fontRenderer.drawString("(T)", posX + 189, posY + 80, -12829636);
+				Minecraft.getInstance().fontRenderer.drawString("(M)", posX + 184, posY + 107, -12829636);
+				Minecraft.getInstance().fontRenderer.drawString("(I)", posX + -185, posY + -25, -12829636);
+				Minecraft.getInstance().fontRenderer.drawString("(C)", posX + -207, posY + -25, -12829636);
+				Minecraft.getInstance().fontRenderer.drawString("(B)", posX + -139, posY + -25, -12829636);
+				Minecraft.getInstance().fontRenderer.drawString("(R)", posX + -162, posY + -25, -12829636);
 			}
 		}
 	}

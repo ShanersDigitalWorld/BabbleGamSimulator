@@ -16,7 +16,7 @@ public class ObscureItem extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:obscure")
 	public static final Item block = null;
 	public ObscureItem(BubbleGumSimulatorModElements instance) {
-		super(instance, 329);
+		super(instance, 69);
 	}
 
 	@Override

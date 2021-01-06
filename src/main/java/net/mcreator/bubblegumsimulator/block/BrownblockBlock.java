@@ -23,7 +23,7 @@ public class BrownblockBlock extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:brownblock")
 	public static final Block block = null;
 	public BrownblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 88);
+		super(instance, 38);
 	}
 
 	@Override

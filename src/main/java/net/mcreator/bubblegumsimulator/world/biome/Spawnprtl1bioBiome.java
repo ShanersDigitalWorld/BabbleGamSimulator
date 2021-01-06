@@ -29,7 +29,7 @@ public class Spawnprtl1bioBiome extends BubbleGumSimulatorModElements.ModElement
 	@ObjectHolder("bubble_gum_simulator:spawnprtl_1bio")
 	public static final CustomBiome biome = null;
 	public Spawnprtl1bioBiome(BubbleGumSimulatorModElements instance) {
-		super(instance, 149);
+		super(instance, 170);
 	}
 
 	@Override

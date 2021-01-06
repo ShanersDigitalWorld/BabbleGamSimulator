@@ -49,7 +49,7 @@ public class IceshardeggBlock extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:iceshardegg")
 	public static final Block block = null;
 	public IceshardeggBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 129);
+		super(instance, 100);
 	}
 
 	@Override

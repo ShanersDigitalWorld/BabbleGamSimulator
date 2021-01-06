@@ -13,7 +13,7 @@ import java.util.Map;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class CoinsItemIsDroppedByPlayerProcedure extends BubbleGumSimulatorModElements.ModElement {
 	public CoinsItemIsDroppedByPlayerProcedure(BubbleGumSimulatorModElements instance) {
-		super(instance, 301);
+		super(instance, 237);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

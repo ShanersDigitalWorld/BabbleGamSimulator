@@ -23,7 +23,7 @@ public class SeagreenblockBlock extends BubbleGumSimulatorModElements.ModElement
 	@ObjectHolder("bubble_gum_simulator:seagreenblock")
 	public static final Block block = null;
 	public SeagreenblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 61);
+		super(instance, 17);
 	}
 
 	@Override

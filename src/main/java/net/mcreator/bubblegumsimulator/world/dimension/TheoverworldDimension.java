@@ -105,7 +105,7 @@ public class TheoverworldDimension extends BubbleGumSimulatorModElements.ModElem
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public TheoverworldDimension(BubbleGumSimulatorModElements instance) {
-		super(instance, 42);
+		super(instance, 90);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

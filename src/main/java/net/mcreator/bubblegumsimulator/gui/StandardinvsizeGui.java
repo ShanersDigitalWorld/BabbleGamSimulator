@@ -45,7 +45,7 @@ public class StandardinvsizeGui extends BubbleGumSimulatorModElements.ModElement
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
 	public StandardinvsizeGui(BubbleGumSimulatorModElements instance) {
-		super(instance, 366);
+		super(instance, 302);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,

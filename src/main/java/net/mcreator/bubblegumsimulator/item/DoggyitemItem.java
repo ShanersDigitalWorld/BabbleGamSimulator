@@ -16,7 +16,7 @@ public class DoggyitemItem extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:doggyitem")
 	public static final Item block = null;
 	public DoggyitemItem(BubbleGumSimulatorModElements instance) {
-		super(instance, 148);
+		super(instance, 72);
 	}
 
 	@Override

@@ -23,7 +23,7 @@ public class FawnbrownblockBlock extends BubbleGumSimulatorModElements.ModElemen
 	@ObjectHolder("bubble_gum_simulator:fawnbrownblock")
 	public static final Block block = null;
 	public FawnbrownblockBlock(BubbleGumSimulatorModElements instance) {
-		super(instance, 73);
+		super(instance, 23);
 	}
 
 	@Override

@@ -12,7 +12,7 @@ import net.mcreator.bubblegumsimulator.BubbleGumSimulatorModElements;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class TechPainting extends BubbleGumSimulatorModElements.ModElement {
 	public TechPainting(BubbleGumSimulatorModElements instance) {
-		super(instance, 14);
+		super(instance, 144);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

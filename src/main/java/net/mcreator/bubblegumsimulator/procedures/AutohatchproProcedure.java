@@ -21,7 +21,7 @@ import java.util.Map;
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class AutohatchproProcedure extends BubbleGumSimulatorModElements.ModElement {
 	public AutohatchproProcedure(BubbleGumSimulatorModElements instance) {
-		super(instance, 327);
+		super(instance, 257);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -31,7 +31,7 @@ public class HatskeyKeyBinding extends BubbleGumSimulatorModElements.ModElement 
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public HatskeyKeyBinding(BubbleGumSimulatorModElements instance) {
-		super(instance, 362);
+		super(instance, 298);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}
