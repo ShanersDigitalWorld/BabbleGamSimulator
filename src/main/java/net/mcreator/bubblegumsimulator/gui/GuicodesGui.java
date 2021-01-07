@@ -30,6 +30,7 @@ import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.bubblegumsimulator.procedures.CodesproProcedure;
 import net.mcreator.bubblegumsimulator.procedures.CloseallguisProcedure;
 import net.mcreator.bubblegumsimulator.BubbleGumSimulatorModElements;
 import net.mcreator.bubblegumsimulator.BubbleGumSimulatorMod;
@@ -292,6 +293,14 @@ public class GuicodesGui extends BubbleGumSimulatorModElements.ModElement {
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				CloseallguisProcedure.executeProcedure($_dependencies);
+			}
+		}
+		if (buttonID == 1) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("guistate", guistate);
+				CodesproProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

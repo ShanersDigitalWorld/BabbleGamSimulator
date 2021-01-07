@@ -1369,6 +1369,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -2817,6 +2821,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -3656,6 +3664,651 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "bubblingamount"
+    },
+    {
+      "name": "Datastoragegui",
+      "type": "gui",
+      "sortid": 316,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "datastoragegui"
+    },
+    {
+      "name": "Datastorepetsequiped",
+      "type": "gui",
+      "sortid": 317,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "datastorepetsequiped"
+    },
+    {
+      "name": "Coincollections",
+      "type": "tag",
+      "sortid": 318,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coincollections"
+    },
+    {
+      "name": "Gemcollections",
+      "type": "tag",
+      "sortid": 319,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gemcollections"
+    },
+    {
+      "name": "Multicollections",
+      "type": "tag",
+      "sortid": 320,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "multicollections"
+    },
+    {
+      "name": "Selectedpetname",
+      "type": "tag",
+      "sortid": 321,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "selectedpetname"
+    },
+    {
+      "name": "Selectedpetstate",
+      "type": "tag",
+      "sortid": 322,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "selectedpetstate"
+    },
+    {
+      "name": "Selectedpetbubbles",
+      "type": "tag",
+      "sortid": 323,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "selectedpetbubbles"
+    },
+    {
+      "name": "Selectedpetgems",
+      "type": "tag",
+      "sortid": 324,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "selectedpetgems"
+    },
+    {
+      "name": "Selectedpetcoins",
+      "type": "tag",
+      "sortid": 325,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "selectedpetcoins"
+    },
+    {
+      "name": "Selectedpetmulti",
+      "type": "tag",
+      "sortid": 326,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "selectedpetmulti"
+    },
+    {
+      "name": "Selectedpetlevels",
+      "type": "tag",
+      "sortid": 327,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "selectedpetlevels"
+    },
+    {
+      "name": "Selectedpetenchants",
+      "type": "tag",
+      "sortid": 328,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "selectedpetenchants"
+    },
+    {
+      "name": "YourFirstPet",
+      "type": "achievement",
+      "sortid": 329,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "your_first_pet"
+    },
+    {
+      "name": "Sellblock2",
+      "type": "block",
+      "sortid": 330,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sellblock_2"
+    },
+    {
+      "name": "Sellblock3",
+      "type": "block",
+      "sortid": 331,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sellblock_3"
+    },
+    {
+      "name": "Sellblock4",
+      "type": "block",
+      "sortid": 332,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sellblock_4"
+    },
+    {
+      "name": "Sellblock5",
+      "type": "block",
+      "sortid": 333,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sellblock_5"
+    },
+    {
+      "name": "Sellblock2EntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 334,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sellblock_2_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sellblock3EntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 335,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sellblock_3_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sellblock4EntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 336,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sellblock_4_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sellblock5EntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 337,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sellblock_5_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Correntluckcount",
+      "type": "tag",
+      "sortid": 338,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "correntluckcount"
+    },
+    {
+      "name": "Currentluckcount",
+      "type": "tag",
+      "sortid": 339,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "currentluckcount"
+    },
+    {
+      "name": "Currentcode",
+      "type": "tag",
+      "sortid": 340,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "currentcode"
+    },
+    {
+      "name": "Codespro",
+      "type": "procedure",
+      "sortid": 340,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "codespro",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Currentluckboosttime",
+      "type": "tag",
+      "sortid": 341,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "currentluckboosttime"
+    },
+    {
+      "name": "Currenthatchspeedboosttime",
+      "type": "tag",
+      "sortid": 342,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "currenthatchspeedboosttime"
+    },
+    {
+      "name": "FreeCoinstag",
+      "type": "tag",
+      "sortid": 343,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "free_coinstag"
+    },
+    {
+      "name": "Yeettag",
+      "type": "tag",
+      "sortid": 344,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "yeettag"
+    },
+    {
+      "name": "ObscureEntitytag",
+      "type": "tag",
+      "sortid": 347,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "obscure_entitytag"
+    },
+    {
+      "name": "SuperCoinstag",
+      "type": "tag",
+      "sortid": 348,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "super_coinstag"
+    },
+    {
+      "name": "Minimetag",
+      "type": "tag",
+      "sortid": 349,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "minimetag"
+    },
+    {
+      "name": "Tofuutag",
+      "type": "tag",
+      "sortid": 350,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tofuutag"
+    },
+    {
+      "name": "Pinkarmypettag",
+      "type": "tag",
+      "sortid": 351,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pinkarmypettag"
+    },
+    {
+      "name": "BlueCrewtag",
+      "type": "tag",
+      "sortid": 352,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_crewtag"
+    },
+    {
+      "name": "SuperGemstag",
+      "type": "tag",
+      "sortid": 353,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "super_gemstag"
+    },
+    {
+      "name": "Twiistedtag",
+      "type": "tag",
+      "sortid": 354,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "twiistedtag"
+    },
+    {
+      "name": "LotsOfGemstag",
+      "type": "tag",
+      "sortid": 355,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lots_of_gemstag"
+    },
+    {
+      "name": "Petselectedpro",
+      "type": "procedure",
+      "sortid": 356,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "petselectedpro",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Petunselectedpro",
+      "type": "procedure",
+      "sortid": 357,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "petunselectedpro",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Petunselected",
+      "type": "tag",
+      "sortid": 358,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "petunselected"
+    },
+    {
+      "name": "Doggybubbles",
+      "type": "tag",
+      "sortid": 359,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "doggybubbles"
+    },
+    {
+      "name": "Doggystats",
+      "type": "tag",
+      "sortid": 360,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "doggystats"
+    },
+    {
+      "name": "Doggystatspro",
+      "type": "procedure",
+      "sortid": 361,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "doggystatspro",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Reeeeeeeepro",
+      "type": "procedure",
+      "sortid": 362,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reeeeeeeepro",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Doggyindexed",
+      "type": "tag",
+      "sortid": 363,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "doggyindexed"
+    },
+    {
+      "name": "Doggyinexed",
+      "type": "procedure",
+      "sortid": 364,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "doggyinexed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Invtest1",
+      "type": "gui",
+      "sortid": 365,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "invtest_1"
+    },
+    {
+      "name": "Invtest2",
+      "type": "gui",
+      "sortid": 366,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "invtest_2"
+    },
+    {
+      "name": "Nextinvpro1",
+      "type": "procedure",
+      "sortid": 367,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nextinvpro_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Backinvpro1",
+      "type": "procedure",
+      "sortid": 368,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "backinvpro_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bubblinparts",
+      "type": "particle",
+      "sortid": 369,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bubblinparts"
+    },
+    {
+      "name": "Bubblinblock",
+      "type": "block",
+      "sortid": 370,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bubblinblock"
     }
   ],
   "variable_elements": [],
@@ -3835,6 +4488,7 @@
       "item.bubble_gum_simulator.bubblemasterbadge": "Bubble Master Badge",
       "item.bubble_gum_simulator.rainbowland": "Rainbowland Portal Igniter",
       "advancements.spawnprtl_1.title": "Spawnprtl 1",
+      "advancements.your_first_pet.descr": "You hatched your first pet! What will you name it?",
       "advancements.bubbler.descr": "Thanks For Playing Babble Gam Sim",
       "item.bubble_gum_simulator.coins": "Coins",
       "item.bubble_gum_simulator.bgsst_10": "Bgsst 1 0",
@@ -3859,6 +4513,7 @@
       "biome.bubble_gum_simulator.beachbio": "Beachbio",
       "item.bubble_gum_simulator.theoverworld": "Theoverworld Portal Igniter",
       "block.bubble_gum_simulator.dirtbrownblock": "Carnationpinkblock",
+      "block.bubble_gum_simulator.bubblinblock": "Bubblinblock",
       "block.bubble_gum_simulator.blackblock": "Cashmereblock",
       "advancements.grand_master.title": "Grand Master",
       "block.bubble_gum_simulator.vipunlocked": "Vip",
@@ -3939,16 +4594,17 @@
       "item.bubble_gum_simulator.bgsst_8.desc": "bgs",
       "item.bubble_gum_simulator.gumspecialistbadge": "Gum Specialist Badge",
       "advancements.bubble_connoisseur.descr": "1.5 Millions Bubbles, you\u0027re a true Gum Connoisseur",
-      "block.bubble_gum_simulator.petbunny": "Petkingdoggy",
+      "block.bubble_gum_simulator.petbunny": "Pet Bunny",
       "block.bubble_gum_simulator.hotpinkblock": "Carnationpinkblock",
       "key.mcreator.boostkey": "Boostkey",
       "key.mcreator.prizeskey": "Prizeskey",
       "block.bubble_gum_simulator.smokygreyblock": "Smokyblock",
+      "advancements.your_first_pet.title": "Your First Pet",
       "block.bubble_gum_simulator.portalframeblock": "Portalframeblock",
       "advancements.hatch_1000_eggs.title": "Hatch 1,000 Eggs",
       "advancements.bubble_master.descr": "You\u0027re a master of the ways of the bubbles with 3.5M blown",
       "block.bubble_gum_simulator.cadetblueblock": "Cashmereblock",
-      "block.bubble_gum_simulator.petbear": "Petkingdoggy",
+      "block.bubble_gum_simulator.petbear": "Pet Bear",
       "block.bubble_gum_simulator.cashmereblock": "Cashmereblock",
       "subtitles.bgsst16": "",
       "item.bubble_gum_simulator.expertbadge": "Expert Badge",
@@ -3968,7 +4624,7 @@
       "block.bubble_gum_simulator.rainbowstrairs": "Rainbowblock",
       "advancements.extreme_bubbler.title": "Extreme Bubbler",
       "advancements.gum_specialist.title": "Gum Specialist",
-      "block.bubble_gum_simulator.petkitty": "Petkingdoggy",
+      "block.bubble_gum_simulator.petkitty": "Pet Kitty",
       "advancements.bubble_connoisseur.title": "Bubble Connoisseur",
       "key.mcreator.bubbling": "Bubbling",
       "item.bubble_gum_simulator.bgsst_8": "Bgsst 8",
@@ -3981,7 +4637,7 @@
       "item.bubble_gum_simulator.bgsst_2": "Bgsst 2",
       "block.bubble_gum_simulator.redwhiteblock": "Redwhiteblock",
       "item.bubble_gum_simulator.bgsst_3": "Bgsst 3",
-      "block.bubble_gum_simulator.petdoggy": "Petdoggy",
+      "block.bubble_gum_simulator.petdoggy": "Pet Doggy",
       "block.bubble_gum_simulator.rainbow_trap": "Rainbowblock",
       "advancements.intermediate.descr": "500 bubbles Blown! You\u0027re starting to get the hang of this",
       "key.mcreator.invkey": "Petskey",
@@ -3992,8 +4648,12 @@
       "block.bubble_gum_simulator.steelbluewhiteblock": "Steelbluewhiteblock",
       "item.bubble_gum_simulator.bgsst_10.desc": "bgs",
       "biome.bubble_gum_simulator.overworldbio": "Overworldbio",
+      "block.bubble_gum_simulator.sellblock_2": "Sellblock2",
+      "block.bubble_gum_simulator.sellblock_3": "Sellblock3",
+      "block.bubble_gum_simulator.sellblock_4": "Sellblock4",
       "block.bubble_gum_simulator.darkindigoblock": "Carnationpinkblock",
       "block.bubble_gum_simulator.rainbowslab": "Rainbowblock",
+      "block.bubble_gum_simulator.sellblock_5": "Sellblock5",
       "advancements.simply_insane.title": "Simply Insane",
       "item.bubble_gum_simulator.bgsst_3.desc": "bgs",
       "block.bubble_gum_simulator.brightredblock": "Cashmereblock",

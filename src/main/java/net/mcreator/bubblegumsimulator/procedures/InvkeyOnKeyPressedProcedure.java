@@ -14,7 +14,7 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.bubblegumsimulator.gui.GuiinventoryGui;
+import net.mcreator.bubblegumsimulator.gui.Invtest1Gui;
 import net.mcreator.bubblegumsimulator.BubbleGumSimulatorModElements;
 
 import java.util.Map;
@@ -65,12 +65,12 @@ public class InvkeyOnKeyPressedProcedure extends BubbleGumSimulatorModElements.M
 				NetworkHooks.openGui((ServerPlayerEntity) _ent, new INamedContainerProvider() {
 					@Override
 					public ITextComponent getDisplayName() {
-						return new StringTextComponent("Guiinventory");
+						return new StringTextComponent("Invtest1");
 					}
 
 					@Override
 					public Container createMenu(int id, PlayerInventory inventory, PlayerEntity player) {
-						return new GuiinventoryGui.GuiContainerMod(id, inventory, new PacketBuffer(Unpooled.buffer()).writeBlockPos(_bpos));
+						return new Invtest1Gui.GuiContainerMod(id, inventory, new PacketBuffer(Unpooled.buffer()).writeBlockPos(_bpos));
 					}
 				}, _bpos);
 			}

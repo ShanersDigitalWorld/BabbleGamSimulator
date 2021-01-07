@@ -6,7 +6,7 @@
     "width": 182,
     "height": 166,
     "inventoryOffsetX": 0,
-    "inventoryOffsetY": 120,
+    "inventoryOffsetY": -177,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
@@ -622,6 +622,60 @@
           "name": "Slot #48",
           "x": 276,
           "y": 174
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:number:Totaleggs>",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:number:Totaleggs>",
+          "x": 211,
+          "y": 203
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 49,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "Petselectedpro"
+          },
+          "onTakenFromSlot": {
+            "name": "Petunselectedpro"
+          },
+          "name": "Slot #49",
+          "x": 113,
+          "y": 75
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 50,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #50",
+          "x": 321,
+          "y": 5
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bubbleico.png",
+          "use1Xscale": true,
+          "name": "bubbleico.png",
+          "x": 139,
+          "y": 204
         }
       }
     ]

@@ -3,6 +3,7 @@ package net.mcreator.bubblegumsimulator.gui;
 
 import org.lwjgl.opengl.GL11;
 
+import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.CapabilityItemHandler;
@@ -35,6 +36,8 @@ import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.bubblegumsimulator.procedures.PetunselectedproProcedure;
+import net.mcreator.bubblegumsimulator.procedures.PetselectedproProcedure;
 import net.mcreator.bubblegumsimulator.procedures.CloseallguisProcedure;
 import net.mcreator.bubblegumsimulator.BubbleGumSimulatorModElements;
 import net.mcreator.bubblegumsimulator.BubbleGumSimulatorMod;
@@ -83,7 +86,7 @@ public class GuiinventoryGui extends BubbleGumSimulatorModElements.ModElement {
 			super(containerType, id);
 			this.entity = inv.player;
 			this.world = inv.player.world;
-			this.internal = new ItemStackHandler(0);
+			this.internal = new ItemStackHandler(2);
 			BlockPos pos = null;
 			if (extraData != null) {
 				pos = extraData.readBlockPos();
@@ -121,6 +124,31 @@ public class GuiinventoryGui extends BubbleGumSimulatorModElements.ModElement {
 					}
 				}
 			}
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 7, 21) {
+				@Override
+				public void onSlotChanged() {
+					super.onSlotChanged();
+					GuiContainerMod.this.slotChanged(0, 0, 0);
+				}
+
+				@Override
+				public ItemStack onTake(PlayerEntity entity, ItemStack stack) {
+					ItemStack retval = super.onTake(entity, stack);
+					GuiContainerMod.this.slotChanged(0, 1, 0);
+					return retval;
+				}
+			}));
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 185, 6) {
+				@Override
+				public boolean canTakeStack(PlayerEntity player) {
+					return false;
+				}
+
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
+			}));
 			int si;
 			int sj;
 			for (si = 0; si < 3; ++si)
@@ -146,18 +174,18 @@ public class GuiinventoryGui extends BubbleGumSimulatorModElements.ModElement {
 			if (slot != null && slot.getHasStack()) {
 				ItemStack itemstack1 = slot.getStack();
 				itemstack = itemstack1.copy();
-				if (index < 0) {
-					if (!this.mergeItemStack(itemstack1, 0, this.inventorySlots.size(), true)) {
+				if (index < 2) {
+					if (!this.mergeItemStack(itemstack1, 2, this.inventorySlots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 					slot.onSlotChange(itemstack1, itemstack);
-				} else if (!this.mergeItemStack(itemstack1, 0, 0, false)) {
-					if (index < 0 + 27) {
-						if (!this.mergeItemStack(itemstack1, 0 + 27, this.inventorySlots.size(), true)) {
+				} else if (!this.mergeItemStack(itemstack1, 0, 2, false)) {
+					if (index < 2 + 27) {
+						if (!this.mergeItemStack(itemstack1, 2 + 27, this.inventorySlots.size(), true)) {
 							return ItemStack.EMPTY;
 						}
 					} else {
-						if (!this.mergeItemStack(itemstack1, 0, 0 + 27, false)) {
+						if (!this.mergeItemStack(itemstack1, 2, 2 + 27, false)) {
 							return ItemStack.EMPTY;
 						}
 					}
@@ -345,7 +373,7 @@ public class GuiinventoryGui extends BubbleGumSimulatorModElements.ModElement {
 			this.font.drawString("" + (entity.getPersistentData().getDouble("Petlevel")) + "", 4, 34, -1);
 			this.font.drawString("" + (entity.getPersistentData().getString("petexp")) + "", 4, 42, -1);
 			this.font.drawString("" + (entity.getPersistentData().getDouble("Totalbubbles")) + "", 33, 165, -52225);
-			this.font.drawString("" + (entity.getPersistentData().getDouble("tPetbubbles")) + "", 10, 50, -52276);
+			this.font.drawString("" + (entity.getPersistentData().getDouble("Petbubbles")) + "", 10, 50, -52276);
 			this.font.drawString("" + (entity.getPersistentData().getDouble("tPetcoins")) + "", 10, 57, -256);
 			this.font.drawString("" + (entity.getPersistentData().getDouble("Petgems")) + "", 10, 65, -10092289);
 			this.font.drawString("" + (entity.getPersistentData().getDouble("Petcurrency")) + "", 10, 73, -256);
@@ -484,5 +512,23 @@ public class GuiinventoryGui extends BubbleGumSimulatorModElements.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
+		if (slotID == 0 && changeType == 0) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				PetselectedproProcedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 0 && changeType == 1) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				PetunselectedproProcedure.executeProcedure($_dependencies);
+			}
+		}
 	}
 }

@@ -1,9 +1,9 @@
 package net.mcreator.bubblegumsimulator.procedures;
 
 import net.minecraft.world.IWorld;
-import net.minecraft.particles.ParticleTypes;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.bubblegumsimulator.particle.BubblinpartsParticle;
 import net.mcreator.bubblegumsimulator.BubbleGumSimulatorModElements;
 
 import java.util.Map;
@@ -45,8 +45,8 @@ public class BubblegumbubbleproProcedure extends BubbleGumSimulatorModElements.M
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		world.addParticle(ParticleTypes.BUBBLE, x, y, z, 0, 1, 0);
 		entity.getPersistentData().putDouble("Bubbles", ((entity.getPersistentData().getDouble("Bubbles")) + 1));
 		entity.getPersistentData().putDouble("Totalbubbles", ((entity.getPersistentData().getDouble("Totalbubbles")) + 1));
+		world.addParticle(BubblinpartsParticle.particle, x, y, z, 0, 1, 0);
 	}
 }

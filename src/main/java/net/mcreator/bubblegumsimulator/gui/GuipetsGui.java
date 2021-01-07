@@ -35,6 +35,8 @@ import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.bubblegumsimulator.procedures.PetunselectedproProcedure;
+import net.mcreator.bubblegumsimulator.procedures.PetselectedproProcedure;
 import net.mcreator.bubblegumsimulator.procedures.CloseallguisProcedure;
 import net.mcreator.bubblegumsimulator.BubbleGumSimulatorModElements;
 import net.mcreator.bubblegumsimulator.BubbleGumSimulatorMod;
@@ -83,7 +85,7 @@ public class GuipetsGui extends BubbleGumSimulatorModElements.ModElement {
 			super(containerType, id);
 			this.entity = inv.player;
 			this.world = inv.player.world;
-			this.internal = new ItemStackHandler(49);
+			this.internal = new ItemStackHandler(51);
 			BlockPos pos = null;
 			if (extraData != null) {
 				pos = extraData.readBlockPos();
@@ -415,13 +417,38 @@ public class GuipetsGui extends BubbleGumSimulatorModElements.ModElement {
 					return false;
 				}
 			}));
+			this.customSlots.put(49, this.addSlot(new SlotItemHandler(internal, 49, -8, 39) {
+				@Override
+				public void onSlotChanged() {
+					super.onSlotChanged();
+					GuiContainerMod.this.slotChanged(49, 0, 0);
+				}
+
+				@Override
+				public ItemStack onTake(PlayerEntity entity, ItemStack stack) {
+					ItemStack retval = super.onTake(entity, stack);
+					GuiContainerMod.this.slotChanged(49, 1, 0);
+					return retval;
+				}
+			}));
+			this.customSlots.put(50, this.addSlot(new SlotItemHandler(internal, 50, 199, -31) {
+				@Override
+				public boolean canTakeStack(PlayerEntity player) {
+					return false;
+				}
+
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
+			}));
 			int si;
 			int sj;
 			for (si = 0; si < 3; ++si)
 				for (sj = 0; sj < 9; ++sj)
-					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 3 + 8 + sj * 18, 120 + 84 + si * 18));
+					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 3 + 8 + sj * 18, -177 + 84 + si * 18));
 			for (si = 0; si < 9; ++si)
-				this.addSlot(new Slot(inv, si, 3 + 8 + si * 18, 120 + 142));
+				this.addSlot(new Slot(inv, si, 3 + 8 + si * 18, -177 + 142));
 		}
 
 		public Map<Integer, Slot> get() {
@@ -440,18 +467,18 @@ public class GuipetsGui extends BubbleGumSimulatorModElements.ModElement {
 			if (slot != null && slot.getHasStack()) {
 				ItemStack itemstack1 = slot.getStack();
 				itemstack = itemstack1.copy();
-				if (index < 49) {
-					if (!this.mergeItemStack(itemstack1, 49, this.inventorySlots.size(), true)) {
+				if (index < 51) {
+					if (!this.mergeItemStack(itemstack1, 51, this.inventorySlots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 					slot.onSlotChange(itemstack1, itemstack);
-				} else if (!this.mergeItemStack(itemstack1, 0, 49, false)) {
-					if (index < 49 + 27) {
-						if (!this.mergeItemStack(itemstack1, 49 + 27, this.inventorySlots.size(), true)) {
+				} else if (!this.mergeItemStack(itemstack1, 0, 51, false)) {
+					if (index < 51 + 27) {
+						if (!this.mergeItemStack(itemstack1, 51 + 27, this.inventorySlots.size(), true)) {
 							return ItemStack.EMPTY;
 						}
 					} else {
-						if (!this.mergeItemStack(itemstack1, 49, 49 + 27, false)) {
+						if (!this.mergeItemStack(itemstack1, 51, 51 + 27, false)) {
 							return ItemStack.EMPTY;
 						}
 					}
@@ -610,6 +637,8 @@ public class GuipetsGui extends BubbleGumSimulatorModElements.ModElement {
 			this.blit(this.guiLeft + -13, this.guiTop + 1, 0, 0, 194, 164, 194, 164);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("bubble_gum_simulator:textures/rersr.png"));
 			this.blit(this.guiLeft + 184, this.guiTop + 19, 0, 0, 28, 146, 28, 146);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("bubble_gum_simulator:textures/bubbleico.png"));
+			this.blit(this.guiLeft + 16, this.guiTop + 167, 0, 0, 7, 7, 7, 7);
 		}
 
 		@Override
@@ -629,6 +658,7 @@ public class GuipetsGui extends BubbleGumSimulatorModElements.ModElement {
 		@Override
 		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
 			this.font.drawString("" + (entity.getPersistentData().getDouble("Totalbubbles")) + "", 24, 166, -52276);
+			this.font.drawString("" + (entity.getPersistentData().getDouble("Totaleggs")) + "", 88, 166, -1);
 		}
 
 		@Override
@@ -748,5 +778,23 @@ public class GuipetsGui extends BubbleGumSimulatorModElements.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
+		if (slotID == 49 && changeType == 0) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				PetselectedproProcedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 49 && changeType == 1) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				PetunselectedproProcedure.executeProcedure($_dependencies);
+			}
+		}
 	}
 }

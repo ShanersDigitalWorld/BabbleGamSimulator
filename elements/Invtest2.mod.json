@@ -1,0 +1,40 @@
+{
+  "_fv": 13,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 269,
+    "height": 166,
+    "inventoryOffsetX": 49,
+    "inventoryOffsetY": 4,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "next",
+          "width": 45,
+          "height": 20,
+          "name": "next",
+          "x": 299,
+          "y": 102
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "back",
+          "onClick": {
+            "name": "Backinvpro1"
+          },
+          "width": 45,
+          "height": 20,
+          "name": "back",
+          "x": 180,
+          "y": 102
+        }
+      }
+    ]
+  }
+}

@@ -49,6 +49,9 @@
         "type": "button",
         "data": {
           "text": "Enter",
+          "onClick": {
+            "name": "Codespro"
+          },
           "width": 50,
           "height": 20,
           "name": "Enter",

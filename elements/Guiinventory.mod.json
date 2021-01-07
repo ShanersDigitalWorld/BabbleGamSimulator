@@ -169,12 +169,12 @@
       {
         "type": "label",
         "data": {
-          "text": "<ENBT:number:tPetbubbles>",
+          "text": "<ENBT:number:Petbubbles>",
           "color": {
             "value": -52276,
             "falpha": 0.0
           },
-          "name": "<ENBT:number:tPetbubbles>",
+          "name": "<ENBT:number:Petbubbles>",
           "x": 135,
           "y": 87
         }
@@ -216,6 +216,37 @@
           "name": "<ENBT:number:Petcurrency>",
           "x": 135,
           "y": 110
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "Petselectedpro"
+          },
+          "onTakenFromSlot": {
+            "name": "Petunselectedpro"
+          },
+          "name": "Slot #0",
+          "x": 131,
+          "y": 57
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 309,
+          "y": 42
         }
       }
     ]

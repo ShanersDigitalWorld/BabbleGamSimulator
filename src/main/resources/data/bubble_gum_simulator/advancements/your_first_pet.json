@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "bubble_gum_simulator:commonegg"
+    },
+    "title": {
+      "translate": "advancements.your_first_pet.title"
+    },
+    "description": {
+      "translate": "advancements.your_first_pet.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "your_first_pet": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "bubble_gum_simulator:bubbler"
+}
