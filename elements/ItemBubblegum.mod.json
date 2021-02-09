@@ -1,14 +1,14 @@
 {
-  "_fv": 13,
+  "_fv": 15,
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "untitled-6",
+    "texture": "bubblinani",
     "customModelName": "Normal",
-    "name": "Item Bubblegum",
+    "name": "Item Bubble",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:BgsBubblegumflavors"
+      "value": "CUSTOM:Bgs"
     },
     "stackSize": 1,
     "enchantability": 0,
@@ -19,6 +19,7 @@
       "value": ""
     },
     "destroyAnyBlock": false,
+    "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
@@ -27,15 +28,6 @@
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
-    "inventoryStackSize": 1,
-    "onRightClickedInAir": {
-      "name": "Bubblingprocedure"
-    },
-    "onStoppedUsing": {
-      "name": "ItemBubblegumOnPlayerStoppedUsing"
-    },
-    "onEntitySwing": {
-      "name": "Bubblegumbubblepro"
-    }
+    "inventoryStackSize": 1
   }
 }

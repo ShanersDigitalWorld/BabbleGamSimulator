@@ -1,0 +1,11 @@
+{
+  "parent": "bubble_gum_simulator:custom/bgschest",
+  "textures": {
+    "all": "bubble_gum_simulator:blocks/asdasd4",
+    "particle": "bubble_gum_simulator:blocks/asdasd4",
+    "0": "bubble_gum_simulator:blocks/seamlesswoodtxt",
+    "1": "bubble_gum_simulator:blocks/sellblocktext",
+    "2": "bubble_gum_simulator:blocks/cadet_blue",
+    "missing": "bubble_gum_simulator:blocks/gold"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bubble_gum_simulator:block/pizzablock"
+    },
+    "type=top": {
+      "model": "bubble_gum_simulator:block/pizzablock_top"
+    },
+    "type=double": {
+      "model": "bubble_gum_simulator:block/pizzablock_full"
+    }
+  }
+}

@@ -15,6 +15,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
@@ -39,6 +40,8 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
+import com.mojang.blaze3d.matrix.MatrixStack;
+
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class GuicodesGui extends BubbleGumSimulatorModElements.ModElement {
 	public static HashMap guistate = new HashMap();
@@ -50,17 +53,17 @@ public class GuicodesGui extends BubbleGumSimulatorModElements.ModElement {
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
 				GUISlotChangedMessage::handler);
 		containerType = new ContainerType<>(new GuiContainerModFactory());
-		FMLJavaModLoadingContext.get().getModEventBus().register(this);
+		FMLJavaModLoadingContext.get().getModEventBus().register(new ContainerRegisterHandler());
 	}
-
+	private static class ContainerRegisterHandler {
+		@SubscribeEvent
+		public void registerContainer(RegistryEvent.Register<ContainerType<?>> event) {
+			event.getRegistry().register(containerType.setRegistryName("guicodes"));
+		}
+	}
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
 		DeferredWorkQueue.runLater(() -> ScreenManager.registerFactory(containerType, GuiWindow::new));
-	}
-
-	@SubscribeEvent
-	public void registerContainer(RegistryEvent.Register<ContainerType<?>> event) {
-		event.getRegistry().register(containerType.setRegistryName("guicodes"));
 	}
 	public static class GuiContainerModFactory implements IContainerFactory {
 		public GuiContainerMod create(int id, PlayerInventory inv, PacketBuffer extraData) {
@@ -117,22 +120,22 @@ public class GuicodesGui extends BubbleGumSimulatorModElements.ModElement {
 		}
 		private static final ResourceLocation texture = new ResourceLocation("bubble_gum_simulator:textures/guicodes.png");
 		@Override
-		public void render(int mouseX, int mouseY, float partialTicks) {
-			this.renderBackground();
-			super.render(mouseX, mouseY, partialTicks);
-			this.renderHoveredToolTip(mouseX, mouseY);
-			codesin.render(mouseX, mouseY, partialTicks);
+		public void render(MatrixStack ms, int mouseX, int mouseY, float partialTicks) {
+			this.renderBackground(ms);
+			super.render(ms, mouseX, mouseY, partialTicks);
+			this.renderHoveredTooltip(ms, mouseX, mouseY);
+			codesin.render(ms, mouseX, mouseY, partialTicks);
 		}
 
 		@Override
-		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
+		protected void drawGuiContainerBackgroundLayer(MatrixStack ms, float par1, int par2, int par3) {
 			GL11.glColor4f(1, 1, 1, 1);
 			Minecraft.getInstance().getTextureManager().bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
-			this.blit(k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
+			this.blit(ms, k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("bubble_gum_simulator:textures/codes.png"));
-			this.blit(this.guiLeft + 0, this.guiTop + 0, 0, 0, 210, 150, 210, 150);
+			this.blit(ms, this.guiLeft + 0, this.guiTop + 0, 0, 0, 210, 150, 210, 150);
 		}
 
 		@Override
@@ -153,12 +156,12 @@ public class GuicodesGui extends BubbleGumSimulatorModElements.ModElement {
 		}
 
 		@Override
-		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
+		protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
 		}
 
 		@Override
-		public void removed() {
-			super.removed();
+		public void onClose() {
+			super.onClose();
 			Minecraft.getInstance().keyboardListener.enableRepeatEvents(false);
 		}
 
@@ -166,11 +169,11 @@ public class GuicodesGui extends BubbleGumSimulatorModElements.ModElement {
 		public void init(Minecraft minecraft, int width, int height) {
 			super.init(minecraft, width, height);
 			minecraft.keyboardListener.enableRepeatEvents(true);
-			this.addButton(new Button(this.guiLeft + 288, this.guiTop + -45, 30, 20, "x", e -> {
+			this.addButton(new Button(this.guiLeft + 288, this.guiTop + -45, 30, 20, new StringTextComponent("x"), e -> {
 				BubbleGumSimulatorMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
 				handleButtonAction(entity, 0, x, y, z);
 			}));
-			codesin = new TextFieldWidget(this.font, this.guiLeft + 45, this.guiTop + 117, 120, 20, "Code Here") {
+			codesin = new TextFieldWidget(this.font, this.guiLeft + 45, this.guiTop + 117, 120, 20, new StringTextComponent("Code Here")) {
 				{
 					setSuggestion("Code Here");
 				}
@@ -195,7 +198,7 @@ public class GuicodesGui extends BubbleGumSimulatorModElements.ModElement {
 			guistate.put("text:codesin", codesin);
 			codesin.setMaxStringLength(32767);
 			this.children.add(this.codesin);
-			this.addButton(new Button(this.guiLeft + 79, this.guiTop + 150, 50, 20, "Enter", e -> {
+			this.addButton(new Button(this.guiLeft + 79, this.guiTop + 150, 50, 20, new StringTextComponent("Enter"), e -> {
 				BubbleGumSimulatorMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(1, x, y, z));
 				handleButtonAction(entity, 1, x, y, z);
 			}));
@@ -300,6 +303,7 @@ public class GuicodesGui extends BubbleGumSimulatorModElements.ModElement {
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("guistate", guistate);
+				$_dependencies.put("world", world);
 				CodesproProcedure.executeProcedure($_dependencies);
 			}
 		}

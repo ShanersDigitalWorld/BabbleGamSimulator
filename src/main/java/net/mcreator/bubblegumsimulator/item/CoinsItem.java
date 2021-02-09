@@ -7,10 +7,10 @@ import net.minecraft.world.World;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.bubblegumsimulator.procedures.CoinsItemIsDroppedByPlayerProcedure;
+import net.mcreator.bubblegumsimulator.procedures.CoinsItemInInventoryTickProcedure;
 import net.mcreator.bubblegumsimulator.itemgroup.BgsItemGroup;
 import net.mcreator.bubblegumsimulator.BubbleGumSimulatorModElements;
 
@@ -31,7 +31,7 @@ public class CoinsItem extends BubbleGumSimulatorModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(BgsItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
+			super(new Item.Properties().group(BgsItemGroup.tab).maxStackSize(64).isImmuneToFire().rarity(Rarity.COMMON));
 			setRegistryName("coins");
 		}
 
@@ -51,18 +51,16 @@ public class CoinsItem extends BubbleGumSimulatorModElements.ModElement {
 		}
 
 		@Override
-		public boolean hitEntity(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
-			boolean retval = super.hitEntity(itemstack, entity, sourceentity);
+		public void inventoryTick(ItemStack itemstack, World world, Entity entity, int slot, boolean selected) {
+			super.inventoryTick(itemstack, world, entity, slot, selected);
 			double x = entity.getPosX();
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
-			World world = entity.world;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("itemstack", itemstack);
-				CoinsItemIsDroppedByPlayerProcedure.executeProcedure($_dependencies);
+				$_dependencies.put("entity", entity);
+				CoinsItemInInventoryTickProcedure.executeProcedure($_dependencies);
 			}
-			return retval;
 		}
 	}
 }

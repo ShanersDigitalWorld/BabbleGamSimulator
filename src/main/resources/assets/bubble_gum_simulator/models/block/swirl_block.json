@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "bubble_gum_simulator:blocks/layer_10",
+    "top": "bubble_gum_simulator:blocks/layer_10",
+    "side": "bubble_gum_simulator:blocks/layer_10"
+  }
+}

@@ -16,6 +16,7 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.bubblegumsimulator.gui.GuiboostsGui;
 import net.mcreator.bubblegumsimulator.BubbleGumSimulatorModElements;
+import net.mcreator.bubblegumsimulator.BubbleGumSimulatorMod;
 
 import java.util.Map;
 
@@ -30,27 +31,27 @@ public class BoostkeyOnKeyPressedProcedure extends BubbleGumSimulatorModElements
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure BoostkeyOnKeyPressed!");
+				BubbleGumSimulatorMod.LOGGER.warn("Failed to load dependency entity for procedure BoostkeyOnKeyPressed!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure BoostkeyOnKeyPressed!");
+				BubbleGumSimulatorMod.LOGGER.warn("Failed to load dependency x for procedure BoostkeyOnKeyPressed!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure BoostkeyOnKeyPressed!");
+				BubbleGumSimulatorMod.LOGGER.warn("Failed to load dependency y for procedure BoostkeyOnKeyPressed!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure BoostkeyOnKeyPressed!");
+				BubbleGumSimulatorMod.LOGGER.warn("Failed to load dependency z for procedure BoostkeyOnKeyPressed!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure BoostkeyOnKeyPressed!");
+				BubbleGumSimulatorMod.LOGGER.warn("Failed to load dependency world for procedure BoostkeyOnKeyPressed!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

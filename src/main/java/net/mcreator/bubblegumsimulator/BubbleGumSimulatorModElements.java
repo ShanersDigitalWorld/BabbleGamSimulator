@@ -13,10 +13,10 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.biome.Biome;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.tags.Tag;
 import net.minecraft.network.PacketBuffer;
@@ -42,7 +42,6 @@ public class BubbleGumSimulatorModElements {
 	public final List<ModElement> elements = new ArrayList<>();
 	public final List<Supplier<Block>> blocks = new ArrayList<>();
 	public final List<Supplier<Item>> items = new ArrayList<>();
-	public final List<Supplier<Biome>> biomes = new ArrayList<>();
 	public final List<Supplier<EntityType<?>>> entities = new ArrayList<>();
 	public final List<Supplier<Enchantment>> enchantments = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
@@ -81,6 +80,8 @@ public class BubbleGumSimulatorModElements {
 				new net.minecraft.util.SoundEvent(new ResourceLocation("bubble_gum_simulator", "bgsst16")));
 		sounds.put(new ResourceLocation("bubble_gum_simulator", "bgsst17"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("bubble_gum_simulator", "bgsst17")));
+		sounds.put(new ResourceLocation("bubble_gum_simulator", "techy"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("bubble_gum_simulator", "techy")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("bubble_gum_simulator").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();
@@ -96,6 +97,7 @@ public class BubbleGumSimulatorModElements {
 		}
 		Collections.sort(elements);
 		elements.forEach(BubbleGumSimulatorModElements.ModElement::initElements);
+		MinecraftForge.EVENT_BUS.register(new BubbleGumSimulatorModVariables(this));
 	}
 
 	public void registerSounds(RegistryEvent.Register<net.minecraft.util.SoundEvent> event) {
@@ -119,10 +121,6 @@ public class BubbleGumSimulatorModElements {
 
 	public List<Supplier<Item>> getItems() {
 		return items;
-	}
-
-	public List<Supplier<Biome>> getBiomes() {
-		return biomes;
 	}
 
 	public List<Supplier<EntityType<?>>> getEntities() {

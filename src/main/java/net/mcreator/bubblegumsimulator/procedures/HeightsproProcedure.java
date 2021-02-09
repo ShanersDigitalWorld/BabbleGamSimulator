@@ -1,14 +1,14 @@
 package net.mcreator.bubblegumsimulator.procedures;
 
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.entity.living.LivingEvent;
+import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.World;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.bubblegumsimulator.BubbleGumSimulatorModElements;
+import net.mcreator.bubblegumsimulator.BubbleGumSimulatorMod;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -23,27 +23,30 @@ public class HeightsproProcedure extends BubbleGumSimulatorModElements.ModElemen
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure Heightspro!");
+				BubbleGumSimulatorMod.LOGGER.warn("Failed to load dependency entity for procedure Heightspro!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		entity.getPersistentData().putDouble("Heights", (entity.getPosY()));
+		entity.getPersistentData().putDouble("Heights", Math.round(((entity.getPosY()) - 4)));
+		entity.getPersistentData().putString("Heights", (((entity.getPersistentData().getDouble("Heights"))) + "" + (" m")));
 	}
 
 	@SubscribeEvent
-	public void onEntityJump(LivingEvent.LivingJumpEvent event) {
-		LivingEntity entity = event.getEntityLiving();
-		double i = entity.getPosX();
-		double j = entity.getPosY();
-		double k = entity.getPosZ();
-		World world = entity.world;
-		Map<String, Object> dependencies = new HashMap<>();
-		dependencies.put("x", i);
-		dependencies.put("y", j);
-		dependencies.put("z", k);
-		dependencies.put("world", world);
-		dependencies.put("entity", entity);
-		dependencies.put("event", event);
-		this.executeProcedure(dependencies);
+	public void onPlayerTick(TickEvent.PlayerTickEvent event) {
+		if (event.phase == TickEvent.Phase.END) {
+			Entity entity = event.player;
+			World world = entity.world;
+			double i = entity.getPosX();
+			double j = entity.getPosY();
+			double k = entity.getPosZ();
+			Map<String, Object> dependencies = new HashMap<>();
+			dependencies.put("x", i);
+			dependencies.put("y", j);
+			dependencies.put("z", k);
+			dependencies.put("world", world);
+			dependencies.put("entity", entity);
+			dependencies.put("event", event);
+			this.executeProcedure(dependencies);
+		}
 	}
 }

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bubble_gum_simulator:block/electric_blue_slab"
+    },
+    "type=top": {
+      "model": "bubble_gum_simulator:block/electric_blue_slab_top"
+    },
+    "type=double": {
+      "model": "bubble_gum_simulator:block/electric_blue_slab_full"
+    }
+  }
+}

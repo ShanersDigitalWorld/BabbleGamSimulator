@@ -1,10 +1,10 @@
 {
-  "_fv": 13,
+  "_fv": 15,
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 176,
-    "height": 166,
+    "width": 153,
+    "height": 59,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
@@ -22,6 +22,58 @@
           "name": "x",
           "x": 397,
           "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bgsshopgui.png",
+          "use1Xscale": true,
+          "name": "bgsshopgui.png",
+          "x": 132,
+          "y": 87
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Go",
+          "onClick": {
+            "name": "ShowShopFlavorGui"
+          },
+          "width": 40,
+          "height": 20,
+          "name": "Go",
+          "x": 192,
+          "y": 152
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Go",
+          "onClick": {
+            "name": "ShowShopGumGui"
+          },
+          "width": 40,
+          "height": 20,
+          "name": "Go",
+          "x": 140,
+          "y": 152
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Go",
+          "onClick": {
+            "name": "GuiShopCondition1"
+          },
+          "width": 40,
+          "height": 20,
+          "name": "Go",
+          "x": 246,
+          "y": 152
         }
       }
     ]

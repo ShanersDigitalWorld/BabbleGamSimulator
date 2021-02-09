@@ -1,17 +1,17 @@
 {
-  "_fv": 13,
+  "_fv": 15,
   "_type": "achievement",
   "definition": {
     "achievementName": "Intermediate",
-    "achievementDescription": "500 bubbles Blown! You're starting to get the hang of this",
+    "achievementDescription": "You hatched 500 eggs or 15k bubbles Blown! You're starting to get the hang of this.",
     "achievementIcon": {
       "value": "CUSTOM:Intermediatebadge"
     },
-    "background": "Default",
+    "background": "54058be6280a4dc7a7b468bba621bc2d.png",
     "disableDisplay": false,
     "showPopup": true,
     "announceToChat": true,
-    "hideIfNotCompleted": false,
+    "hideIfNotCompleted": true,
     "rewardLoot": [],
     "rewardRecipes": [],
     "rewardFunction": "No function",
@@ -20,6 +20,6 @@
     "parent": {
       "value": "CUSTOM:Novice"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_consumed\" x=\"45\" y=\"23\"><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:Intermediatebadge</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"62\" y=\"87\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }
 }

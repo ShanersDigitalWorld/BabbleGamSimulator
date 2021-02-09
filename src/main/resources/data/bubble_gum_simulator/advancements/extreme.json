@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "bubble_gum_simulator:godlybubblerbadge"
+    },
+    "title": {
+      "translate": "advancements.extreme.title"
+    },
+    "description": {
+      "translate": "advancements.extreme.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "extreme": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "bubble_gum_simulator:expert"
+}

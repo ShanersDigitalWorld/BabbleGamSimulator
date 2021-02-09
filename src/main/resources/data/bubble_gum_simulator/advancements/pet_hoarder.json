@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "bubble_gum_simulator:commonegg"
+    },
+    "title": {
+      "translate": "advancements.pet_hoarder.title"
+    },
+    "description": {
+      "translate": "advancements.pet_hoarder.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "pet_hoarder": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "bubble_gum_simulator:pet_collector"
+}

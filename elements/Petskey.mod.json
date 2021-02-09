@@ -1,9 +1,9 @@
 {
-  "_fv": 13,
+  "_fv": 15,
   "_type": "keybind",
   "definition": {
     "triggerKey": "P",
-    "keyBindingName": "Petskey",
+    "keyBindingName": "petskey",
     "keyBindingCategoryKey": "misc",
     "onKeyPressed": {
       "name": "PetskeyOnKeyPressed"

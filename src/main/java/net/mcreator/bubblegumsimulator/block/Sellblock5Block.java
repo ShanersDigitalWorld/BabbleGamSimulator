@@ -3,9 +3,9 @@ package net.mcreator.bubblegumsimulator.block;
 
 import net.minecraftforge.registries.ObjectHolder;
 
-import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
@@ -15,7 +15,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.bubblegumsimulator.procedures.Sellblock5EntityWalksOnTheBlockProcedure;
+import net.mcreator.bubblegumsimulator.procedures.SellbubblesproProcedure;
 import net.mcreator.bubblegumsimulator.itemgroup.BgsItemGroup;
 import net.mcreator.bubblegumsimulator.BubbleGumSimulatorModElements;
 
@@ -39,7 +39,7 @@ public class Sellblock5Block extends BubbleGumSimulatorModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0));
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0));
 			setRegistryName("sellblock_5");
 		}
 
@@ -60,7 +60,11 @@ public class Sellblock5Block extends BubbleGumSimulatorModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				Sellblock5EntityWalksOnTheBlockProcedure.executeProcedure($_dependencies);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				SellbubblesproProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

@@ -12,16 +12,11 @@
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": false
+    "hidden": true
   },
   "criteria": {
     "hatch_1000_eggs": {
-      "trigger": "minecraft:consume_item",
-      "conditions": {
-        "item": {
-          "item": "bubble_gum_simulator:intermediatebadge"
-        }
-      }
+      "trigger": "minecraft:impossible"
     }
   },
   "rewards": {

@@ -1,8 +1,8 @@
 {
   "display": {
-    "background": "bubble_gum_simulator:textures/vip.png",
+    "background": "bubble_gum_simulator:textures/untitled-6.png",
     "icon": {
-      "item": "bubble_gum_simulator:unknown_element"
+      "item": "bubble_gum_simulator:bubblin_item"
     },
     "title": {
       "translate": "advancements.bubbler.title"
@@ -17,10 +17,7 @@
   },
   "criteria": {
     "bubbler": {
-      "trigger": "minecraft:location",
-      "conditions": {
-        "biome": "bubble_gum_simulator:overworldbio"
-      }
+      "trigger": "minecraft:impossible"
     }
   },
   "rewards": {

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "m_17": "rbshock"
+      },
+      "name": "default"
+    }
+  }
+}

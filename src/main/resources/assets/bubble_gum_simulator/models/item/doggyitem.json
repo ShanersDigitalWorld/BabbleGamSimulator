@@ -1,9 +1,0 @@
-{
-  "forge_marker": 1,
-  "parent": "forge:item/default",
-  "loader": "forge:obj",
-  "model": "bubble_gum_simulator:models/item/doggy.obj",
-  "textures": {
-    "particle": "bubble_gum_simulator:items/commoneggitm"
-  }
-}

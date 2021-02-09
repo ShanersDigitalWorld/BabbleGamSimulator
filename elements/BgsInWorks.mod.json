@@ -1,0 +1,11 @@
+{
+  "_fv": 15,
+  "_type": "tab",
+  "definition": {
+    "name": "Bgs In Works",
+    "icon": {
+      "value": "CUSTOM:Galaxytest"
+    },
+    "showSearch": false
+  }
+}

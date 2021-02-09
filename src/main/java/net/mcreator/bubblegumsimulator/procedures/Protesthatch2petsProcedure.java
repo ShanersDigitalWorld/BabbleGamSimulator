@@ -4,7 +4,9 @@ import net.minecraftforge.fml.server.ServerLifecycleHooks;
 
 import net.minecraft.world.IWorld;
 import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.ChatType;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Util;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.block.Blocks;
 
@@ -14,6 +16,7 @@ import net.mcreator.bubblegumsimulator.block.PetdoggyBlock;
 import net.mcreator.bubblegumsimulator.block.PetbunnyBlock;
 import net.mcreator.bubblegumsimulator.block.PetbearBlock;
 import net.mcreator.bubblegumsimulator.BubbleGumSimulatorModElements;
+import net.mcreator.bubblegumsimulator.BubbleGumSimulatorMod;
 
 import java.util.Map;
 
@@ -26,22 +29,22 @@ public class Protesthatch2petsProcedure extends BubbleGumSimulatorModElements.Mo
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				System.err.println("Failed to load dependency x for procedure Protesthatch2pets!");
+				BubbleGumSimulatorMod.LOGGER.warn("Failed to load dependency x for procedure Protesthatch2pets!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				System.err.println("Failed to load dependency y for procedure Protesthatch2pets!");
+				BubbleGumSimulatorMod.LOGGER.warn("Failed to load dependency y for procedure Protesthatch2pets!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				System.err.println("Failed to load dependency z for procedure Protesthatch2pets!");
+				BubbleGumSimulatorMod.LOGGER.warn("Failed to load dependency z for procedure Protesthatch2pets!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure Protesthatch2pets!");
+				BubbleGumSimulatorMod.LOGGER.warn("Failed to load dependency world for procedure Protesthatch2pets!");
 			return;
 		}
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
@@ -51,76 +54,76 @@ public class Protesthatch2petsProcedure extends BubbleGumSimulatorModElements.Mo
 		if ((Math.random() == 0.1)) {
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), PetdoggyBlock.block.getDefaultState(), 3);
-			{
+			if (!world.isRemote()) {
 				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
 				if (mcserv != null)
-					mcserv.getPlayerList().sendMessage(new StringTextComponent("A Player Hatched A Doggy"));
+					mcserv.getPlayerList().func_232641_a_(new StringTextComponent("A Player Hatched A Doggy"), ChatType.SYSTEM, Util.DUMMY_UUID);
 			}
 		} else if ((Math.random() == 0.2)) {
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), PetkittyBlock.block.getDefaultState(), 3);
-			{
+			if (!world.isRemote()) {
 				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
 				if (mcserv != null)
-					mcserv.getPlayerList().sendMessage(new StringTextComponent("A Player Hatched A Kitty"));
+					mcserv.getPlayerList().func_232641_a_(new StringTextComponent("A Player Hatched A Kitty"), ChatType.SYSTEM, Util.DUMMY_UUID);
 			}
 		} else if ((Math.random() == 0.3)) {
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), PetbunnyBlock.block.getDefaultState(), 3);
-			{
+			if (!world.isRemote()) {
 				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
 				if (mcserv != null)
-					mcserv.getPlayerList().sendMessage(new StringTextComponent("A Player Hatched A Bunny"));
+					mcserv.getPlayerList().func_232641_a_(new StringTextComponent("A Player Hatched A Bunny"), ChatType.SYSTEM, Util.DUMMY_UUID);
 			}
 		} else if ((Math.random() == 0.4)) {
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), PetbearBlock.block.getDefaultState(), 3);
-			{
+			if (!world.isRemote()) {
 				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
 				if (mcserv != null)
-					mcserv.getPlayerList().sendMessage(new StringTextComponent("A Player Hatched A Bear"));
+					mcserv.getPlayerList().func_232641_a_(new StringTextComponent("A Player Hatched A Bear"), ChatType.SYSTEM, Util.DUMMY_UUID);
 			}
 		} else if ((Math.random() == 0.5)) {
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), PetkingdoggyBlock.block.getDefaultState(), 3);
-			{
+			if (!world.isRemote()) {
 				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
 				if (mcserv != null)
-					mcserv.getPlayerList().sendMessage(new StringTextComponent("A Player Hatched A King Doggy"));
+					mcserv.getPlayerList().func_232641_a_(new StringTextComponent("A Player Hatched A King Doggy"), ChatType.SYSTEM, Util.DUMMY_UUID);
 			}
 		} else if ((Math.random() == 0.6)) {
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), PetdoggyBlock.block.getDefaultState(), 3);
-			{
+			if (!world.isRemote()) {
 				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
 				if (mcserv != null)
-					mcserv.getPlayerList().sendMessage(new StringTextComponent("A Player Hatched A Doggy"));
+					mcserv.getPlayerList().func_232641_a_(new StringTextComponent("A Player Hatched A Doggy"), ChatType.SYSTEM, Util.DUMMY_UUID);
 			}
 		} else if ((Math.random() == 0.7)) {
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), PetkittyBlock.block.getDefaultState(), 3);
-			{
+			if (!world.isRemote()) {
 				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
 				if (mcserv != null)
-					mcserv.getPlayerList().sendMessage(new StringTextComponent("A Player Hatched A Kitty"));
+					mcserv.getPlayerList().func_232641_a_(new StringTextComponent("A Player Hatched A Kitty"), ChatType.SYSTEM, Util.DUMMY_UUID);
 			}
 		} else if ((Math.random() == 0.8)) {
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
 		} else if ((Math.random() == 0.9)) {
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), PetbunnyBlock.block.getDefaultState(), 3);
-			{
+			if (!world.isRemote()) {
 				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
 				if (mcserv != null)
-					mcserv.getPlayerList().sendMessage(new StringTextComponent("A Player Hatched A Bunny"));
+					mcserv.getPlayerList().func_232641_a_(new StringTextComponent("A Player Hatched A Bunny"), ChatType.SYSTEM, Util.DUMMY_UUID);
 			}
 		} else {
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
 			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), PetbearBlock.block.getDefaultState(), 3);
-			{
+			if (!world.isRemote()) {
 				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
 				if (mcserv != null)
-					mcserv.getPlayerList().sendMessage(new StringTextComponent("A Player Hatched A Bear"));
+					mcserv.getPlayerList().func_232641_a_(new StringTextComponent("A Player Hatched A Bear"), ChatType.SYSTEM, Util.DUMMY_UUID);
 			}
 		}
 	}

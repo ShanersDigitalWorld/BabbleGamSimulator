@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bubble_gum_simulator:block/vipgumflavor"
+    },
+    "type=top": {
+      "model": "bubble_gum_simulator:block/vipgumflavor_top"
+    },
+    "type=double": {
+      "model": "bubble_gum_simulator:block/vipgumflavor_full"
+    }
+  }
+}

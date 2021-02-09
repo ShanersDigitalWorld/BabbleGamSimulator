@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "bubble_gum_simulator:items/screenshot_2021-01-20_super_duper_gum"
+  }
+}

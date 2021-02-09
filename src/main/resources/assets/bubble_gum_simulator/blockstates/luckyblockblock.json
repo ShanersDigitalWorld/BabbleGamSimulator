@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "bubble_gum_simulator:block/luckyblockblock"
+    },
+    "facing=east": {
+      "model": "bubble_gum_simulator:block/luckyblockblock",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "bubble_gum_simulator:block/luckyblockblock",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bubble_gum_simulator:block/luckyblockblock",
+      "y": 270
+    }
+  }
+}

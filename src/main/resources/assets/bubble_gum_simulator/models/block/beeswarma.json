@@ -1,0 +1,17 @@
+{
+  "parent": "forge:item/default",
+  "loader": "forge:composite",
+  "parts": {
+    "part1": {
+      "loader": "forge:obj",
+      "model": "bubble_gum_simulator:models/item/bee.obj",
+      "ambientToFullbright": true,
+      "textures": {
+        "#m_0": "bubble_gum_simulator:blocks/bee"
+      }
+    }
+  },
+  "textures": {
+    "particle": "bubble_gum_simulator:blocks/bee"
+  }
+}

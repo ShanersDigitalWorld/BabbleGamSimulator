@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "bubble_gum_simulator:blocks/lime_green",
-    "particle": "bubble_gum_simulator:blocks/lime_green"
+    "all": "bubble_gum_simulator:blocks/limegreen",
+    "particle": "bubble_gum_simulator:blocks/limegreen"
   }
 }

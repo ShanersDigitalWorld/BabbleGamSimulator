@@ -1,7 +1,8 @@
 {
-  "parent": "block/cube_all",
+  "parent": "bubble_gum_simulator:custom/bgsdoggy",
   "textures": {
     "all": "bubble_gum_simulator:blocks/burnt_sienna",
-    "particle": "bubble_gum_simulator:blocks/burnt_sienna"
+    "particle": "bubble_gum_simulator:blocks/burnt_sienna",
+    "missing": "bubble_gum_simulator:blocks/rust"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 13,
+  "_fv": 15,
   "_type": "block",
   "definition": {
     "texture": "yellow_sell",
@@ -15,6 +15,8 @@
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
     "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
@@ -24,7 +26,7 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Sellblock2",
+    "name": "Sell Block 2x",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -39,7 +41,6 @@
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canProvidePower": false,
@@ -65,7 +66,7 @@
     "soundOnStep": {
       "value": "GROUND"
     },
-    "luminance": 0.0,
+    "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 1,
     "spawnParticles": false,
@@ -93,7 +94,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onEntityWalksOn": {
-      "name": "Sellblock2EntityWalksOnTheBlock"
+      "name": "Sellbubblespro"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

@@ -15,6 +15,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
@@ -29,7 +30,6 @@ import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.bubblegumsimulator.procedures.Tradescreen2proProcedure;
 import net.mcreator.bubblegumsimulator.procedures.CloseallguisProcedure;
 import net.mcreator.bubblegumsimulator.BubbleGumSimulatorModElements;
 import net.mcreator.bubblegumsimulator.BubbleGumSimulatorMod;
@@ -37,6 +37,8 @@ import net.mcreator.bubblegumsimulator.BubbleGumSimulatorMod;
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
+
+import com.mojang.blaze3d.matrix.MatrixStack;
 
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class GuitradingGui extends BubbleGumSimulatorModElements.ModElement {
@@ -49,17 +51,17 @@ public class GuitradingGui extends BubbleGumSimulatorModElements.ModElement {
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
 				GUISlotChangedMessage::handler);
 		containerType = new ContainerType<>(new GuiContainerModFactory());
-		FMLJavaModLoadingContext.get().getModEventBus().register(this);
+		FMLJavaModLoadingContext.get().getModEventBus().register(new ContainerRegisterHandler());
 	}
-
+	private static class ContainerRegisterHandler {
+		@SubscribeEvent
+		public void registerContainer(RegistryEvent.Register<ContainerType<?>> event) {
+			event.getRegistry().register(containerType.setRegistryName("guitrading"));
+		}
+	}
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
 		DeferredWorkQueue.runLater(() -> ScreenManager.registerFactory(containerType, GuiWindow::new));
-	}
-
-	@SubscribeEvent
-	public void registerContainer(RegistryEvent.Register<ContainerType<?>> event) {
-		event.getRegistry().register(containerType.setRegistryName("guitrading"));
 	}
 	public static class GuiContainerModFactory implements IContainerFactory {
 		public GuiContainerMod create(int id, PlayerInventory inv, PacketBuffer extraData) {
@@ -115,21 +117,21 @@ public class GuitradingGui extends BubbleGumSimulatorModElements.ModElement {
 		}
 		private static final ResourceLocation texture = new ResourceLocation("bubble_gum_simulator:textures/guitrading.png");
 		@Override
-		public void render(int mouseX, int mouseY, float partialTicks) {
-			this.renderBackground();
-			super.render(mouseX, mouseY, partialTicks);
-			this.renderHoveredToolTip(mouseX, mouseY);
+		public void render(MatrixStack ms, int mouseX, int mouseY, float partialTicks) {
+			this.renderBackground(ms);
+			super.render(ms, mouseX, mouseY, partialTicks);
+			this.renderHoveredTooltip(ms, mouseX, mouseY);
 		}
 
 		@Override
-		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
+		protected void drawGuiContainerBackgroundLayer(MatrixStack ms, float par1, int par2, int par3) {
 			GL11.glColor4f(1, 1, 1, 1);
 			Minecraft.getInstance().getTextureManager().bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
-			this.blit(k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
+			this.blit(ms, k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("bubble_gum_simulator:textures/trading.png"));
-			this.blit(this.guiLeft + -3, this.guiTop + -3, 0, 0, 211, 210, 211, 210);
+			this.blit(ms, this.guiLeft + -3, this.guiTop + -3, 0, 0, 211, 210, 211, 210);
 		}
 
 		@Override
@@ -147,12 +149,12 @@ public class GuitradingGui extends BubbleGumSimulatorModElements.ModElement {
 		}
 
 		@Override
-		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
+		protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
 		}
 
 		@Override
-		public void removed() {
-			super.removed();
+		public void onClose() {
+			super.onClose();
 			Minecraft.getInstance().keyboardListener.enableRepeatEvents(false);
 		}
 
@@ -160,15 +162,15 @@ public class GuitradingGui extends BubbleGumSimulatorModElements.ModElement {
 		public void init(Minecraft minecraft, int width, int height) {
 			super.init(minecraft, width, height);
 			minecraft.keyboardListener.enableRepeatEvents(true);
-			this.addButton(new Button(this.guiLeft + 286, this.guiTop + -17, 30, 20, "x", e -> {
+			this.addButton(new Button(this.guiLeft + 286, this.guiTop + -17, 30, 20, new StringTextComponent("x"), e -> {
 				BubbleGumSimulatorMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
 				handleButtonAction(entity, 0, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 39, this.guiTop + 183, 60, 20, "Enabled", e -> {
+			this.addButton(new Button(this.guiLeft + 39, this.guiTop + 183, 60, 20, new StringTextComponent("Enabled"), e -> {
 				BubbleGumSimulatorMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(1, x, y, z));
 				handleButtonAction(entity, 1, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 151, this.guiTop + 32, 50, 20, "Trade", e -> {
+			this.addButton(new Button(this.guiLeft + 151, this.guiTop + 32, 50, 20, new StringTextComponent("Trade"), e -> {
 				BubbleGumSimulatorMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(2, x, y, z));
 				handleButtonAction(entity, 2, x, y, z);
 			}));
@@ -266,17 +268,6 @@ public class GuitradingGui extends BubbleGumSimulatorModElements.ModElement {
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				CloseallguisProcedure.executeProcedure($_dependencies);
-			}
-		}
-		if (buttonID == 2) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				Tradescreen2proProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

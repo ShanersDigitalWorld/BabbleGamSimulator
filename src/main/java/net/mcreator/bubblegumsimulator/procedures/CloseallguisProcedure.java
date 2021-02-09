@@ -4,6 +4,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.bubblegumsimulator.BubbleGumSimulatorModElements;
+import net.mcreator.bubblegumsimulator.BubbleGumSimulatorMod;
 
 import java.util.Map;
 
@@ -16,7 +17,7 @@ public class CloseallguisProcedure extends BubbleGumSimulatorModElements.ModElem
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure Closeallguis!");
+				BubbleGumSimulatorMod.LOGGER.warn("Failed to load dependency entity for procedure Closeallguis!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

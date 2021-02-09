@@ -16,7 +16,7 @@ public class Bgsst9Item extends BubbleGumSimulatorModElements.ModElement {
 	@ObjectHolder("bubble_gum_simulator:bgsst_9")
 	public static final Item block = null;
 	public Bgsst9Item(BubbleGumSimulatorModElements instance) {
-		super(instance, 50);
+		super(instance, 81);
 	}
 
 	@Override

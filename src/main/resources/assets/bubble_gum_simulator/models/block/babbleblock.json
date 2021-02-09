@@ -1,0 +1,10 @@
+{
+  "parent": "bubble_gum_simulator:custom/doggy",
+  "textures": {
+    "all": "bubble_gum_simulator:blocks/rust",
+    "particle": "bubble_gum_simulator:blocks/rust",
+    "0": "bubble_gum_simulator:blocks/rust",
+    "1": "bubble_gum_simulator:blocks/reddish_brown",
+    "2": "bubble_gum_simulator:blocks/babbles"
+  }
+}

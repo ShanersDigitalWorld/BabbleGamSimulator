@@ -1,0 +1,7 @@
+{
+  "parent": "bubble_gum_simulator:custom/elemental",
+  "textures": {
+    "all": "bubble_gum_simulator:blocks/water",
+    "particle": "bubble_gum_simulator:blocks/water"
+  }
+}

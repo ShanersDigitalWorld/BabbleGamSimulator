@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "rust",
+        "1": "reddish_brown",
+        "2": "babbles"
+      },
+      "name": "default"
+    }
+  }
+}

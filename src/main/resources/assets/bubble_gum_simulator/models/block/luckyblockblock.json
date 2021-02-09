@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "bubble_gum_simulator:blocks/54058be6280a4dc7a7b468bba621bc2d",
+    "particle": "bubble_gum_simulator:blocks/54058be6280a4dc7a7b468bba621bc2d"
+  }
+}

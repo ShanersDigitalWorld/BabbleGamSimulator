@@ -1,0 +1,11 @@
+{
+  "_fv": 15,
+  "_type": "tab",
+  "definition": {
+    "name": "Bgs Flavors",
+    "icon": {
+      "value": "CUSTOM:ItemBubblegum"
+    },
+    "showSearch": false
+  }
+}

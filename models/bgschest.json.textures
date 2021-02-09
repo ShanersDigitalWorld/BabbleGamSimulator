@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "seamlesswoodtxt",
+        "1": "sellblocktext",
+        "2": "cadet_blue",
+        "missing": "gold"
+      },
+      "name": "default"
+    }
+  }
+}

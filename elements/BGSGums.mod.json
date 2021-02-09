@@ -1,0 +1,11 @@
+{
+  "_fv": 15,
+  "_type": "tab",
+  "definition": {
+    "name": "BGS Gums",
+    "icon": {
+      "value": "CUSTOM:Normalgumblock"
+    },
+    "showSearch": false
+  }
+}

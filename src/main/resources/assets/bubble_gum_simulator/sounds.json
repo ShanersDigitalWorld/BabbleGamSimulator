@@ -151,5 +151,15 @@
         "stream": false
       }
     ]
+  },
+  "techy": {
+    "category": "master",
+    "subtitle": "subtitles.techy",
+    "sounds": [
+      {
+        "name": "bubble_gum_simulator:credits",
+        "stream": false
+      }
+    ]
   }
 }

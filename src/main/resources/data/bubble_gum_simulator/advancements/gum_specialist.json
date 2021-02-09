@@ -16,12 +16,7 @@
   },
   "criteria": {
     "gum_specialist": {
-      "trigger": "minecraft:consume_item",
-      "conditions": {
-        "item": {
-          "item": "bubble_gum_simulator:intermediatebadge"
-        }
-      }
+      "trigger": "minecraft:impossible"
     }
   },
   "rewards": {

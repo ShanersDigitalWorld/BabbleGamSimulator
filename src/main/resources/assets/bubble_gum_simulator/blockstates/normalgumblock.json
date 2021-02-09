@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bubble_gum_simulator:block/normalgumblock"
+    },
+    "type=top": {
+      "model": "bubble_gum_simulator:block/normalgumblock_top"
+    },
+    "type=double": {
+      "model": "bubble_gum_simulator:block/normalgumblock_full"
+    }
+  }
+}

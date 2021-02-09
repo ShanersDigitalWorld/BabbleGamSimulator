@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "bubble_gum_simulator:textures/54058be6280a4dc7a7b468bba621bc2d.png",
+    "icon": {
+      "item": "bubble_gum_simulator:novicebadge"
+    },
+    "title": {
+      "translate": "advancements.one_in_a_million.title"
+    },
+    "description": {
+      "translate": "advancements.one_in_a_million.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "one_in_a_million": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  }
+}

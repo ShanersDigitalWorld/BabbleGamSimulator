@@ -1,0 +1,196 @@
+{
+  "_fv": 15,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 429,
+    "height": 198,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 19,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "DevCodes",
+          "width": 120,
+          "height": 20,
+          "name": "DevCodes",
+          "x": 152,
+          "y": 21
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Hacks",
+          "onClick": {
+            "name": "Hacksclicked"
+          },
+          "width": 50,
+          "height": 20,
+          "name": "Hacks",
+          "x": 275,
+          "y": 21
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:text:tagDevmode>",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:text:tagDevmode>",
+          "x": 158,
+          "y": 2
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:number:tagPlayerx>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:number:tagPlayerx>",
+          "x": 150,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:number:tagPlayery>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:number:tagPlayery>",
+          "x": 150,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:number:tagPlayerz>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:number:tagPlayerz>",
+          "x": 150,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:number:TestSave>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:number:TestSave>",
+          "x": 6,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:integer:TotalBubbles>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:integer:TotalBubbles>",
+          "x": 6,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:logic:TotalBubbles>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:logic:TotalBubbles>",
+          "x": 6,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:text:TotalBubbles>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:text:TotalBubbles>",
+          "x": 6,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<BNBT:number:TestSave>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<BNBT:number:TestSave>",
+          "x": 6,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<BNBT:integer:TotalBubbles>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<BNBT:integer:TotalBubbles>",
+          "x": 6,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<BNBT:logic:TotalBubbles>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<BNBT:logic:TotalBubbles>",
+          "x": 6,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<BNBT:text:TotalBubbles>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<BNBT:text:TotalBubbles>",
+          "x": 6,
+          "y": 71
+        }
+      }
+    ]
+  }
+}

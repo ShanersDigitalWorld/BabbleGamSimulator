@@ -17,6 +17,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
@@ -35,8 +36,6 @@ import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.bubblegumsimulator.procedures.PetunselectedproProcedure;
-import net.mcreator.bubblegumsimulator.procedures.PetselectedproProcedure;
 import net.mcreator.bubblegumsimulator.procedures.CloseallguisProcedure;
 import net.mcreator.bubblegumsimulator.BubbleGumSimulatorModElements;
 import net.mcreator.bubblegumsimulator.BubbleGumSimulatorMod;
@@ -44,6 +43,8 @@ import net.mcreator.bubblegumsimulator.BubbleGumSimulatorMod;
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
+
+import com.mojang.blaze3d.matrix.MatrixStack;
 
 @BubbleGumSimulatorModElements.ModElement.Tag
 public class GuipetsGui extends BubbleGumSimulatorModElements.ModElement {
@@ -56,17 +57,17 @@ public class GuipetsGui extends BubbleGumSimulatorModElements.ModElement {
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
 				GUISlotChangedMessage::handler);
 		containerType = new ContainerType<>(new GuiContainerModFactory());
-		FMLJavaModLoadingContext.get().getModEventBus().register(this);
+		FMLJavaModLoadingContext.get().getModEventBus().register(new ContainerRegisterHandler());
 	}
-
+	private static class ContainerRegisterHandler {
+		@SubscribeEvent
+		public void registerContainer(RegistryEvent.Register<ContainerType<?>> event) {
+			event.getRegistry().register(containerType.setRegistryName("guipets"));
+		}
+	}
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
 		DeferredWorkQueue.runLater(() -> ScreenManager.registerFactory(containerType, GuiWindow::new));
-	}
-
-	@SubscribeEvent
-	public void registerContainer(RegistryEvent.Register<ContainerType<?>> event) {
-		event.getRegistry().register(containerType.setRegistryName("guipets"));
 	}
 	public static class GuiContainerModFactory implements IContainerFactory {
 		public GuiContainerMod create(int id, PlayerInventory inv, PacketBuffer extraData) {
@@ -85,7 +86,7 @@ public class GuipetsGui extends BubbleGumSimulatorModElements.ModElement {
 			super(containerType, id);
 			this.entity = inv.player;
 			this.world = inv.player.world;
-			this.internal = new ItemStackHandler(51);
+			this.internal = new ItemStackHandler(44);
 			BlockPos pos = null;
 			if (extraData != null) {
 				pos = extraData.readBlockPos();
@@ -123,315 +124,93 @@ public class GuipetsGui extends BubbleGumSimulatorModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 52, 36) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 43, 40) {
 			}));
-			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 69, 36) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 61, 40) {
 			}));
-			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 86, 36) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 79, 40) {
 			}));
-			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 103, 36) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 97, 40) {
 			}));
-			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 120, 36) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 115, 40) {
 			}));
-			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 137, 36) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 133, 40) {
 			}));
-			this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 154, 36) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 151, 40) {
 			}));
-			this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 52, 53) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 43, 58) {
 			}));
-			this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 69, 53) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 61, 58) {
 			}));
-			this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 86, 53) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 79, 58) {
 			}));
-			this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 103, 53) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 97, 58) {
 			}));
-			this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 120, 53) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 115, 58) {
 			}));
-			this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 137, 53) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 133, 58) {
 			}));
-			this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 154, 53) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 151, 58) {
 			}));
-			this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 52, 70) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 43, 76) {
 			}));
-			this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 69, 70) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 61, 76) {
 			}));
-			this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 86, 70) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 79, 76) {
 			}));
-			this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 103, 70) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 97, 76) {
 			}));
-			this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal, 18, 120, 70) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal, 18, 115, 76) {
 			}));
-			this.customSlots.put(19, this.addSlot(new SlotItemHandler(internal, 19, 137, 70) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(19, this.addSlot(new SlotItemHandler(internal, 19, 133, 76) {
 			}));
-			this.customSlots.put(20, this.addSlot(new SlotItemHandler(internal, 20, 154, 70) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(20, this.addSlot(new SlotItemHandler(internal, 20, 151, 76) {
 			}));
-			this.customSlots.put(21, this.addSlot(new SlotItemHandler(internal, 21, 52, 87) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(21, this.addSlot(new SlotItemHandler(internal, 21, 43, 94) {
 			}));
-			this.customSlots.put(22, this.addSlot(new SlotItemHandler(internal, 22, 69, 87) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(22, this.addSlot(new SlotItemHandler(internal, 22, 61, 94) {
 			}));
-			this.customSlots.put(23, this.addSlot(new SlotItemHandler(internal, 23, 86, 87) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(23, this.addSlot(new SlotItemHandler(internal, 23, 79, 94) {
 			}));
-			this.customSlots.put(24, this.addSlot(new SlotItemHandler(internal, 24, 103, 87) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(24, this.addSlot(new SlotItemHandler(internal, 24, 97, 94) {
 			}));
-			this.customSlots.put(25, this.addSlot(new SlotItemHandler(internal, 25, 120, 87) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(25, this.addSlot(new SlotItemHandler(internal, 25, 115, 94) {
 			}));
-			this.customSlots.put(26, this.addSlot(new SlotItemHandler(internal, 26, 137, 87) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(26, this.addSlot(new SlotItemHandler(internal, 26, 133, 94) {
 			}));
-			this.customSlots.put(27, this.addSlot(new SlotItemHandler(internal, 27, 154, 87) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(27, this.addSlot(new SlotItemHandler(internal, 27, 151, 94) {
 			}));
-			this.customSlots.put(28, this.addSlot(new SlotItemHandler(internal, 28, 52, 104) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(28, this.addSlot(new SlotItemHandler(internal, 28, 43, 112) {
 			}));
-			this.customSlots.put(29, this.addSlot(new SlotItemHandler(internal, 29, 69, 104) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(29, this.addSlot(new SlotItemHandler(internal, 29, 61, 112) {
 			}));
-			this.customSlots.put(30, this.addSlot(new SlotItemHandler(internal, 30, 86, 104) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(30, this.addSlot(new SlotItemHandler(internal, 30, 79, 112) {
 			}));
-			this.customSlots.put(31, this.addSlot(new SlotItemHandler(internal, 31, 103, 104) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(31, this.addSlot(new SlotItemHandler(internal, 31, 97, 112) {
 			}));
-			this.customSlots.put(32, this.addSlot(new SlotItemHandler(internal, 32, 120, 104) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(32, this.addSlot(new SlotItemHandler(internal, 32, 115, 112) {
 			}));
-			this.customSlots.put(33, this.addSlot(new SlotItemHandler(internal, 33, 137, 104) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(33, this.addSlot(new SlotItemHandler(internal, 33, 133, 112) {
 			}));
-			this.customSlots.put(34, this.addSlot(new SlotItemHandler(internal, 34, 154, 104) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(34, this.addSlot(new SlotItemHandler(internal, 34, 151, 112) {
 			}));
-			this.customSlots.put(35, this.addSlot(new SlotItemHandler(internal, 35, 52, 121) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(35, this.addSlot(new SlotItemHandler(internal, 35, 43, 130) {
 			}));
-			this.customSlots.put(36, this.addSlot(new SlotItemHandler(internal, 36, 69, 121) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(36, this.addSlot(new SlotItemHandler(internal, 36, 61, 130) {
 			}));
-			this.customSlots.put(37, this.addSlot(new SlotItemHandler(internal, 37, 86, 121) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(37, this.addSlot(new SlotItemHandler(internal, 37, 79, 130) {
 			}));
-			this.customSlots.put(38, this.addSlot(new SlotItemHandler(internal, 38, 103, 121) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(38, this.addSlot(new SlotItemHandler(internal, 38, 97, 130) {
 			}));
-			this.customSlots.put(39, this.addSlot(new SlotItemHandler(internal, 39, 120, 121) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(39, this.addSlot(new SlotItemHandler(internal, 39, 115, 130) {
 			}));
-			this.customSlots.put(40, this.addSlot(new SlotItemHandler(internal, 40, 137, 121) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(40, this.addSlot(new SlotItemHandler(internal, 40, 133, 130) {
 			}));
-			this.customSlots.put(41, this.addSlot(new SlotItemHandler(internal, 41, 154, 121) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(41, this.addSlot(new SlotItemHandler(internal, 41, 151, 130) {
 			}));
-			this.customSlots.put(42, this.addSlot(new SlotItemHandler(internal, 42, 52, 138) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(42, this.addSlot(new SlotItemHandler(internal, 42, -217, -50) {
 			}));
-			this.customSlots.put(43, this.addSlot(new SlotItemHandler(internal, 43, 69, 138) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
-			}));
-			this.customSlots.put(44, this.addSlot(new SlotItemHandler(internal, 44, 86, 138) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
-			}));
-			this.customSlots.put(45, this.addSlot(new SlotItemHandler(internal, 45, 103, 138) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
-			}));
-			this.customSlots.put(46, this.addSlot(new SlotItemHandler(internal, 46, 120, 138) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
-			}));
-			this.customSlots.put(47, this.addSlot(new SlotItemHandler(internal, 47, 137, 138) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
-			}));
-			this.customSlots.put(48, this.addSlot(new SlotItemHandler(internal, 48, 154, 138) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
-			}));
-			this.customSlots.put(49, this.addSlot(new SlotItemHandler(internal, 49, -8, 39) {
-				@Override
-				public void onSlotChanged() {
-					super.onSlotChanged();
-					GuiContainerMod.this.slotChanged(49, 0, 0);
-				}
-
-				@Override
-				public ItemStack onTake(PlayerEntity entity, ItemStack stack) {
-					ItemStack retval = super.onTake(entity, stack);
-					GuiContainerMod.this.slotChanged(49, 1, 0);
-					return retval;
-				}
-			}));
-			this.customSlots.put(50, this.addSlot(new SlotItemHandler(internal, 50, 199, -31) {
+			this.customSlots.put(43, this.addSlot(new SlotItemHandler(internal, 43, -69, 2) {
 				@Override
 				public boolean canTakeStack(PlayerEntity player) {
 					return false;
@@ -446,9 +225,9 @@ public class GuipetsGui extends BubbleGumSimulatorModElements.ModElement {
 			int sj;
 			for (si = 0; si < 3; ++si)
 				for (sj = 0; sj < 9; ++sj)
-					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 3 + 8 + sj * 18, -177 + 84 + si * 18));
+					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, -176 + 84 + si * 18));
 			for (si = 0; si < 9; ++si)
-				this.addSlot(new Slot(inv, si, 3 + 8 + si * 18, -177 + 142));
+				this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, -176 + 142));
 		}
 
 		public Map<Integer, Slot> get() {
@@ -467,18 +246,18 @@ public class GuipetsGui extends BubbleGumSimulatorModElements.ModElement {
 			if (slot != null && slot.getHasStack()) {
 				ItemStack itemstack1 = slot.getStack();
 				itemstack = itemstack1.copy();
-				if (index < 51) {
-					if (!this.mergeItemStack(itemstack1, 51, this.inventorySlots.size(), true)) {
+				if (index < 44) {
+					if (!this.mergeItemStack(itemstack1, 44, this.inventorySlots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 					slot.onSlotChange(itemstack1, itemstack);
-				} else if (!this.mergeItemStack(itemstack1, 0, 51, false)) {
-					if (index < 51 + 27) {
-						if (!this.mergeItemStack(itemstack1, 51 + 27, this.inventorySlots.size(), true)) {
+				} else if (!this.mergeItemStack(itemstack1, 0, 44, false)) {
+					if (index < 44 + 27) {
+						if (!this.mergeItemStack(itemstack1, 44 + 27, this.inventorySlots.size(), true)) {
 							return ItemStack.EMPTY;
 						}
 					} else {
-						if (!this.mergeItemStack(itemstack1, 51, 51 + 27, false)) {
+						if (!this.mergeItemStack(itemstack1, 44, 44 + 27, false)) {
 							return ItemStack.EMPTY;
 						}
 					}
@@ -584,10 +363,186 @@ public class GuipetsGui extends BubbleGumSimulatorModElements.ModElement {
 			if (!bound && (playerIn instanceof ServerPlayerEntity)) {
 				if (!playerIn.isAlive() || playerIn instanceof ServerPlayerEntity && ((ServerPlayerEntity) playerIn).hasDisconnected()) {
 					for (int j = 0; j < internal.getSlots(); ++j) {
+						if (j == 0)
+							continue;
+						if (j == 1)
+							continue;
+						if (j == 2)
+							continue;
+						if (j == 3)
+							continue;
+						if (j == 4)
+							continue;
+						if (j == 5)
+							continue;
+						if (j == 6)
+							continue;
+						if (j == 7)
+							continue;
+						if (j == 8)
+							continue;
+						if (j == 9)
+							continue;
+						if (j == 10)
+							continue;
+						if (j == 11)
+							continue;
+						if (j == 12)
+							continue;
+						if (j == 13)
+							continue;
+						if (j == 14)
+							continue;
+						if (j == 15)
+							continue;
+						if (j == 16)
+							continue;
+						if (j == 17)
+							continue;
+						if (j == 18)
+							continue;
+						if (j == 19)
+							continue;
+						if (j == 20)
+							continue;
+						if (j == 21)
+							continue;
+						if (j == 22)
+							continue;
+						if (j == 23)
+							continue;
+						if (j == 24)
+							continue;
+						if (j == 25)
+							continue;
+						if (j == 26)
+							continue;
+						if (j == 27)
+							continue;
+						if (j == 28)
+							continue;
+						if (j == 29)
+							continue;
+						if (j == 30)
+							continue;
+						if (j == 31)
+							continue;
+						if (j == 32)
+							continue;
+						if (j == 33)
+							continue;
+						if (j == 34)
+							continue;
+						if (j == 35)
+							continue;
+						if (j == 36)
+							continue;
+						if (j == 37)
+							continue;
+						if (j == 38)
+							continue;
+						if (j == 39)
+							continue;
+						if (j == 40)
+							continue;
+						if (j == 41)
+							continue;
+						if (j == 42)
+							continue;
+						if (j == 43)
+							continue;
 						playerIn.dropItem(internal.extractItem(j, internal.getStackInSlot(j).getCount(), false), false);
 					}
 				} else {
 					for (int i = 0; i < internal.getSlots(); ++i) {
+						if (i == 0)
+							continue;
+						if (i == 1)
+							continue;
+						if (i == 2)
+							continue;
+						if (i == 3)
+							continue;
+						if (i == 4)
+							continue;
+						if (i == 5)
+							continue;
+						if (i == 6)
+							continue;
+						if (i == 7)
+							continue;
+						if (i == 8)
+							continue;
+						if (i == 9)
+							continue;
+						if (i == 10)
+							continue;
+						if (i == 11)
+							continue;
+						if (i == 12)
+							continue;
+						if (i == 13)
+							continue;
+						if (i == 14)
+							continue;
+						if (i == 15)
+							continue;
+						if (i == 16)
+							continue;
+						if (i == 17)
+							continue;
+						if (i == 18)
+							continue;
+						if (i == 19)
+							continue;
+						if (i == 20)
+							continue;
+						if (i == 21)
+							continue;
+						if (i == 22)
+							continue;
+						if (i == 23)
+							continue;
+						if (i == 24)
+							continue;
+						if (i == 25)
+							continue;
+						if (i == 26)
+							continue;
+						if (i == 27)
+							continue;
+						if (i == 28)
+							continue;
+						if (i == 29)
+							continue;
+						if (i == 30)
+							continue;
+						if (i == 31)
+							continue;
+						if (i == 32)
+							continue;
+						if (i == 33)
+							continue;
+						if (i == 34)
+							continue;
+						if (i == 35)
+							continue;
+						if (i == 36)
+							continue;
+						if (i == 37)
+							continue;
+						if (i == 38)
+							continue;
+						if (i == 39)
+							continue;
+						if (i == 40)
+							continue;
+						if (i == 41)
+							continue;
+						if (i == 42)
+							continue;
+						if (i == 43)
+							continue;
 						playerIn.inventory.placeItemBackInInventory(playerIn.world,
 								internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 					}
@@ -596,7 +551,7 @@ public class GuipetsGui extends BubbleGumSimulatorModElements.ModElement {
 		}
 
 		private void slotChanged(int slotid, int ctype, int meta) {
-			if (this.world != null && this.world.isRemote) {
+			if (this.world != null && this.world.isRemote()) {
 				BubbleGumSimulatorMod.PACKET_HANDLER.sendToServer(new GUISlotChangedMessage(slotid, x, y, z, ctype, meta));
 				handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 			}
@@ -615,30 +570,32 @@ public class GuipetsGui extends BubbleGumSimulatorModElements.ModElement {
 			this.y = container.y;
 			this.z = container.z;
 			this.entity = container.entity;
-			this.xSize = 182;
+			this.xSize = 176;
 			this.ySize = 166;
 		}
 		private static final ResourceLocation texture = new ResourceLocation("bubble_gum_simulator:textures/guipets.png");
 		@Override
-		public void render(int mouseX, int mouseY, float partialTicks) {
-			this.renderBackground();
-			super.render(mouseX, mouseY, partialTicks);
-			this.renderHoveredToolTip(mouseX, mouseY);
+		public void render(MatrixStack ms, int mouseX, int mouseY, float partialTicks) {
+			this.renderBackground(ms);
+			super.render(ms, mouseX, mouseY, partialTicks);
+			this.renderHoveredTooltip(ms, mouseX, mouseY);
 		}
 
 		@Override
-		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
+		protected void drawGuiContainerBackgroundLayer(MatrixStack ms, float par1, int par2, int par3) {
 			GL11.glColor4f(1, 1, 1, 1);
 			Minecraft.getInstance().getTextureManager().bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
-			this.blit(k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
+			this.blit(ms, k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("bubble_gum_simulator:textures/layer_13.png"));
-			this.blit(this.guiLeft + -13, this.guiTop + 1, 0, 0, 194, 164, 194, 164);
+			this.blit(ms, this.guiLeft + -17, this.guiTop + 0, 0, 0, 194, 164, 194, 164);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("bubble_gum_simulator:textures/rersr.png"));
-			this.blit(this.guiLeft + 184, this.guiTop + 19, 0, 0, 28, 146, 28, 146);
+			this.blit(ms, this.guiLeft + 181, this.guiTop + 19, 0, 0, 28, 146, 28, 146);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("bubble_gum_simulator:textures/bubbleico.png"));
-			this.blit(this.guiLeft + 16, this.guiTop + 167, 0, 0, 7, 7, 7, 7);
+			this.blit(ms, this.guiLeft + 13, this.guiTop + 167, 0, 0, 7, 7, 7, 7);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("bubble_gum_simulator:textures/eggsgui.png"));
+			this.blit(ms, this.guiLeft + 75, this.guiTop + 166, 0, 0, 10, 10, 10, 10);
 		}
 
 		@Override
@@ -656,14 +613,24 @@ public class GuipetsGui extends BubbleGumSimulatorModElements.ModElement {
 		}
 
 		@Override
-		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
-			this.font.drawString("" + (entity.getPersistentData().getDouble("Totalbubbles")) + "", 24, 166, -52276);
-			this.font.drawString("" + (entity.getPersistentData().getDouble("Totaleggs")) + "", 88, 166, -1);
+		protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
+			this.font.drawString(ms, "" + (entity.getPersistentData().getString("OverlayTotalBubbles")) + "", 21, 166, -52276);
+			this.font.drawString(ms, "" + (entity.getPersistentData().getString("OverlayTotalEggs")) + "", 85, 166, -1);
+			this.font.drawString(ms, "" + (entity.getPersistentData().getString("CurrentPetsName")) + "", -11, 39, -12829636);
+			this.font.drawString(ms, "" + (entity.getPersistentData().getDouble("CurrentPetsLevel")) + "", -11, 93, -12829636);
+			this.font.drawString(ms, "" + (entity.getPersistentData().getDouble("CurrrentPetsBubbles")) + "", -11, 102, -12829636);
+			this.font.drawString(ms, "" + (entity.getPersistentData().getDouble("CurrentPetsCoins")) + "", -11, 111, -12829636);
+			this.font.drawString(ms, "" + (entity.getPersistentData().getDouble("CurrentPetsGems")) + "", -11, 120, -12829636);
+			this.font.drawString(ms, "Equip", -90, 133, -1);
+			this.font.drawString(ms, "Delete", -52, 133, -1);
+			this.font.drawString(ms, "Enchant", -54, 151, -1);
+			this.font.drawString(ms, "Shiny", -90, 151, -1);
+			this.font.drawString(ms, "" + (entity.getPersistentData().getDouble("CurrentCollection")) + "", -11, 129, -12829636);
 		}
 
 		@Override
-		public void removed() {
-			super.removed();
+		public void onClose() {
+			super.onClose();
 			Minecraft.getInstance().keyboardListener.enableRepeatEvents(false);
 		}
 
@@ -671,9 +638,25 @@ public class GuipetsGui extends BubbleGumSimulatorModElements.ModElement {
 		public void init(Minecraft minecraft, int width, int height) {
 			super.init(minecraft, width, height);
 			minecraft.keyboardListener.enableRepeatEvents(true);
-			this.addButton(new Button(this.guiLeft + 149, this.guiTop + 2, 30, 20, "x", e -> {
+			this.addButton(new Button(this.guiLeft + 146, this.guiTop + 2, 30, 20, new StringTextComponent("x"), e -> {
 				BubbleGumSimulatorMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
 				handleButtonAction(entity, 0, x, y, z);
+			}));
+			this.addButton(new Button(this.guiLeft + -97, this.guiTop + 147, 40, 20, new StringTextComponent("   "), e -> {
+				BubbleGumSimulatorMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(1, x, y, z));
+				handleButtonAction(entity, 1, x, y, z);
+			}));
+			this.addButton(new Button(this.guiLeft + -97, this.guiTop + 129, 40, 20, new StringTextComponent("   "), e -> {
+				BubbleGumSimulatorMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(2, x, y, z));
+				handleButtonAction(entity, 2, x, y, z);
+			}));
+			this.addButton(new Button(this.guiLeft + -56, this.guiTop + 129, 40, 20, new StringTextComponent("   "), e -> {
+				BubbleGumSimulatorMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(3, x, y, z));
+				handleButtonAction(entity, 3, x, y, z);
+			}));
+			this.addButton(new Button(this.guiLeft + -56, this.guiTop + 147, 40, 20, new StringTextComponent("   "), e -> {
+				BubbleGumSimulatorMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(4, x, y, z));
+				handleButtonAction(entity, 4, x, y, z);
 			}));
 		}
 	}
@@ -778,23 +761,5 @@ public class GuipetsGui extends BubbleGumSimulatorModElements.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
-		if (slotID == 49 && changeType == 0) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				PetselectedproProcedure.executeProcedure($_dependencies);
-			}
-		}
-		if (slotID == 49 && changeType == 1) {
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				PetunselectedproProcedure.executeProcedure($_dependencies);
-			}
-		}
 	}
 }

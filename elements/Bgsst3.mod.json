@@ -1,9 +1,9 @@
 {
-  "_fv": 13,
+  "_fv": 15,
   "_type": "musicdisc",
   "definition": {
     "texture": "untitled-3",
-    "name": "Bgsst 3",
+    "name": "bgsst3",
     "description": "bgs",
     "creativeTab": {
       "value": "CUSTOM:Bgssoundtrack"

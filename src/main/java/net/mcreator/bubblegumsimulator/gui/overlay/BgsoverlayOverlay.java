@@ -48,7 +48,7 @@ public class BgsoverlayOverlay extends BubbleGumSimulatorModElements.ModElement 
 				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
 				RenderSystem.disableAlphaTest();
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("bubble_gum_simulator:textures/untitled-4.png"));
-				Minecraft.getInstance().ingameGUI.blit(posX + 164, posY + 4, 0, 0, 48, 115, 48, 115);
+				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + 164, posY + 4, 0, 0, 48, 115, 48, 115);
 				RenderSystem.depthMask(true);
 				RenderSystem.enableDepthTest();
 				RenderSystem.enableAlphaTest();
@@ -60,20 +60,19 @@ public class BgsoverlayOverlay extends BubbleGumSimulatorModElements.ModElement 
 				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
 				RenderSystem.disableAlphaTest();
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("bubble_gum_simulator:textures/overlays.png"));
-				Minecraft.getInstance().ingameGUI.blit(posX + -210, posY + -32, 0, 0, 92, 85, 92, 85);
+				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -210, posY + -32, 0, 0, 92, 85, 92, 85);
 				RenderSystem.depthMask(true);
 				RenderSystem.enableDepthTest();
 				RenderSystem.enableAlphaTest();
 				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
-				Minecraft.getInstance().fontRenderer.drawString("" + (entity.getPersistentData().getDouble("Bubbles")) + "", posX + -193, posY + -2,
-						-65281);
-				Minecraft.getInstance().fontRenderer.drawString("" + (entity.getPersistentData().getDouble("Coincurrency")) + "", posX + -192,
-						posY + 18, -256);
-				Minecraft.getInstance().fontRenderer.drawString("" + (entity.getPersistentData().getDouble("Gemcurrency")) + "", posX + -192,
-						posY + 39, -10092340);
-				Minecraft.getInstance().fontRenderer.drawString("" + (entity.getPersistentData().getDouble("Heights")) + "", posX + -21, posY + 63,
-						-1);
-				Minecraft.getInstance().fontRenderer.drawString("m", posX + 4, posY + 63, -1);
+				Minecraft.getInstance().fontRenderer.drawString(event.getMatrixStack(),
+						"" + (entity.getPersistentData().getString("OverlayBubbles")) + "", posX + -194, posY + -3, -65281);
+				Minecraft.getInstance().fontRenderer.drawString(event.getMatrixStack(),
+						"" + (entity.getPersistentData().getString("OverlayCoinCurrency")) + "", posX + -193, posY + 17, -256);
+				Minecraft.getInstance().fontRenderer.drawString(event.getMatrixStack(),
+						"" + (entity.getPersistentData().getString("OverlayGemCurrency")) + "", posX + -193, posY + 38, -10092340);
+				Minecraft.getInstance().fontRenderer.drawString(event.getMatrixStack(), "" + (entity.getPersistentData().getString("Heights")) + "",
+						posX + 0, posY + 63, -1);
 				RenderSystem.disableDepthTest();
 				RenderSystem.depthMask(false);
 				RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA,
@@ -81,20 +80,22 @@ public class BgsoverlayOverlay extends BubbleGumSimulatorModElements.ModElement 
 				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
 				RenderSystem.disableAlphaTest();
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("bubble_gum_simulator:textures/untitled-3.png"));
-				Minecraft.getInstance().ingameGUI.blit(posX + -99, posY + 74, 0, 0, 198, 13, 198, 13);
+				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -99, posY + 74, 0, 0, 198, 13, 198, 13);
 				RenderSystem.depthMask(true);
 				RenderSystem.enableDepthTest();
 				RenderSystem.enableAlphaTest();
 				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
-				Minecraft.getInstance().fontRenderer.drawString("Height", posX + -99, posY + 64, -1);
-				Minecraft.getInstance().fontRenderer.drawString("(P)", posX + 190, posY + 16, -12829636);
-				Minecraft.getInstance().fontRenderer.drawString("(S)", posX + 191, posY + 47, -12829636);
-				Minecraft.getInstance().fontRenderer.drawString("(T)", posX + 189, posY + 80, -12829636);
-				Minecraft.getInstance().fontRenderer.drawString("(M)", posX + 185, posY + 108, -12829636);
-				Minecraft.getInstance().fontRenderer.drawString("(I)", posX + -184, posY + -25, -12829636);
-				Minecraft.getInstance().fontRenderer.drawString("(C)", posX + -207, posY + -24, -12829636);
-				Minecraft.getInstance().fontRenderer.drawString("(B)", posX + -138, posY + -24, -12829636);
-				Minecraft.getInstance().fontRenderer.drawString("(R)", posX + -162, posY + -24, -12829636);
+				Minecraft.getInstance().fontRenderer.drawString(event.getMatrixStack(), "Height", posX + -99, posY + 63, -1);
+				Minecraft.getInstance().fontRenderer.drawString(event.getMatrixStack(), "(P)", posX + 190, posY + 16, -16777216);
+				Minecraft.getInstance().fontRenderer.drawString(event.getMatrixStack(), "(S)", posX + 191, posY + 47, -12829636);
+				Minecraft.getInstance().fontRenderer.drawString(event.getMatrixStack(), "(T)", posX + 189, posY + 80, -12829636);
+				Minecraft.getInstance().fontRenderer.drawString(event.getMatrixStack(), "(M)", posX + 185, posY + 108, -12829636);
+				Minecraft.getInstance().fontRenderer.drawString(event.getMatrixStack(), "(I)", posX + -184, posY + -25, -12829636);
+				Minecraft.getInstance().fontRenderer.drawString(event.getMatrixStack(), "(C)", posX + -207, posY + -24, -12829636);
+				Minecraft.getInstance().fontRenderer.drawString(event.getMatrixStack(), "(B)", posX + -138, posY + -24, -12829636);
+				Minecraft.getInstance().fontRenderer.drawString(event.getMatrixStack(), "(R)", posX + -162, posY + -24, -12829636);
+				Minecraft.getInstance().fontRenderer.drawString(event.getMatrixStack(),
+						"" + (entity.getPersistentData().getDouble("BubblesPerClick")) + "", posX + -4, posY + -5, -39169);
 			}
 		}
 	}

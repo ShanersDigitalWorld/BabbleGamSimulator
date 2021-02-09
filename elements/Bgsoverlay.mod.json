@@ -1,5 +1,5 @@
 {
-  "_fv": 13,
+  "_fv": 15,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -27,65 +27,52 @@
       {
         "type": "label",
         "data": {
-          "text": "<ENBT:number:Bubbles>",
+          "text": "<ENBT:text:OverlayBubbles>",
           "color": {
             "value": -65281,
             "falpha": 0.0
           },
-          "name": "<ENBT:number:Bubbles>",
-          "x": 20,
-          "y": 118
+          "name": "<ENBT:text:OverlayBubbles>",
+          "x": 19,
+          "y": 117
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "<ENBT:number:Coincurrency>",
+          "text": "<ENBT:text:OverlayCoinCurrency>",
           "color": {
             "value": -256,
             "falpha": 0.0
           },
-          "name": "<ENBT:number:Coincurrency>",
-          "x": 21,
-          "y": 138
+          "name": "<ENBT:text:OverlayCoinCurrency>",
+          "x": 20,
+          "y": 137
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "<ENBT:number:Gemcurrency>",
+          "text": "<ENBT:text:OverlayGemCurrency>",
           "color": {
             "value": -10092340,
             "falpha": 0.0
           },
-          "name": "<ENBT:number:Gemcurrency>",
-          "x": 21,
-          "y": 159
+          "name": "<ENBT:text:OverlayGemCurrency>",
+          "x": 20,
+          "y": 158
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "<ENBT:number:Heights>",
+          "text": "<ENBT:text:Heights>",
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "<ENBT:number:Heights>",
-          "x": 192,
-          "y": 183
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "m",
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "name": "m",
-          "x": 217,
+          "name": "<ENBT:text:Heights>",
+          "x": 213,
           "y": 183
         }
       },
@@ -109,7 +96,7 @@
           },
           "name": "Height",
           "x": 114,
-          "y": 184
+          "y": 183
         }
       },
       {
@@ -117,7 +104,7 @@
         "data": {
           "text": "(P)",
           "color": {
-            "value": -12829636,
+            "value": -16777216,
             "falpha": 0.0
           },
           "name": "(P)",
@@ -214,6 +201,19 @@
           "name": "(R)",
           "x": 51,
           "y": 96
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<ENBT:number:BubblesPerClick>",
+          "color": {
+            "value": -39169,
+            "falpha": 0.0
+          },
+          "name": "<ENBT:number:BubblesPerClick>",
+          "x": 209,
+          "y": 115
         }
       }
     ],

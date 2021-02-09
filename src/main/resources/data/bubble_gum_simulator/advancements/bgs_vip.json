@@ -1,5 +1,6 @@
 {
   "display": {
+    "background": "minecraft:textures/block/stone.png",
     "icon": {
       "item": "bubble_gum_simulator:vip"
     },
@@ -16,14 +17,10 @@
   },
   "criteria": {
     "bgs_vip": {
-      "trigger": "minecraft:changed_dimension",
-      "conditions": {
-        "to": "bubble_gum_simulator:candyland"
-      }
+      "trigger": "minecraft:impossible"
     }
   },
   "rewards": {
     "experience": 1
-  },
-  "parent": "bubble_gum_simulator:bubbler"
+  }
 }
