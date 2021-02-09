@@ -2987,15 +2987,6 @@
       "registry_name": "sellblock_7"
     },
     {
-      "name": "Leaderboardgui",
-      "type": "gui",
-      "sortid": 486,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "leaderboardgui"
-    },
-    {
       "name": "LeaderboardBlock",
       "type": "block",
       "sortid": 486,
@@ -6350,6 +6341,7 @@
       "block.bubble_gum_simulator.royalpurpleblock": "Cashmereblock",
       "block.bubble_gum_simulator.kingderpy": "Kingderpy",
       "item.bubble_gum_simulator.bgsst_14.desc": "bgs",
+      "NullPointerException": "",
       "item.bubble_gum_simulator.bearent_spawn_egg": "Doggy Spawn Egg",
       "block.bubble_gum_simulator.petkingdoggy": "Petkingdoggy",
       "item.bubble_gum_simulator.extremebubblerbadge": "Extreme Bubbler Badge",
@@ -6494,6 +6486,7 @@
       "block.bubble_gum_simulator.sellblock_5": "Sell Block 6x",
       "advancements.simply_insane.title": "Simply Insane",
       "block.bubble_gum_simulator.sellblock_6": "Sell Block 7x",
+      "java.lang.NullPointerException": "",
       "block.bubble_gum_simulator.epic_gum_block": "Epic Gum",
       "block.bubble_gum_simulator.sellblock_7": "Sell Block 8x",
       "item.bubble_gum_simulator.bgsst_3.desc": "bgs",
@@ -6594,15 +6587,17 @@
     "modName": "Bubble Gum Simulator",
     "version": "1.3.9b",
     "author": "Tech Norris",
-    "websiteURL": "https://mcreator.net",
+    "websiteURL": "https://mcreator.net/modification/70844/bubble-gum-simulator-single-player",
     "license": "Not specified",
-    "disableForgeVersionCheck": true,
+    "disableForgeVersionCheck": false,
     "serverSideOnly": false,
     "modPicture": "babble",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "mcreator_link"
+    ],
     "currentGenerator": "forge-1.16.4",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.bubblegumsimulator",

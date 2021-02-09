@@ -7,7 +7,7 @@ modId="bubble_gum_simulator"
 version="1.3.9b"
 displayName="Bubble Gum Simulator"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
-displayURL="https://mcreator.net"
+displayURL="https://mcreator.net/modification/70844/bubble-gum-simulator-single-player"
 logoFile="logo.png"
 authors="Tech Norris"
 
@@ -18,6 +18,18 @@ authors="Tech Norris"
     ordering="NONE"
     side="BOTH"
 
+[[dependencies.bubble_gum_simulator]]
+    modId="forge"
+    mandatory=true
+    versionRange="[35.1.4]"
+    ordering="NONE"
+    side="BOTH"
 
+[[dependencies.bubble_gum_simulator]]
+    modId="mcreator_link"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
 
