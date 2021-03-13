@@ -46,42 +46,6 @@ public class BubbleGumSimulatorModElements {
 	public final List<Supplier<Enchantment>> enchantments = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public BubbleGumSimulatorModElements() {
-		sounds.put(new ResourceLocation("bubble_gum_simulator", "bgsst1"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("bubble_gum_simulator", "bgsst1")));
-		sounds.put(new ResourceLocation("bubble_gum_simulator", "bgsst2"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("bubble_gum_simulator", "bgsst2")));
-		sounds.put(new ResourceLocation("bubble_gum_simulator", "bgsst3"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("bubble_gum_simulator", "bgsst3")));
-		sounds.put(new ResourceLocation("bubble_gum_simulator", "bgsst4"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("bubble_gum_simulator", "bgsst4")));
-		sounds.put(new ResourceLocation("bubble_gum_simulator", "bgsst5"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("bubble_gum_simulator", "bgsst5")));
-		sounds.put(new ResourceLocation("bubble_gum_simulator", "bgsst6"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("bubble_gum_simulator", "bgsst6")));
-		sounds.put(new ResourceLocation("bubble_gum_simulator", "bgsst7"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("bubble_gum_simulator", "bgsst7")));
-		sounds.put(new ResourceLocation("bubble_gum_simulator", "bgsst8"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("bubble_gum_simulator", "bgsst8")));
-		sounds.put(new ResourceLocation("bubble_gum_simulator", "bgsst9"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("bubble_gum_simulator", "bgsst9")));
-		sounds.put(new ResourceLocation("bubble_gum_simulator", "bgsst10"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("bubble_gum_simulator", "bgsst10")));
-		sounds.put(new ResourceLocation("bubble_gum_simulator", "bgsst11"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("bubble_gum_simulator", "bgsst11")));
-		sounds.put(new ResourceLocation("bubble_gum_simulator", "bgsst12"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("bubble_gum_simulator", "bgsst12")));
-		sounds.put(new ResourceLocation("bubble_gum_simulator", "bgsst13"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("bubble_gum_simulator", "bgsst13")));
-		sounds.put(new ResourceLocation("bubble_gum_simulator", "bgsst14"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("bubble_gum_simulator", "bgsst14")));
-		sounds.put(new ResourceLocation("bubble_gum_simulator", "bgsst15"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("bubble_gum_simulator", "bgsst15")));
-		sounds.put(new ResourceLocation("bubble_gum_simulator", "bgsst16"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("bubble_gum_simulator", "bgsst16")));
-		sounds.put(new ResourceLocation("bubble_gum_simulator", "bgsst17"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("bubble_gum_simulator", "bgsst17")));
-		sounds.put(new ResourceLocation("bubble_gum_simulator", "techy"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("bubble_gum_simulator", "techy")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("bubble_gum_simulator").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

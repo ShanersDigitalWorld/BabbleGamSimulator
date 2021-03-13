@@ -2,7 +2,7 @@
   "_fv": 15,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Extreme",
+    "achievementName": "Extreme Bubbler",
     "achievementDescription": "7,500 bubbles blown. You're extreme!",
     "achievementIcon": {
       "value": "CUSTOM:Extremebubblerbadge"
