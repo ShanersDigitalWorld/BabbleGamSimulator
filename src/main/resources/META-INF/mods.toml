@@ -1,6 +1,6 @@
 modLoader="javafml"
 loaderVersion="[35,)"
-license="Not specified"
+license="Custom license"
 
 [[mods]]
 modId="bubble_gum_simulator"
@@ -18,12 +18,6 @@ authors="Tech Norris"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.bubble_gum_simulator]]
-    modId="forge"
-    mandatory=true
-    versionRange="[35.1.4]"
-    ordering="NONE"
-    side="BOTH"
 
 
 
