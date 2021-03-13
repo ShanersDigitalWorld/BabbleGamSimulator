@@ -1423,15 +1423,6 @@
       "registry_name": "guipotions"
     },
     {
-      "name": "Guititles",
-      "type": "gui",
-      "sortid": 211,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "guititles"
-    },
-    {
       "name": "Guishop",
       "type": "gui",
       "sortid": 212,
@@ -1448,15 +1439,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "guisettings"
-    },
-    {
-      "name": "Guibubblepass",
-      "type": "gui",
-      "sortid": 215,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "guibubblepass"
     },
     {
       "name": "Guicodes",
