@@ -5,10 +5,7 @@
     "part1": {
       "loader": "forge:obj",
       "model": "bubble_gum_simulator:models/item/bee.obj",
-      "ambientToFullbright": true,
-      "textures": {
-        "#m_0": "bubble_gum_simulator:blocks/bee"
-      }
+      "ambientToFullbright": true
     }
   },
   "textures": {

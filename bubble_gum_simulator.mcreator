@@ -3489,15 +3489,6 @@
       "registry_name": "beeswarma"
     },
     {
-      "name": "Nullent",
-      "type": "mob",
-      "sortid": 543,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "nullent"
-    },
-    {
       "name": "RickrollblkOnBlockRightClicked",
       "type": "procedure",
       "sortid": 545,
@@ -6072,7 +6063,6 @@
       "block.bubble_gum_simulator.portalframeblock": "Portal Frame Block",
       "advancements.hatch_1000_eggs.title": "Hatch 1,000 Eggs",
       "advancements.bubble_master.descr": "You\u0027re a master of the ways of the bubbles with 3.5M blown",
-      "entity.bubble_gum_simulator.nullent": "Nullent",
       "block.bubble_gum_simulator.cadetblueblock": "Cashmereblock",
       "block.bubble_gum_simulator.petbear": "Pet Bear",
       "block.bubble_gum_simulator.cashmereblock": "Cashmere Block",
@@ -6165,7 +6155,6 @@
       "block.bubble_gum_simulator.bgselementalblock": "Bgselementalblock",
       "item.bubble_gum_simulator.toyland": "Toyland Portal Igniter",
       "block.bubble_gum_simulator.mediumbluewhiteslab": "Mediumbluewhiteslab",
-      "item.bubble_gum_simulator.nullent_spawn_egg": "Nullent Spawn Egg",
       "block.bubble_gum_simulator.omaka": "Omaka",
       "block.bubble_gum_simulator.iceshardegg": "Ice Shard Egg",
       "block.bubble_gum_simulator.fawnbrownblock": "Cashmereblock",
@@ -6231,9 +6220,7 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [
-      "mcreator_link"
-    ],
+    "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.4",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.bubblegumsimulator",

@@ -25,11 +25,5 @@ authors="Tech Norris"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.bubble_gum_simulator]]
-    modId="mcreator_link"
-    mandatory=true
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 
 
