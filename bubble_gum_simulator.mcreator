@@ -1450,15 +1450,6 @@
       "registry_name": "guisettings"
     },
     {
-      "name": "Guitrading",
-      "type": "gui",
-      "sortid": 214,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "guitrading"
-    },
-    {
       "name": "Guibubblepass",
       "type": "gui",
       "sortid": 215,
@@ -1976,48 +1967,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "petskey"
-    },
-    {
-      "name": "TradingkeyOnKeyPressed",
-      "type": "procedure",
-      "sortid": 293,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tradingkey_on_key_pressed",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Tradingkey",
-      "type": "keybind",
-      "sortid": 294,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tradingkey"
     },
     {
       "name": "SettingskeyOnKeyPressed",
@@ -6137,7 +6086,6 @@
       "item.bubble_gum_simulator.betatvent_spawn_egg": "Betatvent Spawn Egg",
       "entity.bubble_gum_simulator.betatvent": "Betatvent",
       "item.bubble_gum_simulator.kittyent_spawn_egg": "Doggy Spawn Egg",
-      "key.mcreator.tradingkey": "Tradingkey",
       "advancements.bubbler.title": "Bubbler",
       "entity.bubble_gum_simulator.holy_shock": "Holy Shock",
       "item.bubble_gum_simulator.item_super_gum": "Extra Stretchy Gum",
