@@ -6223,7 +6223,7 @@
     "modName": "Bubble Gum Simulator",
     "version": "1.3.9b",
     "author": "Tech Norris",
-    "websiteURL": "https://mcreator.net/modification/70844/bubble-gum-simulator-single-player",
+    "websiteURL": "https://github.com/ShanersDigitalWorld/BabbleGamSimulator",
     "license": "Not specified",
     "disableForgeVersionCheck": false,
     "serverSideOnly": true,
